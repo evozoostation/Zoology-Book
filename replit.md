@@ -25,3 +25,8 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+- `artifacts/zoology-book` — ZooStudy+, an interactive zoology textbook ported from the v0 project `evozoostation/v0-interactive-zoology-book`. React + Vite SPA with sidebar navigation, per-section progress tracking persisted in `localStorage`, search, and rich content rendering (paragraphs, lists, definitions, tables, callouts, key points). Content lives in `src/lib/book-data.ts`. PDF reference page images live in `public/pdf/`.
+
