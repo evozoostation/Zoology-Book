@@ -20,18 +20,19 @@ export type ContentBlock =
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "callout"; variant: "info" | "warning" | "tip" | "example"; title?: string; content: string }
   | { type: "keypoint"; points: string[] }
-   | { type: "image"; src: string; alt: stri    caption?: string; width?: "sm" | "md" | "lg" | "full" };
+  | { type: "image"; src: string; alt: string; caption?: string; width?: "sm" | "md" | "lg" | "full" };
 
 export const chapters: Chapter[] = [
   {
     id: "arquitectura-1",
     number: 1,
-    title: "A      ctura Animal — Parte I",
+    title: "Arquitectura Animal — Parte I",
     subtitle: "Biodiversidad y origen de los metazoos",
     sections: [
       {
         id: "biodiversidad",
-        title: "Biodiversidad del mundo viviente",          ontent: [
+        title: "Biodiversidad del mundo viviente",
+        content: [
           { type: "heading", level: 2, text: "Biodiversidad del mundo viviente" },
           { type: "paragraph", text: "La vida fue unicelular durante más de 2.500 millones de años. Todo cambió cuando las cianobacterias comenzaron a liberar oxígeno a la atmósfera. Ese gas, tóxico para muchos organismos primitivos, resultó ser el combustible que permitiría el salto hacia formas de vida más complejas: los eucariotas." },
           { type: "paragraph", text: "Más tarde, hace unos 541 millones de años, se produjo la llamada Explosión del Cámbrico. En un lapso geológicamente breve, aparecieron prácticamente todos los grandes grupos de animales que conocemos hoy. Es el momento fundacional de la biodiversidad animal." },
@@ -1322,7 +1323,13 @@ export const chapters: Chapter[] = [
             "El sistema circulatorio cerrado y el digestivo completo son novedades evolutivas importantes.",
             "Los poliquetos son el grupo más diverso, con parapodios y quetas abundantes.",
             "Los clitelados (oligoquetos e hirudíneos) tienen clitelo y desarrollo directo.",
-            "Las lombrices mejoran la   {
+            "Las lombrices mejoran la calidad del suelo; las sanguijuelas tienen interés médico."
+          ] }
+        ]
+      }
+    ]
+  },
+  {
     id: "moluscos",
     number: 10,
     title: "Moluscos",
@@ -1484,7 +1491,8 @@ export const chapters: Chapter[] = [
         ]
       }
     ]
-  },i  {
+  },
+  {
     id: "lofoforados-ecdysozoa",
     number: 11,
     title: "Lofoforados y Ecdysozoa",
@@ -1789,11 +1797,6 @@ export const chapters: Chapter[] = [
             "Los sistemas respiratorios varían: branquias, pulmones en libro o tráqueas.",
             "La excreción puede ser por glándulas antenales/coxales o por tubos de Malpighi.",
             "El éxito evolutivo de los artrópodos se debe a la versatilidad de sus apéndices, la protección del exoesqueleto y la colonización de todos los ambientes."
-          ] }
-        ]
-      }
-    ]
-  }, del exoesqueleto y la colonización de todos los ambientes."
           ] }
         ]
       }
