@@ -20,7 +20,8 @@ export type ContentBlock =
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "callout"; variant: "info" | "warning" | "tip" | "example"; title?: string; content: string }
   | { type: "keypoint"; points: string[] }
-  | { type: "image"; src: string; alt: string; caption?: string; width?: "sm" | "md" | "lg" | "full" };
+  | { type: "image"; src: string; alt: string; caption?: string; width?: "sm" | "md" | "lg" | "full" }
+  | { type: "video"; src: string; caption?: string; width?: "sm" | "md" | "lg" | "full" };
 
 export const chapters: Chapter[] = [
   {
@@ -33,9 +34,42 @@ export const chapters: Chapter[] = [
         id: "biodiversidad",
         title: "Biodiversidad del mundo viviente",
         content: [
-          { type: "heading", level: 2, text: "Biodiversidad del mundo viviente" },
+                  {
+            type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/q_auto/f_auto/v1777131292/Gemini_Generated_Image_j1rhksj1rhksj1rh_vvhbqm.png",
+            alt: "Filogenia de los Eucariotas: Relaciones evolutivas entre los grandes linajes",
+            caption: "árbol filogenético circular de los Eucariotas, que ilustra las relaciones evolutivas entre los grandes grupos de seres vivos",
+            width: "lg"
+          },{ type: "heading", level: 2, text: "Biodiversidad del mundo viviente" },
           { type: "paragraph", text: "La vida fue unicelular durante más de 2.500 millones de años. Todo cambió cuando las cianobacterias comenzaron a liberar oxígeno a la atmósfera. Ese gas, tóxico para muchos organismos primitivos, resultó ser el combustible que permitiría el salto hacia formas de vida más complejas: los eucariotas." },
+          {
+            type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/f_auto,q_auto/v1777128668/Gemini_Generated_Image_ckkjc4ckkjc4ckkj_piqy6h.png",
+            alt: "Árbol de la vida de los Eucariotas",
+            caption: "**El Árbol de la Vida Eucariota:** Relaciones filogenéticas entre los cinco grandes supergrupos y el origen de la multicelularidad.",
+            width: "lg"
+          },
           { type: "paragraph", text: "Más tarde, hace unos 541 millones de años, se produjo la llamada Explosión del Cámbrico. En un lapso geológicamente breve, aparecieron prácticamente todos los grandes grupos de animales que conocemos hoy. Es el momento fundacional de la biodiversidad animal." },
+          {
+            type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/q_auto/f_auto/v1777131791/Gemini_Generated_Image_qbjq1gqbjq1gqbjq_bevxva.png",
+            alt: "Evolución de la pluricelularidad desde un ancestro unicelular",
+            caption: "**La Hipótesis Colonial:** Transición de un organismo unicelular flagelado a una colonia y, finalmente, a un organismo pluricelular con diferenciación en células somáticas y germinales.",
+            width: "lg"
+          },
+          {
+            type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/q_auto/f_auto/v1777132775/Gemini_Generated_Image_40npjw40npjw40np_flp9xk.png",
+            alt: "Estructura detallada de un coanoflagelado",
+            caption: "**Anatomía de un coanoflagelado:** Se observa el flagelo central rodeado por el collar de microvellosidades, estructura clave para la filtración de partículas alimenticias y ancestro directo de los coanocitos en poríferos.",
+            width: "md"
+          },
+          { type: "paragraph", text: "Entre los parientes unicelulares más cercanos a los animales se encuentran los coanoflagelados. Estos protistas coloniales poseen un flagelo rodeado por un collar de microvellosidades, una estructura prácticamente idéntica a los coanocitos de las esponjas. Su estudio es clave para entender cómo se originó la pluricelularidad." },
+          {
+            type: "video",
+            src: "https://res.cloudinary.com/dhtyvmi5f/video/upload/q_auto/f_auto/v1777133640/videoplayback_ohw9w4.mp4",
+            caption: "**Dinámica colonial de *C. flexa*:** Observación de dinoflagelados ovalados y colonias de coanoflagelados en agua marina de Curazao, mostrando su capacidad de contraerse en esferas y expandirse en forma de copa.",
+          },
           { type: "callout", variant: "info", title: "¿Sabías que...?", content: "Los coanoflagelados son los parientes unicelulares más cercanos a los animales. Sus colonias nos dan pistas de cómo pudo surgir la pluricelularidad." }
         ]
       },

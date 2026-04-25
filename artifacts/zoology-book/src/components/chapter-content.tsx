@@ -20,6 +20,20 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+function getEmbedUrl(src: string): { embed: string; type: "iframe" | "video" } {
+  const ytMatch = src.match(
+    /(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/
+  );
+  if (ytMatch) {
+    return { embed: `https://www.youtube.com/embed/${ytMatch[1]}`, type: "iframe" };
+  }
+  const vimeoMatch = src.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (vimeoMatch) {
+    return { embed: `https://player.vimeo.com/video/${vimeoMatch[1]}`, type: "iframe" };
+  }
+  return { embed: src, type: "video" };
+}
+
 function renderInline(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
   return parts.map((part, idx) => {
@@ -184,6 +198,44 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
             loading="lazy"
             className="w-full h-auto rounded-xl border border-border shadow-sm"
           />
+          {block.caption && (
+            <figcaption className="mt-2 text-center text-sm italic text-muted-foreground">
+              {renderInline(block.caption)}
+            </figcaption>
+          )}
+        </figure>
+      );
+    }
+
+    case "video": {
+      const widthClass = {
+        sm: "max-w-sm",
+        md: "max-w-md",
+        lg: "max-w-2xl",
+        full: "max-w-full",
+      }[block.width || "lg"];
+      const { embed, type: embedType } = getEmbedUrl(block.src);
+      return (
+        <figure className={cn("mt-6 mx-auto", widthClass)}>
+          <div className="relative w-full overflow-hidden rounded-xl border border-border shadow-sm" style={{ paddingTop: "56.25%" }}>
+            {embedType === "iframe" ? (
+              <iframe
+                src={embed}
+                title={block.caption || "Vídeo"}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+                className="absolute inset-0 h-full w-full"
+              />
+            ) : (
+              <video
+                src={embed}
+                controls
+                preload="metadata"
+                className="absolute inset-0 h-full w-full bg-black"
+              />
+            )}
+          </div>
           {block.caption && (
             <figcaption className="mt-2 text-center text-sm italic text-muted-foreground">
               {renderInline(block.caption)}
