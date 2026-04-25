@@ -20,6 +20,27 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+function renderInline(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+  return parts.map((part, idx) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={idx} className="font-bold text-foreground">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    if (part.startsWith("*") && part.endsWith("*") && part.length > 2) {
+      return (
+        <em key={idx} className="italic">
+          {part.slice(1, -1)}
+        </em>
+      );
+    }
+    return <span key={idx}>{part}</span>;
+  });
+}
+
 interface ChapterContentProps {
   chapterId: string;
   sectionId: string;
@@ -54,7 +75,7 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
     case "paragraph":
       return (
         <p className="mt-4 text-base leading-relaxed text-muted-foreground first:mt-0">
-          {block.text}
+          {renderInline(block.text)}
         </p>
       );
 
@@ -69,7 +90,7 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
         >
           {block.items.map((item, idx) => (
             <li key={idx} className="text-muted-foreground">
-              {item}
+              {renderInline(item)}
             </li>
           ))}
         </ListTag>
@@ -79,8 +100,8 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
     case "definition":
       return (
         <div className="mt-4 rounded-lg border border-border bg-muted/30 p-4">
-          <dt className="font-bold text-foreground">{block.term}</dt>
-          <dd className="mt-1 text-sm text-muted-foreground">{block.definition}</dd>
+          <dt className="font-bold text-foreground">{renderInline(block.term)}</dt>
+          <dd className="mt-1 text-sm text-muted-foreground">{renderInline(block.definition)}</dd>
         </div>
       );
 
@@ -92,7 +113,7 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
               <tr>
                 {block.headers.map((header, idx) => (
                   <th key={idx} className="p-4 text-left font-bold text-foreground">
-                    {header}
+                    {renderInline(header)}
                   </th>
                 ))}
               </tr>
@@ -102,7 +123,7 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
                 <tr key={rowIdx} className="hover:bg-muted/50">
                   {row.map((cell, cellIdx) => (
                     <td key={cellIdx} className="p-4 text-muted-foreground">
-                      {cell}
+                      {renderInline(cell)}
                     </td>
                   ))}
                 </tr>
@@ -143,7 +164,7 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
             <Icon className={cn("h-4 w-4", v.title)} />
             <h4 className={cn("font-bold", v.title)}>{block.title || block.variant}</h4>
           </div>
-          <div className="text-sm text-muted-foreground">{block.content}</div>
+          <div className="text-sm text-muted-foreground">{renderInline(block.content)}</div>
         </div>
       );
     }
@@ -157,7 +178,7 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
           </div>
           <ul className="ml-4 list-disc space-y-1 text-sm text-muted-foreground">
             {block.points.map((point, idx) => (
-              <li key={idx}>{point}</li>
+              <li key={idx}>{renderInline(point)}</li>
             ))}
           </ul>
         </div>

@@ -32,290 +32,665 @@ export const chapters: Chapter[] = [
         id: "biodiversidad",
         title: "Biodiversidad del mundo viviente",
         content: [
-          { type: "heading", level: 1, text: "Arquitectura Animal — Parte I" },
           { type: "heading", level: 2, text: "Biodiversidad del mundo viviente" },
-          { type: "callout", variant: "info", title: "Dato clave", content: "La vida fue unicelular durante 2.500 millones de años antes de que aparecieran los primeros animales." },
-          { type: "paragraph", text: "La aparición de las cianobacterias provoca la acumulación de O₂ en la atmósfera y, en consecuencia, la aparición de los eucariotas." },
-          { type: "paragraph", text: "Los coanoflagelados se consideran los organismos más próximos filogenéticamente a los animales actuales (metazoos). Los coanocitos (células flageladas que forman los poríferos) podrían haber derivado de los coanoflagelados, ya que son prácticamente idénticos." },
-          { type: "paragraph", text: "Existen colonias facultativas como las de Proterospongia (protistas) sin división de funciones ni tejidos diferenciados, formadas únicamente por células de tipo coanocito, que ilustran posibles estados intermedios entre protistas y metazoos." },
-        ],
+          { type: "paragraph", text: "La vida fue unicelular durante más de 2.500 millones de años. Todo cambió cuando las cianobacterias comenzaron a liberar oxígeno a la atmósfera. Ese gas, tóxico para muchos organismos primitivos, resultó ser el combustible que permitiría el salto hacia formas de vida más complejas: los eucariotas." },
+          { type: "paragraph", text: "Más tarde, hace unos 541 millones de años, se produjo la llamada Explosión del Cámbrico. En un lapso geológicamente breve, aparecieron prácticamente todos los grandes grupos de animales que conocemos hoy. Es el momento fundacional de la biodiversidad animal." },
+          { type: "callout", variant: "info", title: "¿Sabías que...?", content: "Los coanoflagelados son los parientes unicelulares más cercanos a los animales. Sus colonias nos dan pistas de cómo pudo surgir la pluricelularidad." }
+        ]
       },
       {
-        id: "metazoos-caracteristicas",
+        id: "que-es-un-metazoo",
         title: "¿Qué es un metazoo?",
         content: [
-          { type: "heading", level: 2, text: "Metazoos: características generales" },
-          { type: "paragraph", text: "Los animales (metazoos) comparten un conjunto de rasgos básicos:" },
-          { type: "list", items: [
-            "Son pluricelulares con células diferenciadas en tejidos.",
-            "Son heterótrofos y, en general, con capacidad de movimiento.",
-            "Derivan de un desarrollo embrionario característico (con blastulación y gastrulación).",
-            "Presentan ciclos diploides con gametos haploides (óvulos y espermatozoides)."
-          ]},
-          { type: "callout", variant: "tip", title: "Ventajas de la pluricelularidad", content: "Mayor longevidad, éxito reproductivo, eficacia funcional y posibilidad de alcanzar grandes tamaños corporales." },
-          { type: "heading", level: 3, text: "¿Cuántas maneras hay de ser «animal»?" },
-          { type: "paragraph", text: "Se han descrito unos 34 tipos de organización (filos) de metazoos. Cada filo responde a un plan estructural diferente — el «Bauplan» o «Body Plan» —, es decir, a una arquitectura animal propia." },
-          { type: "paragraph", text: "Cada filo construye su plan estructural siguiendo un proceso de desarrollo embrionario particular." },
-        ],
+          { type: "heading", level: 2, text: "Los verdaderos animales" },
+          { type: "paragraph", text: "Cuando hablamos de animales (o metazoos) nos referimos a organismos pluricelulares que comparten un puñado de rasgos esenciales. Son heterótrofos, es decir, se alimentan de materia orgánica producida por otros seres vivos. Sus células se agrupan en tejidos especializados, y su desarrollo embrionario sigue un guion muy parecido en todos ellos: del cigoto a la blástula, de la blástula a la gástrula, y de ahí a la complejidad de órganos y sistemas." },
+          { type: "paragraph", text: "Una de las grandes ventajas de ser pluricelular es que se pueden alcanzar tamaños mayores, vivir más años y repartir el trabajo entre células especializadas. Cada tipo celular hace lo que mejor sabe, y todas colaboran para que el conjunto funcione." },
+          { type: "heading", level: 3, text: "El plan estructural (Bauplan)" },
+          { type: "paragraph", text: "Cada filo animal responde a una arquitectura interna diferente: a eso los biólogos llaman «Bauplan» o plan estructural. Por ejemplo, los moluscos tienen un pie muscular, un manto y una concha, mientras que los artrópodos presentan un exoesqueleto articulado. Se han descrito unos 34 filos de metazoos, y cada uno es una solución única al problema de cómo organizar un cuerpo." }
+        ]
       },
       {
         id: "formacion-animal",
-        title: "Formación de un animal",
+        title: "¿Cómo se forma un animal?",
         content: [
-          { type: "heading", level: 2, text: "¿Cómo se forma un animal?" },
-          { type: "paragraph", text: "Existen tres opciones teóricas para construir un cuerpo pluricelular:" },
-          { type: "definition", term: "Opción 1 — Masa de células", definition: "No funcionaría: las células interiores no podrían intercambiar gases por difusión. Se necesita una capa muy fina." },
-          { type: "definition", term: "Opción 2 — Una capa de células", definition: "Tampoco resulta viable como animal: presenta limitaciones de oxigenación y organización (ej. Volvox, una colonia)." },
-          { type: "definition", term: "Opción 3 — Dos capas de células", definition: "Sí funciona: permite el intercambio de gases por difusión y separa funciones (ectodermo y endodermo). Es la base de los diploblásticos." },
-        ],
+          { type: "heading", level: 2, text: "De una masa de células a un cuerpo organizado" },
+          { type: "paragraph", text: "Los primeros animales eran muy simples. Para entender su origen podemos imaginar distintos niveles de organización:" },
+          { type: "definition", term: "Opción 1 — Masa maciza de células", definition: "No funcionaría: las células del interior quedarían aisladas del exterior, sin oxígeno ni nutrientes. El intercambio de gases por difusión solo es eficaz en capas muy finas." },
+          { type: "definition", term: "Opción 2 — Una sola capa de células", definition: "Tampoco es suficiente. El famoso alga verde Volvox forma esferas huecas de una sola capa, pero no puede complejizarse más porque carece de un interior especializado." },
+          { type: "definition", term: "Opción 3 — Dos capas de células", definition: "Aquí sí hay un avance: una capa externa (ectodermo) que protege y otra interna (endodermo) que recubre una cavidad digestiva. Así funcionan los cnidarios (como las medusas) y las esponjas. Es el nivel de los diploblásticos." },
+          { type: "definition", term: "Opción 4 — Tres capas", definition: "La gran revolución: añadir el mesodermo, una capa media que dará lugar a músculos, esqueleto, sistema circulatorio... La mayoría de los animales actuales somos triblásticos." }
+        ]
       },
       {
         id: "cavidades-corporales",
         title: "Cavidades corporales",
         content: [
-          { type: "heading", level: 2, text: "Cavidades corporales en los triblásticos" },
-          { type: "paragraph", text: "Los triblásticos (con tres hojas embrionarias) tienen problemas para evolucionar hacia tamaños grandes si no resuelven la difusión interna." },
-          { type: "definition", term: "Solución 1", definition: "Hacerse alargados y aplanados (mayor relación superficie/volumen). Es la solución de los platelmintos." },
-          { type: "definition", term: "Solución 2", definition: "Disponer de cavidades internas con fluidos en movimiento, que ayudan al transporte y la difusión y permiten un mayor tamaño." },
-          { type: "paragraph", text: "Según el tipo de cavidad reconocemos tres modelos de organización:" },
-          { type: "definition", term: "Acelomados", definition: "Sin cavidad interna; el mesodermo es compacto. Ejemplo: gusanos planos." },
-          { type: "definition", term: "Pseudocelomados", definition: "Con cavidad (pseudoceloma) no rodeada por mesotelio. Actúa como esqueleto hidrostático y crea una presión interna estable. Ejemplo: nematodos." },
-          { type: "definition", term: "Celomados", definition: "Con cavidad verdadera (celoma) rodeada por un epitelio mesodérmico (peritoneo). Permite el transporte de fluidos, el intercambio regulado entre tejidos y la aparición de órganos complejos. Ejemplo: anélidos." },
-          { type: "keypoint", points: [
-            "Diploblásticos = 2 hojas embrionarias (ectodermo + endodermo).",
-            "Triblásticos = 3 hojas (añaden el mesodermo).",
-            "El celoma facilita el aumento de tamaño y la complejidad orgánica."
-          ]},
-        ],
+          { type: "heading", level: 2, text: "El problema de crecer" },
+          { type: "paragraph", text: "Cuando un animal triblástico quiere ser más grande, la difusión interna se vuelve insuficiente. La evolución encontró dos soluciones principales:" },
+          { type: "list", items: [ "Aplanarse y alargarse (como los gusanos planos), para maximizar la superficie en contacto con el exterior.", "Desarrollar cavidades internas llenas de líquido que sirvan como esqueleto hidrostático y permitan el transporte de sustancias." ] },
+          { type: "heading", level: 3, text: "Según las cavidades, distinguimos tres modelos:" },
+          { type: "definition", term: "Acelomados", definition: "No tienen cavidad interna. El mesodermo es compacto. Ejemplo: los platelmintos (gusanos planos)." },
+          { type: "definition", term: "Pseudocelomados", definition: "Poseen una cavidad (pseudoceloma) que no está rodeada por un epitelio propio. Actúa como esqueleto hidrostático y permite cierta compartimentación. Ejemplo: los nematodos." },
+          { type: "definition", term: "Celomados", definition: "Son los más complejos. El celoma es una cavidad verdadera tapizada por un epitelio de origen mesodérmico (peritoneo). Allí dentro pueden alojarse órganos, circular fluidos y regular el intercambio con los tejidos. Ejemplo: anélidos, moluscos, artrópodos y nosotros mismos." },
+          { type: "callout", variant: "tip", title: "Un detalle importante", content: "El pseudoceloma deriva del blastocele (la cavidad del embrión temprano). El celoma, en cambio, es una cavidad de nueva formación. Muchos animales tienen ambos tipos a la vez: espacios pseudocelómicos que funcionan como hemoceloma (sistema circulatorio abierto)." }
+        ]
       },
-    ],
+      {
+        id: "simetria-corporal",
+        title: "Simetría corporal",
+        content: [
+          { type: "heading", level: 2, text: "La huella del estilo de vida" },
+          { type: "paragraph", text: "La simetría de un animal nos habla de cómo se mueve y cómo percibe el mundo." },
+          { type: "definition", term: "Asimetría", definition: "Sin ningún plano de simetría. Es rara y típica de formas muy irregulares, como algunas esponjas." },
+          { type: "definition", term: "Simetría radial", definition: "Cuerpo organizado alrededor de un eje central, como una rueda. La tienen animales sésiles (pólipos) o que flotan a la deriva (medusas). Reciben estímulos de todas direcciones y sus órganos sensoriales están repartidos uniformemente." },
+          { type: "definition", term: "Simetría bilateral", definition: "Un solo plano sagital divide el cuerpo en dos mitades especulares (derecha e izquierda). Implica una dirección preferente de movimiento: la cabeza va delante, con los órganos sensoriales concentrados (cefalización). Es el plan ganador de los animales activos y depredadores." },
+          { type: "paragraph", text: "La simetría bilateral aparece con los triblásticos y está estrechamente ligada a la búsqueda activa de alimento. También conllevó la aparición de una región anterior (cabeza) y otra posterior, así como una espalda (dorso) y un vientre (vientre)." }
+        ]
+      },
+      {
+        id: "metameria",
+        title: "Metamería: la segmentación del cuerpo",
+        content: [
+          { type: "heading", level: 2, text: "Repetir para crecer y especializarse" },
+          { type: "paragraph", text: "Cuando un animal celomado quiere aumentar de tamaño sin perder eficacia, una estrategia brillante es repetir una misma unidad básica a lo largo del eje del cuerpo. Cada unidad, o metámero, contiene su porción de celoma, músculos, nervios y a veces órganos repetidos. Esto se llama metamería." },
+          { type: "paragraph", text: "Un ejemplo claro son los anélidos, como la lombriz de tierra: su cuerpo parece una sucesión de anillos casi idénticos. Pero la evolución permite que esos metámeros se especialicen en distintas funciones: unos para la alimentación, otros para la reproducción, etc. Cuando aparecen regiones claramente diferenciadas (cabeza, tórax, abdomen) hablamos de tagmatización." },
+          { type: "definition", term: "Metamería homónoma", definition: "Todos los segmentos son muy parecidos entre sí (excepto el primero y el último). Típica de lombrices y algunos poliquetos." },
+          { type: "definition", term: "Metamería heterónoma", definition: "Los segmentos se agrupan en regiones especializadas (tagmas). La encontramos en artrópodos (cabeza, tórax y abdomen) y también en vertebrados (columna vertebral, costillas, músculos segmentados)." },
+          { type: "callout", variant: "warning", title: "Cuidado con la pseudometamería", content: "No confundir con repeticiones seriadas que no proceden del mesodermo segmentado. Por ejemplo, las tenias parecen segmentadas, pero sus proglótides no son metámeros verdaderos. Eso es pseudometamería." }
+        ]
+      },
+      {
+        id: "esqueletos",
+        title: "Esqueletos: soporte y movimiento",
+        content: [
+          { type: "heading", level: 2, text: "Tres maneras de sujetar el cuerpo" },
+          { type: "paragraph", text: "Los animales necesitan una estructura que les dé forma, sostenga los músculos y permita el movimiento. La evolución ha fabricado tres tipos básicos de esqueleto." },
+          { type: "definition", term: "Esqueleto hidrostático", definition: "Es el más sencillo: una cavidad llena de líquido rodeada de músculos. Al contraer los músculos se genera presión y el cuerpo se mueve. Es muy eficaz en medios acuáticos y en animales pequeños. Lo usan los cnidarios, los gusanos planos, los nematodos y los anélidos." },
+          { type: "definition", term: "Exoesqueleto", definition: "Cubierta rígida externa segregada por la epidermis. Protege al animal, pero limita el crecimiento (hay que mudarlo periódicamente). Ejemplos: concha de moluscos, caparazón de artrópodos (quitina)." },
+          { type: "definition", term: "Endoesqueleto", definition: "Estructura interna mineralizada (huesos o cartílago) o de otro material. Permite un crecimiento continuo y un anclaje profundo de los músculos. Es propio de equinodermos (placas calcáreas) y vertebrados." },
+          { type: "paragraph", text: "Muchos animales combinan dos tipos. Por ejemplo, los anélidos tienen esqueleto hidrostático, pero también quetas (estructuras rígidas) que les ayudan a anclarse. Y los moluscos tienen concha (exoesqueleto) pero también su cuerpo blando se mantiene gracias a la presión de sus fluidos." }
+        ]
+      },
+      {
+        id: "metazoos-coloniales",
+        title: "Metazoos coloniales y polimorfismo",
+        content: [
+          { type: "heading", level: 2, text: "Cuando varios individuos se unen en uno solo" },
+          { type: "paragraph", text: "Algunos animales forman colonias en las que los individuos (zooides) son genéticamente idénticos (clones) y permanecen físicamente unidos. Viven como una especie de superorganismo." },
+          { type: "paragraph", text: "El polimorfismo colonial ocurre cuando los zooides se especializan en distintas tareas: unos se dedican a la alimentación (gastrozooides), otros a la reproducción (gonozooides) y otros a la defensa (dactilozooides). Es un paso hacia la integración de un verdadero organismo único." },
+          { type: "paragraph", text: "En los metazoos modulares, la individualidad de cada zooide se difumina tanto que apenas se distingue dónde empieza uno y termina el otro. Es común en esponjas y cnidarios (como los corales)." }
+        ]
+      },
+      {
+        id: "desarrollo-embrionario",
+        title: "Desarrollo embrionario",
+        content: [
+          { type: "heading", level: 2, text: "Del huevo al animal" },
+          { type: "paragraph", text: "El desarrollo embrionario es uno de los rasgos más conservados de los metazoos. Comienza con la fecundación, sigue con segmentaciones sucesivas (sin aumentar el tamaño, solo el número de células) y culmina con la formación de las capas embrionarias." },
+          { type: "heading", level: 3, text: "Segmentación" },
+          { type: "paragraph", text: "El patrón de segmentación depende de la cantidad y distribución del vitelo (la yema). Los huevos con poco vitelo (oligolecíticos) se dividen por completo (segmentación holoblástica). Los que tienen mucho vitelo (polilecíticos) solo se dividen parcialmente (segmentación meroblástica)." },
+          { type: "heading", level: 3, text: "Gastrulación" },
+          { type: "paragraph", text: "En la blástula las células se disponen en la periferia dejando una cavidad central (blastocele). Luego, una invaginación forma el arquénteron (futuro intestino) y el blastoporo (el primer orificio). Así nacen el ectodermo (exterior) y el endodermo (interior)." },
+          { type: "heading", level: 3, text: "Protóstomos y deuteróstomos" },
+          { type: "paragraph", text: "En los protóstomos (como moluscos, anélidos y artrópodos), el blastoporo se convierte en la boca. En los deuteróstomos (equinodermos y cordados), el blastoporo se convierte en el ano y la boca se forma después, en el extremo opuesto. Esta diferencia fundamental separa dos grandes linajes de animales." },
+          { type: "table", headers: ["Carácter", "Protóstomos", "Deuteróstomos"], rows: [
+            ["Origen de la boca", "Del blastoporo", "De neoformación"],
+            ["Segmentación", "Espiral y determinada", "Radial e indeterminada"],
+            ["Formación del celoma", "Esquizocélica", "Enterocélica"],
+            ["Ejemplos", "Anélidos, moluscos, artrópodos", "Equinodermos, cordados"]
+          ] }
+        ]
+      },
+      {
+        id: "vocabulario",
+        title: "Vocabulario clave",
+        content: [
+          { type: "heading", level: 2, text: "Términos que conviene recordar" },
+          { type: "definition", term: "Filo", definition: "Categoría taxonómica que agrupa especies con un mismo plan corporal (Bauplan)." },
+          { type: "definition", term: "Sinapomorfía", definition: "Carácter novedoso compartido por todos los miembros de un grupo y su ancestro común." },
+          { type: "definition", term: "Apomorfía", definition: "Carácter derivado." },
+          { type: "definition", term: "Plesiomorfía", definition: "Carácter ancestral, heredado del ancestro más antiguo." },
+          { type: "definition", term: "Grupo monofilético", definition: "Incluye a un ancestro común y a todos sus descendientes." },
+          { type: "definition", term: "Grupo parafilético", definition: "Incluye al ancestro pero no a todos los descendientes." },
+          { type: "definition", term: "Grupo polifilético", definition: "Agrupa especies sin un ancestro común exclusivo (por convergencia)." },
+          { type: "definition", term: "Celoma", definition: "Cavidad corporal secundaria rodeada por un epitelio mesodérmico." },
+          { type: "definition", term: "Pseudoceloma", definition: "Cavidad corporal sin epitelio propio, derivada del blastocele." }
+        ]
+      }
+    ]
   },
   {
     id: "arquitectura-2",
     number: 2,
     title: "Arquitectura Animal — Parte II",
-    subtitle: "Simetría, metamería y esqueletos",
+    subtitle: "Simetría, metamería y estrategias esqueléticas",
     sections: [
       {
         id: "simetria",
         title: "Simetría corporal",
         content: [
-          { type: "heading", level: 2, text: "Tipos de simetría" },
-          { type: "definition", term: "Asimetría", definition: "Sin plano de simetría definido. Ejemplo: muchas esponjas." },
-          { type: "definition", term: "Simetría radial", definition: "Múltiples planos de simetría que pasan por el eje oral-aboral. Típica de animales sésiles o pelágicos pasivos (cnidarios, ctenóforos)." },
-          { type: "definition", term: "Simetría bilateral", definition: "Un único plano de simetría que divide el cuerpo en mitades especulares (derecha e izquierda). Implica la aparición de una región anterior (cabeza) y una posterior, junto con cefalización." },
-          { type: "callout", variant: "info", content: "La simetría bilateral está ligada a la búsqueda activa de alimento y a la cefalización (concentración de órganos sensoriales en la región anterior)." },
-        ],
+          { type: "heading", level: 2, text: "La simetría como reflejo del estilo de vida" },
+          { type: "paragraph", text: "Cuando observamos un animal, la disposición simétrica de su cuerpo nos cuenta mucho sobre cómo se mueve, cómo se alimenta y cómo percibe el entorno. La evolución ha ensayado tres grandes soluciones." },
+          { type: "definition", term: "Asimetría", definition: "Ausencia total de simetría. No existe ningún plano que divida el cuerpo en mitades especulares. Es propia de formas muy irregulares, como muchas esponjas (poríferos)." },
+          { type: "definition", term: "Simetría radial", definition: "El cuerpo se organiza alrededor de un eje central (oral-aboral) de modo que múltiples planos que pasan por ese eje dividen al animal en partes iguales. Es la simetría de los cnidarios (medusas, pólipos) y los ctenóforos. Resulta muy útil para animales sésiles o que flotan a la deriva, porque reciben estímulos de cualquier dirección." },
+          { type: "definition", term: "Simetría bilateral", definition: "Un único plano (el sagital) divide el cuerpo en dos mitades especulares: derecha e izquierda. Esta simetría está asociada a la locomoción activa y a la cefalización: la región anterior (cabeza) concentra los órganos sensoriales y el cerebro. Es el plan dominante en los triblásticos y, por tanto, en la mayoría de los animales." },
+          { type: "callout", variant: "tip", title: "Un caso especial: la simetría birradial", content: "Algunos ctenóforos presentan simetría birradial, una variante de la radial en la que solo dos planos (perpendiculares entre sí) producen mitades iguales. Es una solución intermedia entre la radial y la bilateral." }
+        ]
       },
       {
         id: "metameria",
-        title: "Metamería y segmentación",
+        title: "Metamería: la repetición de segmentos",
         content: [
-          { type: "heading", level: 2, text: "Metamería" },
-          { type: "paragraph", text: "La metamería es la repetición seriada de unidades estructurales (metámeros o segmentos) a lo largo del eje anteroposterior del cuerpo. Cada metámero suele incluir una porción de celoma, musculatura, nervios y a veces órganos repetidos." },
-          { type: "definition", term: "Metamería homónoma", definition: "Todos los segmentos son muy similares (ej. anélidos poliquetos)." },
-          { type: "definition", term: "Metamería heterónoma", definition: "Los segmentos están especializados en regiones (ej. artrópodos: cabeza, tórax y abdomen)." },
-          { type: "definition", term: "Pseudometamería", definition: "Repetición aparente de algunos órganos sin verdadera segmentación celómica (ej. monoplacóforos, poliplacóforos)." },
-          { type: "callout", variant: "tip", title: "Ventajas de la metamería", content: "Permite especializar regiones del cuerpo, facilita la locomoción, aumenta la eficacia muscular y favorece el crecimiento por adición de segmentos (crecimiento teloblástico)." },
-        ],
+          { type: "heading", level: 2, text: "La fuerza de repetir una misma unidad" },
+          { type: "paragraph", text: "Cuando un animal celomado necesita crecer en tamaño sin perder eficacia funcional, una estrategia brillante es repetir una misma unidad básica una y otra vez a lo largo del eje del cuerpo. Cada unidad, llamada metámero o segmento, contiene su propia porción de celoma, músculos, nervios y, a menudo, órganos repetidos (como nefridios o vasos sanguíneos)." },
+          { type: "paragraph", text: "Esta organización segmentada se denomina metamería. No es lo mismo que la simple repetición de apéndices: la verdadera metamería implica que el mesodermo se divide en somitas durante el desarrollo embrionario." },
+          { type: "definition", term: "Metamería homónoma", definition: "Todos los segmentos son muy similares entre sí (excepto el primero y el último). Es típica de anélidos como la lombriz de tierra o muchos poliquetos marinos. La homonomía permite una locomoción ondulatoria muy eficaz." },
+          { type: "definition", term: "Metamería heterónoma", definition: "Los segmentos se agrupan en regiones especializadas llamadas tagmas. Cada tagma cumple una función distinta: cabeza (alimentación y percepción), tórax (locomoción), abdomen (reproducción). Aparece en artrópodos y también, con matices, en vertebrados (columna vertebral con regiones: cervical, torácica, lumbar...)." },
+          { type: "paragraph", text: "El proceso de especialización de los segmentos se conoce como tagmatización. Por ejemplo, en los insectos, los tres pares de patas se concentran en el tórax, mientras que el abdomen carece de apéndices locomotores." },
+          { type: "callout", variant: "warning", title: "Cuidado: no toda repetición es metamería", content: "Algunos animales (como las tenias) parecen segmentados, pero sus proglótides no se originan a partir de somitas mesodérmicas. Esta falsa segmentación recibe el nombre de pseudometamería. También es pseudometamérica la repetición de placas en los poliplacóforos (quitones) o monoplacóforos." }
+        ]
       },
       {
         id: "esqueletos",
-        title: "Tipos de esqueleto",
+        title: "Esqueletos: soporte, protección y movimiento",
         content: [
-          { type: "heading", level: 2, text: "Sistemas esqueléticos" },
-          { type: "definition", term: "Esqueleto hidrostático", definition: "El soporte se basa en la presión de un líquido interno encerrado por una pared muscular. Típico de cnidarios, platelmintos, anélidos y nematodos." },
-          { type: "definition", term: "Exoesqueleto", definition: "Esqueleto externo segregado por la epidermis. Puede ser de quitina (artrópodos) o de carbonato cálcico (moluscos, briozoos, braquiópodos)." },
-          { type: "definition", term: "Endoesqueleto", definition: "Esqueleto interno mineralizado. Típico de equinodermos (placas de carbonato cálcico) y vertebrados (huesos y cartílagos)." },
-          { type: "callout", variant: "warning", content: "El exoesqueleto rígido limita el crecimiento y obliga a procesos de muda (ecdisis) periódicos en los ecdisozoos." },
-        ],
+          { type: "heading", level: 2, text: "Tres grandes familias estructurales" },
+          { type: "paragraph", text: "Los animales necesitan una arquitectura interna que les dé forma, sirva de anclaje a los músculos y proteja los órganos vitales. La naturaleza ha inventado tres tipos básicos de esqueleto, a veces combinados en un mismo animal." },
+          { type: "definition", term: "Esqueleto hidrostático", definition: "Es el más simple y antiguo. Consiste en una cavidad (o varias) llena de líquido rodeada por paredes musculares. La contracción de la musculatura presuriza el líquido, generando rigidez y movimiento. Es característico de cnidarios, platelmintos, nematodos y anélidos. En estos últimos, la metamería potencia el movimiento ondulatorio al aislar la presión en cada segmento mediante septos." },
+          { type: "definition", term: "Exoesqueleto", definition: "Cubierta externa rígida, secretada por la epidermis. Puede ser de carbonato cálcico (conchas de moluscos), quitina (artrópodos) o combinaciones de ambos. El exoesqueleto protege al animal y permite la fijación de músculos, pero impide el crecimiento continuo: el animal debe mudar periódicamente (ecdisis) para crecer. Los artrópodos y nematodos son expertos en esta estrategia." },
+          { type: "definition", term: "Endoesqueleto", definition: "Estructura interna, a menudo mineralizada, que crece con el animal. Permite un anclaje profundo de la musculatura y no requiere ser mudada. Es típico de equinodermos (placas calcáreas por debajo de la piel) y vertebrados (cartílago y hueso)." },
+          { type: "paragraph", text: "Muchos animales combinan varios tipos. Por ejemplo, las tortugas tienen un exoesqueleto (caparazón) y un endoesqueleto (huesos internos). Los moluscos poseen concha (exoesqueleto) pero su cuerpo también utiliza un esqueleto hidrostático para desplazarse (el pie)." },
+          { type: "callout", variant: "info", title: "Una curiosidad: las esponjas", content: "Los poríferos carecen de verdaderos tejidos, pero sintetizan un esqueleto de espículas (silíceas o calcáreas) y fibras de colágeno (esponjina). Es un ejemplo de esqueleto inorgánico secreción celular individual." }
+        ]
       },
-    ],
+      {
+        id: "metazoos-coloniales",
+        title: "Metazoos coloniales: vivir en comunidad clonal",
+        content: [
+          { type: "heading", level: 2, text: "Un solo genotipo, muchos cuerpos" },
+          { type: "paragraph", text: "Algunos animales no viven solitarios, sino que forman colonias en las que cada miembro (denominado zooide) es genéticamente idéntico a los demás (clones). Estos zooides permanecen físicamente conectados y a menudo comparten cavidades o sistemas de distribución de nutrientes." },
+          { type: "paragraph", text: "La colonialidad es muy frecuente en cnidarios (corales, hidrozoos), briozoos y algunos tunicados. En estos grupos, la colonia puede comportarse como un superorganismo: los zooides se especializan en diferentes funciones, dando lugar al polimorfismo colonial." },
+          { type: "heading", level: 3, text: "Tipos de zooides especializados" },
+          { type: "list", items: [
+            "Gastrozooides: capturan presas y realizan la digestión (alimentan a la colonia).",
+            "Gonozooides: dedicados exclusivamente a la reproducción sexual.",
+            "Dactilozooides: defendiendo la colonia con cnidocitos o estructuras urticantes."
+          ] },
+          { type: "paragraph", text: "En los metazoos modulares, la individualidad de cada zooide se difumina hasta el punto de que resulta difícil saber dónde empieza uno y termina el otro. Es el caso de muchas esponjas, corales y briozoos incrustantes. Esta estrategia permite a la colonia crecer de forma indeterminada y colonizar grandes superficies." },
+          { type: "callout", variant: "example", title: "Ejemplo clásico", content: "Los hidrozoos del género Obelia forman colonias ramificadas con diferentes tipos de zooides. Las colonias pueden alcanzar tamaños considerables y producir medusas que liberan gametos." }
+        ]
+      },
+      {
+        id: "resumen-arquitectura",
+        title: "Resumen de arquitectura animal",
+        content: [
+          { type: "heading", level: 2, text: "Ideas centrales para recordar" },
+          { type: "keypoint", points: [
+            "La simetría del cuerpo (radial o bilateral) está ligada al tipo de vida y a la cefalización.",
+            "La metamería permite crecer y especializar regiones corporales (tagmatización).",
+            "Existen tres tipos básicos de esqueleto: hidrostático, exoesqueleto y endoesqueleto.",
+            "La colonialidad con polimorfismo representa un nivel intermedio entre individuo y superorganismo."
+          ] },
+          { type: "paragraph", text: "En los próximos capítulos veremos cómo estos conceptos se plasman en los diferentes filos de animales, desde las esponjas hasta los vertebrados." }
+        ]
+      }
+    ]
   },
   {
     id: "arquitectura-3",
     number: 3,
     title: "Arquitectura Animal — Parte III",
-    subtitle: "Desarrollo embrionario y filogenia básica",
+    subtitle: "Desarrollo embrionario y grandes linajes",
     sections: [
       {
-        id: "desarrollo",
-        title: "Desarrollo embrionario",
+        id: "desarrollo-embrionario",
+        title: "Desarrollo embrionario: del cigoto al organismo",
         content: [
-          { type: "heading", level: 2, text: "Etapas del desarrollo" },
+          { type: "heading", level: 2, text: "Las etapas fundamentales" },
+          { type: "paragraph", text: "Todos los metazoos comparten un patrón básico de desarrollo que comienza con la fecundación y culmina en la formación de un adulto. Estas etapas son tan antiguas que se han conservado durante cientos de millones de años." },
           { type: "list", ordered: true, items: [
-            "Fecundación: unión del óvulo y el espermatozoide (interna o externa).",
-            "Segmentación: divisiones mitóticas sucesivas del zigoto que generan la mórula.",
-            "Blastulación: formación de la blástula con una cavidad interna (blastocele).",
-            "Gastrulación: invaginación que origina ectodermo, endodermo y arquénteron (futuro tubo digestivo).",
-            "Organogénesis: formación de órganos a partir de las hojas embrionarias."
-          ]},
-          { type: "heading", level: 3, text: "Tipos de segmentación" },
-          { type: "definition", term: "Segmentación radial", definition: "Los blastómeros se sitúan unos sobre otros formando filas. Típica de deuteróstomos." },
-          { type: "definition", term: "Segmentación espiral", definition: "Los blastómeros se disponen alternando posiciones. Típica de protóstomos espirales (Spiralia)." },
-          { type: "definition", term: "Segmentación holoblástica", definition: "Divisiones completas del zigoto (huevos con poco vitelo)." },
-          { type: "definition", term: "Segmentación meroblástica", definition: "Divisiones parciales (huevos con mucho vitelo, como los cefalópodos)." },
-        ],
+            "Fecundación: unión del óvulo y el espermatozoide, que da lugar al cigoto diploide.",
+            "Segmentación: el cigoto se divide repetidamente sin aumentar de tamaño, originando una mórula (acúmulo macizo de células).",
+            "Blastulación: las células emigran a la periferia formando una esfera hueca (blástula) con una cavidad interna llamada blastocele.",
+            "Gastrulación: una invaginación de la blástula produce el arquénteron (futuro tubo digestivo) y el blastoporo (primera abertura). Aparecen las dos primeras capas embrionarias: ectodermo (externa) y endodermo (interna).",
+            "Organogénesis: las capas embrionarias se diferencian en tejidos y órganos."
+          ] },
+          { type: "callout", variant: "info", title: "La tercera capa", content: "En los triblásticos (la mayoría de animales) aparece el mesodermo, una capa intermedia que dará lugar a músculos, sistema circulatorio, esqueleto y otros órganos internos. En los diploblásticos (cnidarios, ctenóforos) el mesodermo no existe." }
+        ]
+      },
+      {
+        id: "segmentacion",
+        title: "La segmentación: los primeros pasos del embrión",
+        content: [
+          { type: "heading", level: 2, text: "Patrones de división celular" },
+          { type: "paragraph", text: "La segmentación del cigoto no es aleatoria; sigue patrones determinados por la cantidad y distribución del vitelo (sustancias de reserva) dentro del óvulo." },
+          { type: "definition", term: "Oligolecítico", definition: "Poco vitelo. La segmentación es holoblástica (completa) y las células se dividen por igual. Típico de equinodermos y mamíferos." },
+          { type: "definition", term: "Mesolecítico", definition: "Vitelo abundante pero concentrado en un polo (heterolecítico). Segmentación holoblástica pero desigual: las células del polo animal (con menos vitelo) son más pequeñas que las del polo vegetativo. Ejemplo: anfibios." },
+          { type: "definition", term: "Polilecítico", definition: "Muy abundante vitelo. Segmentación meroblástica (incompleta): las divisiones afectan solo la región activa del citoplasma. Típico de aves, reptiles y muchos moluscos cefalópodos." },
+          { type: "heading", level: 3, text: "Disposición de los blastómeros" },
+          { type: "definition", term: "Segmentación radial", definition: "Los blastómeros se sitúan unos encima de otros, formando anillos regulares. Es propia de deuteróstomos (equinodermos, cordados)." },
+          { type: "definition", term: "Segmentación espiral", definition: "Los blastómeros se disponen en espiral, alternando posiciones en cada división. Es característica de los protóstomos espirales (Spiralia: platelmintos, anélidos, moluscos, lofoforados)." },
+          { type: "paragraph", text: "La segmentación no solo determina el tamaño celular, sino que en algunos grupos fija el destino de cada célula desde muy pronto (desarrollo determinado) o lo mantiene flexible (desarrollo indeterminado). Esta diferencia tiene enormes consecuencias evolutivas." }
+        ]
+      },
+      {
+        id: "gastrulacion",
+        title: "Gastrulación: el nacimiento del tubo digestivo",
+        content: [
+          { type: "heading", level: 2, text: "Del disco al saco" },
+          { type: "paragraph", text: "La gastrulación es uno de los momentos más críticos del desarrollo. Durante esta fase, la blástula se invagina o pliega para formar un embrión de dos capas (gástrula). La cavidad interna que se forma es el arquénteron, que se abrirá al exterior por el blastoporo." },
+          { type: "paragraph", text: "En los diploblásticos, con estas dos capas ya es suficiente para construir un organismo funcional (cnidarios, ctenóforos). En los triblásticos, en cambio, la gastrulación continúa: células del endodermo o del blastoporo proliferan para formar el mesodermo." },
+          { type: "heading", level: 3, text: "Formación del mesodermo: dos caminos evolutivos" },
+          { type: "definition", term: "Esquizocelia", definition: "El mesodermo se origina a partir de células que proliferan desde el blastoporo (específicamente del blastómero 4d) y que forman masas sólidas que luego se ahuecan para formar el celoma. Es típica de protóstomos (anélidos, artrópodos, moluscos)." },
+          { type: "definition", term: "Enterocelia", definition: "El mesodermo surge como evaginaciones del arquénteron (intestino embrionario) que se desprenden y forman cavidades. Es característica de deuteróstomos (equinodermos, cordados)." },
+          { type: "callout", variant: "tip", title: "Un detalle embriológico", content: "Los acelomados (platelmintos) y pseudocelomados (nematodos) no forman un celoma verdadero; por tanto, no presentan esquizocelia ni enterocelia. Su mesodermo es compacto y no se ahueca." }
+        ]
       },
       {
         id: "protostomos-deuterostomos",
-        title: "Protóstomos y deuteróstomos",
+        title: "Protóstomos y deuteróstomos: dos grandes destinos",
         content: [
-          { type: "heading", level: 2, text: "Dos grandes linajes de bilaterales" },
-          { type: "table", headers: ["Carácter", "Protóstomos", "Deuteróstomos"], rows: [
-            ["Origen de la boca", "Del blastoporo", "Del segundo orificio"],
-            ["Origen del ano", "Segundo orificio", "Del blastoporo"],
-            ["Segmentación", "Espiral, determinada", "Radial, indeterminada"],
-            ["Formación del celoma", "Esquizocélica", "Enterocélica"],
+          { type: "heading", level: 2, text: "El blastoporo decide el futuro del animal" },
+          { type: "paragraph", text: "Una de las primeras decisiones que toma el embrión es qué hacer con el blastoporo, la abertura que comunica el arquénteron con el exterior. Según su destino, los animales bilaterales se dividen en dos linajes fundamentales." },
+          { type: "definition", term: "Protóstomos", definition: "El blastoporo se convierte en la boca. El ano se forma después, en el extremo opuesto o a partir del propio blastoporo. La segmentación es espiral y determinada, y el celoma se forma por esquizocelia. Ejemplos: moluscos, anélidos, artrópodos, nematodos." },
+          { type: "definition", term: "Deuteróstomos", definition: "El blastoporo se convierte en el ano. La boca se forma de novo en el extremo opuesto. La segmentación es radial e indeterminada (las células embrionarias son totipotentes más tiempo), y el celoma se forma por enterocelia. Ejemplos: equinodermos, hemicordados, cordados." },
+          { type: "table", headers: ["Carácter embrionario", "Protóstomos", "Deuteróstomos"], rows: [
+            ["Origen de la boca", "Del blastoporo", "De neoformación"],
+            ["Origen del ano", "Secundario (a veces del blastoporo)", "Del blastoporo"],
+            ["Segmentación", "Espiral y determinada", "Radial e indeterminada"],
+            ["Formación del celoma", "Esquizocélica (por proliferación celular)", "Enterocélica (por evaginación del arquénteron)"],
             ["Ejemplos", "Anélidos, moluscos, artrópodos", "Equinodermos, cordados"]
-          ]},
-          { type: "callout", variant: "info", title: "Nephrozoa", content: "Tanto protóstomos como deuteróstomos forman parte de los Nephrozoa, animales bilaterales con sistema excretor." },
-          { type: "paragraph", text: "Los protóstomos se subdividen en dos grandes clados: Spiralia (= Lophotrochozoa, con segmentación espiral y a menudo larva trocófora) y Ecdysozoa (con cutícula y proceso de muda)." },
-        ],
+          ] },
+          { type: "callout", variant: "info", title: "Una excepción notable", content: "Los nematodos son protóstomos, pero su segmentación no es espiral pura (es bilateral determinada). Es un grupo derivado dentro de Ecdysozoa." }
+        ]
       },
       {
-        id: "filogenia",
-        title: "Esquema filogenético básico",
+        id: "filogenia-basica",
+        title: "El árbol de la vida de los animales",
         content: [
-          { type: "heading", level: 2, text: "Árbol simplificado de los metazoos" },
+          { type: "heading", level: 2, text: "Grandes linajes de metazoos" },
+          { type: "paragraph", text: "Gracias a la morfología comparada y, sobre todo, a las filogenias moleculares, hoy podemos dibujar un árbol bastante consensuado de las relaciones entre los filos animales." },
           { type: "list", items: [
-            "Porifera (esponjas) — diploblásticos sin tejidos verdaderos.",
-            "Ctenophora y Cnidaria — diploblásticos con simetría radial.",
-            "Bilateria — animales bilaterales triblásticos.",
-            "  → Spiralia (Lophotrochozoa): platelmintos, anélidos, moluscos, lofoforados.",
-            "  → Ecdysozoa: nematodos, artrópodos, etc.",
-            "  → Deuterostomia: equinodermos, cordados."
-          ]},
+            "Porifera (esponjas) — animales sin tejidos verdaderos, probablemente el grupo hermano del resto de metazoos o, según algunos estudios, Ctenophora.",
+            "Ctenophora (ctenóforos) — diploblásticos con simetría birradial y peines ciliares.",
+            "Cnidaria (cnidarios) — diploblásticos con cnidocitos; incluye pólipos, medusas y corales.",
+            "Bilateria — todos los animales con simetría bilateral y tres capas embrionarias (triblásticos).",
+            "  ├── Deuterostomia: equinodermos, hemicordados, cordados.",
+            "  └── Protostomia: dos grandes clados:",
+            "       ├── Spiralia (o Lophotrochozoa): segmentación espiral, a menudo larva trocófora. Incluye platelmintos, anélidos, moluscos, lofoforados.",
+            "       └── Ecdysozoa: cutícula con quitina y muda (ecdisis). Incluye nematodos, artrópodos, priapúlidos y otros."
+          ] },
+          { type: "paragraph", text: "Dentro de Spiralia, los Lophotrochozoa se caracterizan por presentar larva trocófora (una larva ciliada típica) o, en algunos grupos, lofóforo (corona de tentáculos para la alimentación). Dentro de Ecdysozoa, la presencia de una cutícula que se muda periódicamente es la sinapomorfía más clara." },
           { type: "keypoint", points: [
-            "El plan corporal de cada filo se hereda y se conserva con pocas modificaciones evolutivas.",
-            "El estudio comparado del desarrollo embrionario es esencial para reconstruir la filogenia animal.",
-            "Los caracteres compartidos por todos los descendientes de un ancestro común se llaman sinapomorfías."
-          ]},
-        ],
+            "El desarrollo embrionario proporciona caracteres clave para reconstruir la filogenia.",
+            "La distinción entre protóstomos y deuteróstomos es fundamental para entender la evolución animal.",
+            "La presencia de cutícula quitinosa y muda define a los Ecdysozoa, uno de los grupos más diversos (artrópodos, nematodos).",
+            "La segmentación espiral y la larva trocófora son marcas de los Spiralia."
+          ] }
+        ]
       },
-    ],
+      {
+        id: "vocabulario-embrionario",
+        title: "Vocabulario embrionario clave",
+        content: [
+          { type: "heading", level: 2, text: "Términos que conviene recordar" },
+          { type: "definition", term: "Blastocele", definition: "Cavidad interna de la blástula, llena de líquido." },
+          { type: "definition", term: "Arquénteron", definition: "Cavidad digestiva primaria que se forma durante la gastrulación." },
+          { type: "definition", term: "Blastoporo", definition: "Abertura del arquénteron al exterior; su destino define protóstomos/deuteróstomos." },
+          { type: "definition", term: "Segmentación determinada", definition: "El destino de cada célula está fijado desde las primeras divisiones. Si se separan, no pueden formar un individuo completo." },
+          { type: "definition", term: "Segmentación indeterminada", definition: "Las células embrionarias conservan totipotencia durante más tiempo; la separación precoz puede dar lugar a gemelos idénticos." },
+          { type: "definition", term: "Huevo telolecito", definition: "Huevo con mucho vitelo concentrado en un polo (como en aves y cefalópodos). Segmentación meroblástica discoidal." },
+          { type: "definition", term: "Huevo centrolecito", definition: "Vitelo en el centro del óvulo; típico de artrópodos. Segmentación superficial." }
+        ]
+      }
+    ]
   },
   {
-    id: "ctenoforos-placozoos",
+    id: "ctenophora-placozoa-origen",
     number: 4,
-    title: "Ctenóforos y Placozoos",
-    subtitle: "Filos basales de los metazoos",
+    title: "Ctenophora, Placozoa i l'origen dels metazoa",
+    subtitle: "Els enigmàtics parents basals",
     sections: [
       {
-        id: "ctenoforos",
-        title: "Ctenóforos",
+        id: "ctenoforos-intro",
+        title: "Ctenòfors: els portadors de pinta",
         content: [
-          { type: "heading", level: 2, text: "Filo Ctenophora" },
-          { type: "paragraph", text: "Los ctenóforos son animales marinos planctónicos, transparentes y gelatinosos. Su nombre significa «portadores de peines» por las hileras de cilios fusionados en peines (ctenos) que utilizan para nadar." },
+          { type: "heading", level: 2, text: "Fílum Ctenophora" },
+          { type: "paragraph", text: "Els ctenòfors són animals marins, gairebé sempre transparents i d'aspecte gelatinós. El seu nom significa «portadors de pinta», en al·lusió a les vuit fileres de cilis fusionats que recorren el seu cos i que bateguen sincrònicament per a propulsar-se a l'aigua. Encara que durant molt de temps es van agrupar amb els cnidaris, avui sabem que constitueixen un llinatge independent i, possiblement, el grup germà de la resta de metazous." },
+          { type: "paragraph", text: "La majoria són pelàgics i formen part important del plàncton gelatinós. Alguns són bentònics. S'alimenten de petits crustacis, larves de peixos i altres zooplàncton; les espècies més grans poden capturar fins i tot altres ctenòfors." },
           { type: "list", items: [
-            "Simetría birradial (variante de la radial).",
-            "Diploblásticos con una mesoglea muy desarrollada.",
-            "Ocho hileras de placas ciliadas (ctenos) usadas para la natación.",
-            "Dos tentáculos largos retráctiles con coloblastos (células adhesivas), no urticantes.",
-            "Cavidad gastrovascular ramificada con boca y poros aborales.",
-            "Estatocisto apical para el equilibrio."
-          ]},
-          { type: "callout", variant: "info", title: "Diferencia clave con los cnidarios", content: "Los ctenóforos no tienen cnidocitos. Capturan presas con coloblastos (células pegajosas) en lugar de células urticantes." },
-          { type: "paragraph", text: "Mayoritariamente hermafroditas, con fecundación externa y desarrollo directo a través de una larva cidípida." },
-        ],
+            "Simetria birradial: dos plans de simetria perpendiculars (no és la radial típica dels cnidaris).",
+            "Cos amb un pol oral (on se situa la boca) i un pol aboral (on s'obre l'anus).",
+            "Vuit files de «pintes» (ctens) que recorren el cos longitudinalment; cada pinta està formada per cilis gegants fusionats.",
+            "Dos tentacles llargs, retràctils, proveïts de col·loblasts (cèl·lules adhesives) per a capturar preses; no posseeixen cnidocits urticants.",
+            "Sistema digestiu complet: boca, faringe, estómac, canals i porus anals.",
+            "Xarxa nerviosa subepitelial, però amb una organització única (en sinciti, no amb neurones discretes).",
+            "Òrgan apical amb estatòcist (equilibri) connectat a les pintes mitjançant bandes ciliades."
+          ] },
+          { type: "callout", variant: "info", title: "¿Diploblàstics o triblàstics?", content: "Durant anys es van considerar diploblàstics, però estudis recents mostren que posseeixen una capa muscular entre l'ectoderma i l'endoderma, que alguns interpreten com un mesoderma incipient. La seva posició filogenètica continua sent molt debatuda." }
+        ]
       },
       {
-        id: "placozoos",
-        title: "Placozoos",
+        id: "ctenoforos-reproduccio",
+        title: "Reproducció i desenvolupament dels ctenòfors",
         content: [
-          { type: "heading", level: 2, text: "Filo Placozoa" },
-          { type: "paragraph", text: "Los placozoos son los metazoos con la organización corporal más sencilla conocida. El representante clásico es Trichoplax adhaerens." },
-          { type: "list", items: [
-            "Cuerpo aplanado, irregular, de unos pocos milímetros.",
-            "Sin simetría definida y sin órganos.",
-            "Solo unos pocos tipos celulares organizados en dos epitelios (dorsal y ventral) y una capa intermedia con células contráctiles.",
-            "Sin sistema nervioso ni musculatura organizada.",
-            "Se desplazan deslizándose sobre el sustrato gracias a los cilios ventrales.",
-            "Digestión externa: secretan enzimas sobre el sustrato y absorben los nutrientes."
-          ]},
-          { type: "callout", variant: "tip", content: "Su simplicidad ha llevado a considerarlos un modelo para entender el origen de los metazoos." },
-        ],
-      },
-    ],
-  },
-  {
-    id: "origen-metazoos",
-    number: 5,
-    title: "Origen de los Metazoos",
-    subtitle: "De los protistas coloniales al animal pluricelular",
-    sections: [
-      {
-        id: "hipotesis",
-        title: "Hipótesis sobre el origen",
-        content: [
-          { type: "heading", level: 2, text: "Hipótesis evolutivas" },
-          { type: "definition", term: "Hipótesis colonial (Haeckel)", definition: "Los metazoos derivarían de colonias de protistas flagelados similares a los coanoflagelados, en las que se produjo una progresiva especialización celular." },
-          { type: "definition", term: "Hipótesis sincitial", definition: "Propone que los metazoos derivarían de un protista plurinucleado (ciliado) que posteriormente se compartimentaría en células." },
-          { type: "paragraph", text: "Las pruebas moleculares y morfológicas actuales apoyan claramente la hipótesis colonial: los coanoflagelados son el grupo hermano de los metazoos." },
-        ],
+          { type: "heading", level: 2, text: "Cicle vital i larva cidípida" },
+          { type: "paragraph", text: "La majoria dels ctenòfors són hermafrodites, amb gònades d'origen endodèrmic que maduren simultàniament. Poden autofecundar-se, cosa poc comuna en animals. La fecundació és externa i el desenvolupament indirecte inclou una larva característica, anomenada larva cidípida, que ja presenta les vuit files de pintes." },
+          { type: "paragraph", text: "Aquesta larva mostra estructures ectodèrmiques (les pintes), endodèrmiques (els canals meridionals fins a l'anus) i unes altres que podrien correspondre a un mesènquima o mesoderma primitiu. La complexitat larvària contrasta amb la relativa simplicitat d'alguns adults." },
+          { type: "callout", variant: "tip", title: "Biodiversitat", content: "Es coneixen unes 200 espècies de ctenòfors, totes marines. Malgrat la seva escassa diversitat, la seva importància ecològica és enorme en ecosistemes planctònics." }
+        ]
       },
       {
-        id: "coanoflagelados",
-        title: "Los coanoflagelados",
+        id: "placozous",
+        title: "Placozous: els metazous més simples",
         content: [
-          { type: "heading", level: 2, text: "Coanoflagelados" },
-          { type: "paragraph", text: "Son protistas unicelulares con un único flagelo rodeado por un collar de microvellosidades (la «coana»). Esta morfología es prácticamente idéntica a la de los coanocitos de las esponjas." },
+          { type: "heading", level: 2, text: "Fílum Placozoa: la simplicitat portada a l'extrem" },
+          { type: "paragraph", text: "Els placozous són, sens dubte, els metazous amb l'organització més senzilla coneguda. Durant més d'un segle, l'únic representant va ser Trichoplax adhaerens, un petit organisme marí bentònic que sembla una ameba aplanada d'uns pocs mil·límetres. Recentment s'ha descobert una sorprenent diversitat críptica, amb diverses espècies morfològicament indistingibles però genèticament diferents." },
+          { type: "paragraph", text: "El cos d'un placozoo manca per complet de simetria definida. No té sistema nerviós, ni músculs, ni òrgans digestius. Es desplaça sobre el substrat marí mitjançant cilis ventrals i secreta enzims digestius per a absorbir els nutrients de l'exterior (digestió externa)." },
           { type: "list", items: [
-            "Pueden ser solitarios o formar colonias facultativas.",
-            "Capturan partículas alimenticias con el collar de microvellosidades.",
-            "Comparten con los metazoos genes implicados en adhesión celular y señalización."
-          ]},
-          { type: "callout", variant: "example", title: "Proterospongia", content: "Forma colonial de coanoflagelados sin diferenciación celular: un puente conceptual hacia la pluricelularidad animal." },
-        ],
+            "Cos discoïdal, aplanat, d'uns 2–3 mm de diàmetre.",
+            "Dues capes epitelials (dorsal i ventral) separades per un espai amb cèl·lules contràctils i ameboides.",
+            "Només uns pocs tipus cel·lulars (descrits sis, amb diversos subtipus).",
+            "Unions cel·lulars tipus desmosoma.",
+            "S'alimenten de microalgues i detritus; la digestió és extracorpòria.",
+            "Es reprodueixen per fissió binària i també sexualment (s'han observat estadis amb espermatozoides i òvuls)."
+          ] },
+          { type: "callout", variant: "warning", title: "Un animal amb gens Hox", content: "Malgrat la seva extrema simplicitat, els placozous posseeixen gens Hox i Parahox, els mateixos que en altres animals regulen l'organització anteroposterior. Això suggereix que la seva senzillesa és secundària (per pèrdua) o que els gens Hox poden tenir funcions més bàsiques que no requereixen un eix corporal complex." }
+        ]
       },
       {
-        id: "novedades-metazoos",
-        title: "Novedades evolutivas de los metazoos",
+        id: "placozous-filogenia",
+        title: "Posició filogenètica dels placozous",
         content: [
-          { type: "heading", level: 2, text: "Innovaciones clave" },
-          { type: "list", items: [
-            "Adhesión celular estable mediante cadherinas e integrinas.",
-            "Matriz extracelular con colágeno.",
-            "Comunicación celular: señalización por péptidos y receptores.",
-            "Desarrollo embrionario regulado con blastulación y gastrulación.",
-            "Diferenciación de células germinales y somáticas."
-          ]},
+          { type: "heading", level: 2, text: "On situar els placozous?" },
+          { type: "paragraph", text: "Els estudis moleculars situen Placozoa com el grup germà d'un clade que inclou Cnidaria i Bilateria, formant tots ells el grup Parahoxozoa (per compartir gens Parahox). Això significa que els placozous no són els metazous més basals (aquest lloc el disputen porífers i ctenòfors), sinó que van divergir després però posteriorment van simplificar la seva morfologia." },
+          { type: "paragraph", text: "La genòmica comparada ha revelat que Trichoplax comparteix nombroses famílies de gens reguladors del desenvolupament amb cnidaris i bilaterals, incloent-hi factors de transcripció associats a la neurogènesi… encara que ell mateix no tingui neurones. És un exemple fascinant d'evolució per pèrdua o de retenció d'un programa genètic no expressat." },
           { type: "keypoint", points: [
-            "El paso de protista colonial a metazoo implicó una división estable del trabajo entre células.",
-            "El colágeno es una proteína exclusiva de los metazoos.",
-            "La aparición de los Hox genes permitió la diversificación de planes corporales en los bilaterales."
-          ]},
-        ],
+            "Placozoa, Cnidaria i Bilateria formen el clade Parahoxozoa.",
+            "La simplicitat dels placozous és convergent o secundària, no ancestral.",
+            "El seu estudi ajuda a entendre quins gens són necessaris per a construir un animal i quins són prescindibles."
+          ] }
+        ]
       },
-    ],
+      {
+        id: "origen-metazous-hipotesis",
+        title: "L'origen dels metazous: de protists a animals",
+        content: [
+          { type: "heading", level: 2, text: "Quin va ser el primer animal?" },
+          { type: "paragraph", text: "Una de les preguntes més fascinants de la zoologia és com va sorgir el primer animal a partir d'un avantpassat unicel·lular. Durant dècades es va assumir que les esponges (Porifera) eren el grup més basal, però les anàlisis moleculars dels últims anys han posat en dubte aquesta visió." },
+          { type: "paragraph", text: "Existeixen dues hipòtesis principals:" },
+          { type: "definition", term: "Hipòtesi tradicional (Porifera basal)", definition: "Les esponges serien el grup germà de la resta de metazous. Això implica que l'avantpassat de tots els animals era similar a una esponja: sense teixits vertaders, amb coanòcits i sistema aquïfer. La complexitat (teixits, nervis, músculs) hauria aparegut després, en el llinatge que porta a cnidaris i bilaterals." },
+          { type: "definition", term: "Hipòtesi alternativa (Ctenophora basal)", definition: "Els ctenòfors serien el grup més basal. Això implica conseqüències revolucionàries: els ctenòfors posseeixen músculs i sistema nerviós, que haurien evolucionat de manera independent a la resta d'animals (convergència). Els porífers serien un grup derivat que hauria perdut teixits." },
+          { type: "callout", variant: "info", title: "El debat obert", content: "Ambdues hipòtesis tenen suport molecular, i encara no hi ha consens. Cada nova filogènia basada en gens o en l'anàlisi de microRNAs canvia l'arbre. La posició de Ctenophora és el major desafiament actual de la filogènia animal." }
+        ]
+      },
+      {
+        id: "evidencies-origen-independent",
+        title: "Evidències de l'origen independent del sistema nerviós",
+        content: [
+          { type: "heading", level: 2, text: "Si els ctenòfors són basals, el seu sistema nerviós és únic" },
+          { type: "paragraph", text: "La hipòtesi de Ctenophora com a grup germà implica que el sistema nerviós (i els músculs) haurien evolucionat dues vegades: una en els ctenòfors i una altra en la resta d'eumetazous (cnidaris + bilaterals). Aquesta idea, encara que heterodoxa, es recolza en diverses evidències sorprenents:" },
+          { type: "list", items: [
+            "Els ctenòfors utilitzen neurotransmissors específics i manquen de la maquinària molecular per a processar microRNAs que regulen el desenvolupament neuronal en altres metazous.",
+            "Els gens típicament expressats en les neurones de cnidaris i bilaterals estan absents en els ctenòfors, o no s'expressen en les seves cèl·lules nervioses.",
+            "La xarxa neuronal dels ctenòfors té una arquitectura única: les neurites es fusionen formant un sinciti, no hi ha sinapsis discretes com en altres animals."
+          ] },
+          { type: "paragraph", text: "Si això es confirma, els ctenòfors representarien un experiment evolutiu independent per a construir un animal amb músculs i nervis, completament diferent al de la resta del regne animal. Serien, en cert sentit, els 'extraterrestres evolutius' del nostre propi planeta." },
+          { type: "keypoint", points: [
+            "La posició filogenètica de ctenòfors i porífers continua sent incerta i canvia segons les dades.",
+            "L'origen dels teixits i del sistema nerviós podria no ser únic, sinó convergent.",
+            "Els placozous demostren que la simplicitat morfològica no equival a posició basal."
+          ] }
+        ]
+      },
+      {
+        id: "caracteristiques-metazous",
+        title: "Què defineix realment un metazou?",
+        content: [
+          { type: "heading", level: 2, text: "Les innovacions del regne animal" },
+          { type: "paragraph", text: "Encara que la frontera entre protists colonials i vertaders animals és difusa, els metazous comparteixen un conjunt de característiques que els defineixen com a grup monofilètic." },
+          { type: "list", items: [
+            "Pluricel·lularitat amb cèl·lules connectades mitjançant unions especialitzades (caderines, desmosomes).",
+            "Heterotròfia per ingestió (no absorció externa com els fongs).",
+            "Factors de senyalització únics (Wnt, Frizzled, Hedgehog, EGFR) i factors de transcripció (Hox, Parahox, ETS, POU).",
+            "Matriu extracel·lular amb col·lagen tipus IV, nidogen i perlecà.",
+            "Espermatozoides amb morfologia característica (cap, peça mitjana, flagel).",
+            "Desenvolupament embrionari amb blàstula i gàstrula (sense excepcions conegudes)."
+          ] },
+          { type: "paragraph", text: "El registre fòssil del Proterozoic (fa uns 580 milions d'anys) ens ha deixat les primeres evidències de metazous: petjades, impressions de cossos tous com els de la fauna d'Ediacara. Però va ser en el Cambrià, fa uns 541 milions d'anys, quan es va produir la gran explosió de diversitat: van aparèixer gairebé tots els fílums actuals, es van desenvolupar ecosistemes tridimensionals complexos i es va establir la dinàmica fonamental de la biosfera marina." },
+          { type: "callout", variant: "example", title: "Causes de l'Explosió del Cambrià", content: "Entre les hipòtesis més acceptades: augment de l'oxigen dissolt, desgel de glaciacions, fragmentació del supercontinent Rodínia, aparició dels gens Hox, biomineralització (closques dures) i augment de la competència ecològica." }
+        ]
+      }
+    ]
   },
   {
-    id: "patologias-protistas",
-    number: 6,
-    title: "Patologías y Protistas Asociados",
-    subtitle: "Protistas parásitos de interés zoológico",
+    id: "protozoos-y-enfermedades",
+    number: 5,
+    title: "Protozoos",
+    subtitle: "Los primeros eucariotas móviles y su impacto sanitario",
     sections: [
       {
-        id: "introduccion-patologias",
-        title: "Introducción",
+        id: "introduccion-protozoos",
+        title: "Introducción a los protozoos",
         content: [
-          { type: "heading", level: 2, text: "Protistas parásitos" },
-          { type: "paragraph", text: "Aunque los protistas no son metazoos, varios grupos parasitan animales y son responsables de enfermedades importantes en la fauna salvaje, los animales domésticos y el ser humano. Su estudio es relevante en zoología por su impacto ecológico y sanitario." },
-        ],
+          { type: "heading", level: 2, text: "¿Qué son los protozoos?" },
+          { type: "paragraph", text: "Los protozoos se encuentran dentro de los protistas. Los protistas son organismos eucariotas con organización celular que pueden asemejarse a hongos, a plantas (algas) o a animales (protozoos). Los protozoos son protistas con motilidad (al menos en alguna fase de su ciclo) y básicamente heterótrofos." },
+          { type: "paragraph", text: "El grupo de los protozoos no es natural; es polifilético, es decir, agrupa individuos con ancestros diferentes. Un grupo monofilético incluye a todos los descendientes de un mismo ancestro, mientras que uno parafilético incluye al ancestro pero no a todos sus descendientes." },
+          { type: "list", items: [
+            "Células solitarias e independientes. Algunas especies presentan organización colonial (individuos o zooides germinativos y somáticos).",
+            "Cada célula equivale a un organismo completo que asume todas las funciones.",
+            "La tendencia evolutiva hacia una mayor complejidad estructural ocurre de manera convergente en muchos grupos: polimerización (multiplicación de estructuras como vacuolas, flagelos), formación de colonias y multiplicación del número de núcleos (una clara tendencia a la pluricelularidad).",
+            "Las células con muchos núcleos, cada uno gobernando una parte, se consideran pluricelulares."
+          ] },
+          { type: "paragraph", text: "Los protozoos son protistas básicamente heterótrofos. Algunos capturan presas y pueden realizar fotosíntesis (a veces los protozoos no se diferencian de las algas). Viven en medios acuosos, son vulnerables a la desecación, pueden formar quistes, y son aerobios o anaerobios. Pueden ser libres (planctónicos o bentónicos) o simbiontes (parásitos, comensales o mutualistas)." }
+        ]
       },
       {
-        id: "ejemplos-protistas",
-        title: "Ejemplos relevantes",
+        id: "componentes-funcionales",
+        title: "Componentes funcionales de los protozoos",
         content: [
-          { type: "heading", level: 2, text: "Grupos y patologías" },
-          { type: "definition", term: "Apicomplexos (Plasmodium)", definition: "Parásitos intracelulares con un complejo apical para la invasión celular. Plasmodium causa la malaria, transmitida por mosquitos del género Anopheles." },
-          { type: "definition", term: "Tripanosomátidos (Trypanosoma, Leishmania)", definition: "Flagelados parásitos transmitidos por insectos vectores. Causan la enfermedad del sueño, la enfermedad de Chagas y la leishmaniasis." },
-          { type: "definition", term: "Amebas (Entamoeba histolytica)", definition: "Causan disentería amebiana en humanos." },
-          { type: "definition", term: "Ciliados (Ichthyophthirius)", definition: "Parásitos externos de peces que provocan la enfermedad del «punto blanco» en acuicultura." },
-          { type: "callout", variant: "warning", title: "Importancia ecológica", content: "Las parasitosis por protistas pueden regular las poblaciones hospedadoras y afectar gravemente a la producción acuícola y ganadera." },
-        ],
+          { type: "heading", level: 2, text: "Estructura celular" },
+          { type: "list", items: [
+            "Núcleo (con 1 o 2 nucléolos).",
+            "Mitocondrias, aparato de Golgi.",
+            "Retículo endoplasmático.",
+            "Vacuolas (digestivas, contráctiles).",
+            "Plastos (en formas fotosintéticas).",
+            "Lisosomas.",
+            "Extrusomas (orgánulos de descarga)."
+          ] },
+          { type: "paragraph", text: "La membrana celular (plasmalema) puede estar reforzada interna o externamente. Internamente por microtúbulos, vesículas y microfilamentos (citoesqueleto). Externamente puede estar recubierta de mucopolisacáridos (glicocálix) o reforzada por formaciones esqueléticas (testas) minerales u orgánicas." },
+          { type: "definition", term: "Quiste", definition: "Membrana protectora externa orgánica que forma quistes de resistencia en condiciones extremas. No todas las especies la tienen." }
+        ]
       },
-    ],
+      {
+        id: "movimiento-locomocion",
+        title: "Movimiento y locomoción",
+        content: [
+          { type: "heading", level: 2, text: "Cómo se mueven los protozoos" },
+          { type: "paragraph", text: "Se mueven como respuesta a estímulos químicos, lumínicos o táctiles. El movimiento es una respuesta sensible y se produce mediante formaciones específicas:" },
+          { type: "definition", term: "Seudópodos", definition: "Extensiones del citoplasma. Según su morfología: lobópodos (redondeados), filópodos (largos y finos), rizópodos (anastomosados) y axópodos (con un eje interno de microtúbulos que puede polimerizarse y despolimerizarse)." },
+          { type: "definition", term: "Flagelos", definition: "Formados por un axonema microtubular (9 dobletes + 2 centrales) y un cinetosoma (9 tripletes). Pueden moverse de diversas maneras, generando ondas que producen un movimiento paralelo al flagelo. Se encuentran mayoritariamente en la parte anterior." },
+          { type: "definition", term: "Cilios", definition: "Estructura similar a los flagelos pero más cortos y numerosos. Se agrupan en cinetias (hileras). Dos tipos de movimiento: fase efectiva y fase de recuperación. La coordinación es metacrónica a lo largo de las cinetias y sincrónica en cada fila transversal. Generan un movimiento perpendicular al cuerpo celular." }
+        ]
+      },
+      {
+        id: "nutricion",
+        title: "Nutrición",
+        content: [
+          { type: "heading", level: 2, text: "La alimentación en protozoos" },
+          { type: "list", items: [
+            "Difusión pasiva (por gradiente de concentración) o activa con transporte activo.",
+            "Endocitosis: formación de vesículas.",
+            "Pinocitosis (micropartículas en disolución).",
+            "Fagocitosis (fagotrofia o nutrición holozoica): formación de vacuolas digestivas. Puede haber citostoma o no."
+          ] },
+          { type: "paragraph", text: "Las amebas realizan fagocitosis en cualquier punto de la membrana plasmática (sin citostoma). Los ciliados, en cambio, tienen fagocitosis y expulsión de residuos en puntos específicos (citostoma/citofaringe y citopigio)." }
+        ]
+      },
+      {
+        id: "reproduccion-protozoos",
+        title: "Reproducción",
+        content: [
+          { type: "heading", level: 2, text: "Reproducción asexual" },
+          { type: "definition", term: "Escisión binaria", definition: "División en dos células hijas. Puede ser simetricogénica (plano longitudinal, «en espejo»), asimétrica u homotetogénica (plano transversal, típica de ciliados). En los ciliados, el macronúcleo se divide por amitosis (reparto desigual) y el micronúcleo por mitosis." },
+          { type: "definition", term: "Gemación", definition: "El organismo genera otro y se puede distinguir el progenitor del descendiente." },
+          { type: "definition", term: "Escisión múltiple", definition: "La célula se divide en varios descendientes iguales. División muy rápida. Ejemplo: Plasmodium (parásito de la malaria)." },
+          { type: "heading", level: 2, text: "Reproducción sexual" },
+          { type: "definition", term: "Singamia", definition: "Unión de dos células. Puede ser isogamia (células iguales) o anisogamia (células diferentes; la oogamia es un caso con un gameto grande y otro pequeño)." },
+          { type: "definition", term: "Conjugación", definition: "Unión temporal para intercambiar material genético. Típica de ciliados. Los individuos compatibles (mating type) se unen, intercambian pronúcleos y luego se separan." }
+        ]
+      },
+      {
+        id: "clasificacion-protistas",
+        title: "Clasificación de los protistas",
+        content: [
+          { type: "heading", level: 2, text: "Grandes grupos" },
+          { type: "paragraph", text: "La sistemática de los protozoos es compleja y ha cambiado mucho con los análisis moleculares. Una clasificación actual ampliamente aceptada incluye los siguientes supergrupos:" },
+          { type: "list", items: [
+            "Opistocontos: hongos, metazoos, coanoflagelados.",
+            "Amebozoos: amebas lobopodiales (como Amoeba proteus).",
+            "Arqueplastos: plantas verdes, clorofíceas, rodofíceas.",
+            "SAR (Stramenopiles, Alveolates, Rhizaria):",
+            "Rizarios: foraminíferos, radiolarios, silicofilóseos.",
+            "Alveolados: dinoflagelados, apicomplejos (Plasmodium), ciliados (Paramecium).",
+            "Estramenopilos: diatomeas, feofíceas.",
+            "Metamonada: parabasálidos (ej. Trichomonas).",
+            "Discoba: euglenozoos (euglénidos y cinetoplástidos como Trypanosoma y Leishmania)."
+          ] },
+          { type: "callout", variant: "info", title: "Coanoflagelados", content: "Vida libre. Pequeños flagelados marinos o de agua dulce (3-10 μm), fijos y sedentarios, solitarios o coloniales. Tienen un solo flagelo rodeado por un collar de microvellosidades (30-40). El collar y la disposición del flagelo recuerdan a los coanocitos de las esponjas." }
+        ]
+      },
+      {
+        id: "grupos-especificos",
+        title: "Grupos específicos de interés",
+        content: [
+          { type: "heading", level: 2, text: "Euglenozoos" },
+          { type: "paragraph", text: "Los flagelos emergen de una cavidad; mitocondrias con crestas discoidales. Cuerpo recubierto por un citoesqueleto microtubular." },
+          { type: "list", items: [
+            "Euglénidos: marinos, de agua dulce, autótrofos y/o heterótrofos. Extienden dos flagelos desde la cavidad.",
+            "Cinetoplástidos: con cinetoplasto (estructura de ADN mitocondrial). Parásitos o de vida libre. Los tripanosomátidos son endoparásitos tisulares o hemáticos, intra o extracelulares. Ejemplos humanos: Trypanosoma (enfermedad del sueño, mal de Chagas) y Leishmania (leishmaniasis)."
+          ] },
+          { type: "heading", level: 2, text: "Metamónados" },
+          { type: "paragraph", text: "Flagelados sin mitocondrias clásicas (principalmente debido al parasitismo o la vida en ambientes anóxicos). Presentan hidrogenosomas o mitosomas. Trichomonas vaginalis se transmite sexualmente y causa vaginitis en humanos. Trichonympha y Spirotrichonympha son simbiontes mutualistas en termitas." },
+          { type: "heading", level: 2, text: "Alveolados: ciliados" },
+          { type: "list", items: [
+            "Presentan alvéolos bajo la membrana.",
+            "Cilios (al menos en una fase de la vida), agrupados en cinetias.",
+            "Micronúcleo diploide y macronúcleo poliploide.",
+            "Citostoma y citopigio.",
+            "Escisión binaria (asexual) y conjugación (sexual).",
+            "Vida libre en agua dulce o marina, solitarios o coloniales, comensales, mutualistas y parásitos."
+          ] },
+          { type: "heading", level: 2, text: "Amebas" },
+          { type: "paragraph", text: "Locomoción por seudópodos. Se agrupan según el tipo de seudópodos y esqueleto: gimnamebas (sin esqueleto) y testáceas (con esqueleto externo)." },
+          { type: "heading", level: 2, text: "Foraminíferos" },
+          { type: "paragraph", text: "La mayoría marinos y bentónicos. Sus testas (conchas) externas son de numerosos tipos, generalmente multicamerales y constituidas por CaCO₃ (a veces sílice u otros materiales). Presentan reticulopodios que salen por la abertura y con los que atrapan a sus presas." },
+          { type: "heading", level: 2, text: "Radiolarios (protistas con axopodios)" },
+          { type: "paragraph", text: "Pertenecen a varios clados (polifiléticos). Típicamente con axopodios. Marinos y de agua dulce. De vida libre, algunos con algas simbiontes. Generalmente planctónicos. Esqueletos a menudo muy complejos." }
+        ]
+      },
+      {
+        id: "patologias-protozoos",
+        title: "Patologías causadas por protozoos",
+        content: [
+          { type: "heading", level: 2, text: "El parasitismo en protozoos" },
+          { type: "paragraph", text: "El parasitismo es una relación interespecífica en la que el parásito a menudo prescinde de sus propios medios de supervivencia para depender obligadamente del hospedador. Esta característica polifilética ha surgido en muchos momentos diferentes de la evolución. Algunos patógenos pueden ser nocivos para cualquier tipo de hospedador porque, con la evolución, han dejado de ser específicos." },
+          { type: "table", headers: ["Beneficiosos", "Patológicos"], rows: [
+            ["Mineralización de nutrientes en suelo y aguas (Paramecium)", "Parásitos en plantas (Plasmopara, parásito de la vid) y animales de consumo (Eimeria)"],
+            ["Prevención de patógenos en el tratamiento de aguas (Vorticella)", "Parásitos del ser humano (Trypanosoma, Plasmodium, Entamoeba)"],
+            ["Toxicidad: mareas rojas (Gonyaulax) — no son parásitos pero son tóxicas", ""]
+          ] },
+          { type: "paragraph", text: "Los protozoos pueden causar patologías tanto en animales como en plantas. Pueden afectar al ser humano si estos son de consumo, pero no tienen por qué ser dañinos per se." }
+        ]
+      },
+      {
+        id: "parasitos-humanos",
+        title: "Parásitos humanos: vías de transmisión",
+        content: [
+          { type: "heading", level: 2, text: "¿Cómo nos infectamos?" },
+          { type: "list", items: [
+            "**Agua mal depurada**: Naegleria (ameba de agua dulce), Cryptosporidium.",
+            "**Aire**: transporta protozoos muy ligeros que suelen afectar a la piel o al aparato digestivo. Acanthamoeba (parásito de agua, tierra y aire muy resistente, se aísla en vías respiratorias).",
+            "**Alimentos** (carne, pescado, verduras).",
+            "**Poca higiene**, principalmente dental, y transmisión sexual: Trichomonas vaginalis (mujeres y hombres).",
+            "**Vectores artrópodos hematófagos** (que se alimentan de sangre): mosquitos, moscas, chinches."
+          ] },
+          { type: "paragraph", text: "Estas infecciones están especialmente asociadas a regiones ecuatoriales y lugares pobres, aunque algunas (como la leishmaniasis) también están presentes en áreas templadas." }
+        ]
+      },
+      {
+        id: "amebas-patogenas",
+        title: "Amebas patógenas: Entamoeba histolytica",
+        content: [
+          { type: "heading", level: 2, text: "Entamoeba histolytica" },
+          { type: "list", items: [
+            "Cosmopolita, distribuida por todo el mundo según la higiene del momento y del lugar.",
+            "**Patología**: disentería amebiana (gastroenteritis muy fuerte, con sangre en heces). Parásito intestinal y extraintestinal (graves ulceraciones intestinales y abscesos en órganos internos).",
+            "Entre 20.000 y 100.000 muertes anuales.",
+            "**Transmisión**: fecal-oral a través de quistes. Agua, alimentos (verduras frescas sin cocinar con agua contaminada).",
+            "Un solo hospedador: el ser humano."
+          ] }
+        ]
+      },
+      {
+        id: "discoba-cinetoplastidos",
+        title: "Discoba: cinetoplástidos (Trypanosoma, Leishmania)",
+        content: [
+          { type: "heading", level: 2, text: "Tripanosomas" },
+          { type: "definition", term: "Trypanosoma brucei", definition: "Causa la enfermedad del sueño. Traspasa la barrera hematoencefálica y afecta al SNC: fatiga constante, dolor extremo, insomnio agudo nocturno, coma y muerte. Transmitido por la mosca tsé-tsé en África." },
+          { type: "definition", term: "Trypanosoma cruzi", definition: "Causa el mal de Chagas (aproximadamente los mismos efectos). El vector es una chinche (reduviano). Presente en toda Sudamérica; causa más de 60.000 muertes anuales." },
+          { type: "definition", term: "Leishmania", definition: "Se encuentra en regiones templadas y tropicales, según los vectores y las especies. Causa entre 75.000 y 80.000 muertes anuales. En Cataluña existe una subespecie (Leishmania infantum) que afecta a perros y humanos (si el sistema inmune presenta alguna deficiencia). El vector es una mosca (flebótomo)." }
+        ]
+      },
+      {
+        id: "apicomplejos",
+        title: "Apicomplejos: Toxoplasma y Plasmodium",
+        content: [
+          { type: "heading", level: 2, text: "Apicomplexa" },
+          { type: "paragraph", text: "Presentan un complejo apical que les sirve para incrustarse en las células hospedadoras. No tienen flagelos excepto en la fase de gametos. Algunos (alveolados) pueden tener escisión múltiple. Meiosis cigótica." },
+          { type: "heading", level: 2, text: "Toxoplasma gondii" },
+          { type: "list", items: [
+            "Cosmopolita, ligado a los gatos.",
+            "**Patología**: solo es grave en embriones y en adultos con inmunodeficiencias (o sida). En embriones puede afectar hígado y cerebro, e incluso provocar ceguera. Se infecta a través de la placenta. Es un parásito oportunista que no tiene capacidad de infectar a personas sanas.",
+            "**Transmisión**: ooquistes de gatos, acumulados en verduras, agua o carne (si se cocina, el parásito muere)."
+          ] },
+          { type: "heading", level: 2, text: "Plasmodium (malaria o paludismo)" },
+          { type: "list", items: [
+            "Parásitos intracelulares de la sangre y otros tejidos de mamíferos y aves.",
+            "No producen esporas libres; siempre están dentro del vector (mosquito) o del hospedador humano.",
+            "Causa de 1 a 2.5 millones de muertes anuales.",
+            "Cuatro especies nocivas para humanos: P. vivax, P. malariae, P. ovale y P. falciparum (la más mortífera).",
+            "Vector: insecto díptero del género Anopheles (hembra)."
+          ] }
+        ]
+      },
+      {
+        id: "ciclo-plasmodium",
+        title: "Ciclo biológico de Plasmodium",
+        content: [
+          { type: "heading", level: 2, text: "Cómo se desarrolla la malaria" },
+          { type: "paragraph", text: "El mosquito hembra pica al ser humano e inyecta esporozoítos. Éstos llegan al hígado, donde experimentan una esquizogonia (división asexual múltiple dentro de los hepatocitos), produciendo merozoítos. Los merozoítos salen del hígado e invaden eritrocitos, donde realizan otra esquizogonia. Los glóbulos rojos se hinchan (alimentándose de hemoglobina) y eventualmente se rompen, liberando más merozoítos y causando fiebres periódicas. Algunos merozoítos se diferencian en gametocitos." },
+          { type: "paragraph", text: "Si un mosquito pica a una persona infectada, ingiere los gametocitos. En el intestino del mosquito se forman microgametos y macrogametos, se produce la fecundación y se origina un cigoto móvil (oocineto). El oocineto atraviesa el epitelio intestinal, se enquista (oocisto), realiza meiosis y mitosis, produciendo esporozoítos que migran a las glándulas salivales del mosquito, listos para infectar a otro humano." },
+          { type: "keypoint", points: [
+            "Fiebres periódicas sincrónicas con la ruptura de eritrocitos.",
+            "Anemia, diarreas, oclusión capilar, daño renal y cerebral pueden llevar a la muerte."
+          ] }
+        ]
+      },
+      {
+        id: "prevencion-malaria",
+        title: "Prevención de la malaria (profilaxis)",
+        content: [
+          { type: "heading", level: 2, text: "Estrategias de control" },
+          { type: "list", items: [
+            "Quimioprofilaxis.",
+            "Control del vector: insecticidas (DDT), peces (gambusias), mosquiteras, repelentes, ropa adecuada.",
+            "Vacunas: Dr. Manuel Patarroyo (30–60% de efectividad, cedida a la OMS). RTS,S (Mosquirix, 30–62%) o R21/Matrix-M (77%)."
+          ] }
+        ]
+      }
+    ]
   },
   {
     id: "poriferos",
