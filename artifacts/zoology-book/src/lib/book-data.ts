@@ -19,7 +19,8 @@ export type ContentBlock =
   | { type: "definition"; term: string; definition: string }
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "callout"; variant: "info" | "warning" | "tip" | "example"; title?: string; content: string }
-  | { type: "keypoint"; points: string[] };
+  | { type: "keypoint"; points: string[] }
+  | { type: "image"; src: string; alt: string; caption?: string; width?: "sm" | "md" | "lg" | "full" };
 
 export const chapters: Chapter[] = [
   {
@@ -1492,204 +1493,314 @@ export const chapters: Chapter[] = [
     ]
   },
   {
-    id: "lofoforados",
-    number: 12,
+    id: "lofoforados-ecdysozoa",
+    number: 11,
     title: "Lofoforados y Ecdysozoa",
     subtitle: "Filtradores con lofóforo y animales con muda",
     sections: [
       {
-        id: "lofoforados",
-        title: "Lofoforados",
+        id: "lofoforados-generales",
+        title: "Lofoforados: características generales",
         content: [
-          { type: "heading", level: 1, text: "Tema 7 — Lofoforados y Ecdysozoa" },
-          { type: "heading", level: 2, text: "Lofoforados" },
-          { type: "paragraph", text: "Los lofoforados son un clado que agrupa varios filos con un plan corporal común, todos sésiles o muy poco móviles." },
+          { type: "heading", level: 2, text: "¿Qué son los lofoforados?" },
+          { type: "paragraph", text: "Los lofoforados son un clado que agrupa tres filos de animales acuáticos, sésiles o poco móviles, que comparten un plan corporal con lofóforo (corona de tentáculos ciliados para la alimentación). Aunque tradicionalmente se consideraban próximos a los anélidos y moluscos (por la larva trocófora), hoy se sitúan dentro de Spiralia como grupo hermano de los moluscos y anélidos." },
           { type: "list", items: [
-            "Simetría bilateral.",
-            "Protóstomos: el primer orificio embrionario forma la boca.",
-            "Segmentación espiral.",
+            "Simetría bilateral (aunque son sésiles, no cefalizados).",
+            "Protóstomos: el blastoporo forma la boca.",
+            "Segmentación espiral del huevo.",
             "Larva trocófora o larva con lofóforo."
-          ]},
-          { type: "callout", variant: "info", title: "Sinapomorfías", content: "Lofóforo: corona de tentáculos ciliados, derivada del mesosoma, que sirve para alimentarse. Cuerpo no cefalizado, dividido en tres regiones (prosoma, mesosoma y metasoma) con sus respectivas cavidades celómicas. Sistema digestivo en U." },
-          { type: "list", items: [
-            "Viven en tubos o presentan exoesqueleto. Todos son sésiles.",
-            "Generalmente marinos y bentónicos.",
-            "Sistema circulatorio bastante desarrollado.",
-            "Muy bien representados en el registro fósil. Unas 7.000 especies."
-          ]},
-        ],
+          ] },
+          { type: "callout", variant: "info", title: "Sinapomorfías del clado", content: "Lofóforo (corona de tentáculos ciliados derivada del mesosoma) y cuerpo dividido en tres regiones (prosoma, mesosoma, metasoma) con sus respectivas cavidades celómicas. Sistema digestivo en U (con excepciones)." },
+          { type: "paragraph", text: "Todos son marinos, bentónicos y sésiles (viven fijos al sustrato o dentro de tubos). Presentan sistema circulatorio bastante desarrollado (en algunos, cerrado). Están bien representados en el registro fósil (braquiópodos y briozoos son muy abundantes desde el Paleozoico). Se conocen unas 7.000 especies actuales." }
+        ]
       },
       {
         id: "bryozoa",
-        title: "Phylum Bryozoa (= Ectoprocta)",
+        title: "Filo Bryozoa (Ectoprocta)",
         content: [
-          { type: "heading", level: 2, text: "Briozoos" },
-          { type: "callout", variant: "info", title: "Sinapomorfía", content: "Prosoma generalmente ausente. Lofóforo retráctil." },
+          { type: "heading", level: 2, text: "Briozoos: colonias de zooides" },
+          { type: "paragraph", text: "Los briozoos son animales coloniales, con individuos llamados zooides, cada uno de tamaño microscópico (menos de 1 mm). Las colonias pueden adoptar formas incrustantes, erectas, ramificadas o en forma de costra. Viven en mares (la mayoría) y también en agua dulce (filactolemas)." },
           { type: "list", items: [
-            "Siempre coloniales: cada individuo se llama zooide. Mayoritariamente marinos, algunos de agua dulce.",
-            "Simplificación por miniaturización: sin sistema circulatorio, excretor ni respiratorio.",
-            "Funículos: cordones celulares mesodérmicos para almacenar y distribuir nutrientes y unir individuos de la colonia."
-          ]},
-          { type: "heading", level: 3, text: "Polimorfismo colonial" },
-          { type: "list", items: [
-            "Autozooides: «normales», alimentan a la colonia.",
-            "Avicularias: en forma de pico, defensivos (evitan epibiontes).",
-            "Vibraculares: para el desplazamiento en colonias móviles.",
-            "Cenozooides: soporte estructural.",
-            "Nanozooides: limpieza.",
-            "Espinozooides: defensa.",
-            "Gonozooides: reproducción, con ovicelas para incubar embriones."
-          ]},
-          { type: "heading", level: 3, text: "Reproducción" },
-          { type: "list", items: [
-            "Asexual: formación de colonias por gemación a partir del ancéstrula; estatoblastos (gemas de resistencia) en filactolemados de agua dulce.",
-            "Sexual: hermafroditas; fecundación habitualmente interna; muchas modalidades de incubación.",
-            "Segmentación radial holoblástica con celoblástula.",
-            "Dos tipos de larva: cifonauta (libre, planctotrófica, con valvas quitinosas) y coronada (totalmente ciliada, lecitotrófica)."
-          ]},
+            "Prosoma generalmente ausente. Lofóforo retráctil.",
+            "Exoesqueleto (zooecio) secretado por el epitelio; quitinoso, calcáreo o gelatinoso.",
+            "Sin sistema circulatorio, excretor ni respiratorio (simplificación por miniaturización).",
+            "Funículo: cordón celular mesodérmico que conecta el estómago con el epitelio; distribuye nutrientes y forma las yemas de resistencia (estatoblastos).",
+            "Polimorfismo colonial: autozoides (alimentación), avicularios (defensa con forma de pico), vibracularios (movimiento), gonozoides (reproducción), etc."
+          ] },
+          { type: "heading", level: 3, text: "Reproducción y desarrollo" },
+          { type: "paragraph", text: "Asexual: formación de colonias por gemación a partir de una larva que se fija (ancéstrula). En filactolemas se forman estatoblastos (yemas de resistencia) que pueden sobrevivir al frío o la sequía." },
+          { type: "paragraph", text: "Sexual: la mayoría de los zooides son hermafroditas. Los espermatozoides se liberan al agua por poros en los tentáculos; la fecundación es interna (el esperma entra por el orificio intertentacular). Los embriones se incuban en el gonozooide (ovicela). Larva cifonauta (planctotrófica, con valvas quitinosas) o larva coronada (lecitotrófica)." },
           { type: "heading", level: 3, text: "Clasificación" },
-          { type: "definition", term: "Filactolemados", definition: "De agua dulce, prosoma con cavidad (protocele), lofóforo grande en forma de herradura, colonias homomorfas con estatoblastos. Conexión por poros." },
-          { type: "definition", term: "Estenolemados", definition: "Marinos, zooides tubulares sin prosoma, lofóforo reducido y circular. Polimorfismo colonial poco desarrollado. Poliembrionía: a partir de un embrión se generan varios clones idénticos." },
-          { type: "definition", term: "Gimnolemados", definition: "Marinos, sin prosoma, lofóforo reducido. Conexión entre zooides por células en reloj de arena. Es el grupo más diverso." },
-        ],
+          { type: "definition", term: "Clase Phylactolaemata", definition: "De agua dulce. Prosoma con cavidad (protocolo). Lofóforo grande en forma de herradura. Colonias homomorfas. Estatoblastos con flotadores (anillo de aire). Ejemplo: Plumatella." },
+          { type: "definition", term: "Clase Stenolaemata", definition: "Marinos. Zooides tubulares, con lofóforo reducido y circular. Polimorfismo poco desarrollado. Conexión por poros. Importantes en el fósil (orden Cyclostomata). Ejemplo: Crisia." },
+          { type: "definition", term: "Clase Gymnolaemata", definition: "Marinos, grupo más diverso. Sin prosoma, lofóforo circular. Conexión entre zooides por células en reloj de arena. Orden Cheilostomata (mayoría de especies). Ejemplos: Bugula, Membranipora." }
+        ]
       },
       {
         id: "phoronida",
-        title: "Phylum Phoronida",
+        title: "Filo Phoronida",
         content: [
-          { type: "heading", level: 2, text: "Foronídeos" },
-          { type: "callout", variant: "info", title: "Sinapomorfías", content: "Secretan tubos quitinosos (mucopolisacáridos) que entierran en sustratos blandos o fijan en duros. Prosoma reducido." },
+          { type: "heading", level: 2, text: "Foronídeos: solitarios y tubícolas" },
+          { type: "paragraph", text: "Los foronídeos son gusanos marinos que viven dentro de tubos quitinosos (mucopolisacáridos) fijos al sustrato (rocas o arena). Son solitarios, aunque pueden ser gregarios. Tienen un lofóforo circular o en herradura (en formas grandes)." },
           { type: "list", items: [
-            "Individuos solitarios pero a veces gregarios.",
-            "Lofóforo circular en formas pequeñas y complejo en formas grandes.",
-            "Dioicos o hermafroditas; larva actinotroca.",
-            "Conservan caracteres plesiomórficos dentro de los lofoforados.",
-            "Solo 13 especies en dos géneros: Phoronis y Phoronopsis.",
-            "Sistema circulatorio prácticamente cerrado."
-          ]},
-        ],
+            "Prosoma reducido; cuerpo dividido en dos regiones: metámera anterior (mesosoma con lofóforo) y posterior (metasoma).",
+            "Sistema circulatorio prácticamente cerrado (glóbulos con hemoglobina).",
+            "Excretor con protonefridios (en larva) y metanefridios (en adulto).",
+            "Dioicos o hermafroditas (la mayoría). Fecundación externa o interna.",
+            "Segmentación radial (no espiral) y larva actinotroca planctónica (con lóbulos ciliados).",
+            "Unas 13 especies actuales, dos géneros: Phoronis y Phoronopsis."
+          ] },
+          { type: "callout", variant: "tip", content: "La larva actinotroca es muy característica y permite la dispersión de los foronídeos. Puede nadar varias semanas antes de metamorfosarse." }
+        ]
       },
       {
         id: "brachiopoda",
-        title: "Phylum Brachiopoda",
+        title: "Filo Brachiopoda",
         content: [
-          { type: "heading", level: 2, text: "Braquiópodos" },
-          { type: "callout", variant: "info", title: "Convergencia evolutiva", content: "Ejemplo muy claro de convergencia evolutiva con los bivalvos: cuerpo cerrado por dos valvas, una dorsal y una ventral." },
+          { type: "heading", level: 2, text: "Braquiópodos: conchas pero con plan diferente" },
+          { type: "paragraph", text: "Los braquiópodos son un ejemplo clásico de convergencia evolutiva con los bivalvos, aunque su plan corporal es muy distinto. Tienen dos valvas (una dorsal y una ventral), pero son de distinto tamaño y forma; el animal vive fijo al sustrato por un pedúnculo ventral." },
           { type: "list", items: [
-            "Valvas segregadas por el manto (carbonato o fosfato cálcico, escleroproteínas).",
-            "Cuerpo fijado al sustrato por un pedúnculo ventral.",
-            "Quetas que evitan la entrada de partículas grandes y aportan protección.",
-            "Formas solitarias y marinas.",
-            "Lofóforo complejo (equivalente funcional a los ctenidios complejos de los bivalvos).",
-            "Sistema circulatorio abierto.",
-            "Reproducción solo sexual; especies dioicas; fecundación externa.",
-            "Larva lobulada de vida corta."
-          ]},
+            "Valvas de carbonato cálcico (articulados) o fosfato cálcico y quitina (inarticulados).",
+            "Lofóforo complejo (en forma de dos brazos enrollados) que ocupa la cavidad paleal.",
+            "Sin cabeza, sin mandíbulas; el lofóforo filtra partículas alimenticias.",
+            "Sistema circulatorio abierto con corazón y vasos.",
+            "Dioicos, fecundación externa. Segmentación holoblástica radial. Larva lobulada de vida corta.",
+            "Muy abundantes en el Paleozoico; hoy solo unas 350 especies (relictos)."
+          ] },
           { type: "heading", level: 3, text: "Clasificación" },
-          { type: "definition", term: "Inarticulata", definition: "Concha de fosfato cálcico y quitina, sin charnera. Pedúnculo largo con cavidad y musculatura. Epistoma con cavidad reducida." },
-          { type: "definition", term: "Articulata", definition: "Concha de carbonato cálcico, con charnera. Pedúnculo corto y fibrilar. Viven con el lado ventral hacia arriba; a veces gregarios." },
-        ],
+          { type: "definition", term: "Inarticulados", definition: "Valvas sin charnera (solo músculos). Pedúnculo largo, con cavidad celómica. Ejemplo: Lingula (fósil viviente, se conoce desde el Cámbrico)." },
+          { type: "definition", term: "Articulados", definition: "Valvas con charnera (dientes y encajes). Pedúnculo corto, fibrilar. Viven con el lado ventral hacia arriba. Ejemplo: Terebratulina (Mediterráneo)." },
+          { type: "callout", variant: "info", content: "Aunque parecidos a bivalvos, los braquiópodos tienen un plano de simetría diferente: en bivalvos las valvas son laterales (izquierda-derecha); en braquiópodos, dorsal-ventral." }
+        ]
       },
       {
         id: "ecdysozoa-intro",
-        title: "Ecdysozoa",
+        title: "Ecdysozoa: el supergrupo de la muda",
         content: [
-          { type: "heading", level: 2, text: "Ecdysozoa" },
-          { type: "paragraph", text: "Ecdysozoa es uno de los dos grandes clados de los protóstomos (el otro es Spiralia)." },
-          { type: "callout", variant: "info", title: "Sinapomorfías", content: "Cutícula secretada por la epidermis que forma un esqueleto externo y contiene quitina en alguna fase. Proceso de muda (ecdisis) controlado por hormonas (ecdisona). Ausencia de epitelios ciliados. Segmentación no espiral." },
-          { type: "heading", level: 3, text: "La muda" },
-          { type: "paragraph", text: "La cutícula está unida a la epidermis. Comienza con la apólisis (separación de epidermis y cutícula), la epidermis secreta fluido y empieza a crecer una nueva cutícula. La cutícula vieja se rompe y se desprende. El crecimiento es discontinuo, alternando períodos intermudales y de muda." },
-        ],
+          { type: "heading", level: 2, text: "Una innovación clave: la cutícula y la ecdisis" },
+          { type: "paragraph", text: "Ecdysozoa es uno de los dos grandes clados de protóstomos (el otro es Spiralia). Agrupa a filos tan diversos como nematodos, artrópodos, priapúlidos, cinorrincos, loricíferos y otros. Su sinapomorfía más importante es la presencia de una cutícula de quitina (o colágeno) que se muda periódicamente bajo control hormonal (ecdisis)." },
+          { type: "list", items: [
+            "Cutícula secretada por la epidermis, que forma un exoesqueleto flexible o rígido.",
+            "Crecimiento discontinuo: el animal debe mudar para crecer (estadios intermudales y mudas).",
+            "Regulada por la hormona ecdisona.",
+            "Ausencia de epitelios ciliados en la superficie (excepto en algunos grupos).",
+            "Segmentación no espiral (en los que tienen segmentación)."
+          ] },
+          { type: "callout", variant: "info", title: "Proceso de muda", content: "La apólisis separa la epidermis de la cutícula vieja; la epidermis secreta una nueva cutícula; la cutícula vieja se rompe y el animal sale (éxuvia)." },
+          { type: "paragraph", text: "Dentro de Ecdysozoa se distinguen dos grandes linajes: Scalidophora (priapúlidos, cinorrincos, loricíferos) y Nematozoa (nematodos y nematomorfos), y el gigantesco clado Panarthropoda (artrópodos, tardígrados, onicóforos). En este capítulo nos centraremos en introvertos y nematodos; los artrópodos se tratarán aparte." }
+        ]
       },
       {
-        id: "introverta",
-        title: "Introverta (Cycloneuralia)",
+        id: "introversos",
+        title: "Introverta (Cycloneuralia): escálidos y nematomorfos",
         content: [
-          { type: "heading", level: 2, text: "Introverta" },
-          { type: "paragraph", text: "Presentan un introverto (probóscide) en la parte anterior del cuerpo, evaginable. El cerebro tiene forma de anillo dispuesto alrededor de la parte más anterior del tubo digestivo (circumesofágico)." },
-          { type: "heading", level: 3, text: "Scalidophora (Cephalorhyncha)" },
-          { type: "paragraph", text: "Introverto con espinas (escálidas) dispuestas en círculos. Dos anillos de músculos retractores en el introverto." },
-          { type: "definition", term: "Phylum Priapulida", definition: "Cuerpo vermiforme (0,05–20 cm) dividido en introverto, tronco y plumaje caudal (respiratorio y quimiorreceptor). Sin sistema circulatorio. Dioicos; fecundación externa; desarrollo indirecto. Marinos, bentónicos, excavadores. Depredadores. 22 especies." },
-          { type: "definition", term: "Phylum Kinorhyncha", definition: "Cuerpo alargado (<1 mm) con verdadera segmentación: 13 zonitas (introverto, cuello, tronco). Cutícula con placas articuladas. Dioicos con fecundación interna. Desarrollo directo (juveniles con 11 zonitas y 6 mudas hasta el adulto). Marinos, meiofauna. 340 especies. Detritívoros." },
-          { type: "definition", term: "Phylum Loricifera", definition: "Cuerpo pequeño (250 μm) en cuatro regiones (introverto, cuello, tórax retráctil y abdomen recubierto por una lóriga cuticular). Dioicos. Marinos, meiofauna. 38 especies. Bacteriófagos." },
-        ],
+          { type: "heading", level: 2, text: "Animales con introverto evaginable" },
+          { type: "paragraph", text: "Los introvertos (hoy llamados Cycloneuralia) son un grupo de ecdisozoos que presentan un introverto (probóscide) en la parte anterior que puede invaginarse (meterse hacia dentro) y evaginarse (sacarse). La boca se abre al final del introverto. El cerebro tiene forma de anillo alrededor del esófago anterior (circumesofágico)." },
+          { type: "heading", level: 3, text: "Phylum Priapulida" },
+          { type: "definition", term: "Priapúlidos", definition: "Gusanos marinos de 0,05 a 20 cm, con cuerpo dividido en introverto (con espinas), tronco y una cola caudal con función respiratoria y sensorial (plumario). Sin sistema circulatorio. Sistema excretor: protonefridios. Dioicos, fecundación externa. Desarrollo indirecto (larva). Son depredadores excavadores. Unas 22 especies. Ejemplo: Priapulus (aguas frías)." },
+          { type: "heading", level: 3, text: "Phylum Kinorhyncha" },
+          { type: "definition", term: "Cinorrincos", definition: "Microscópicos (<1 mm), marinos de la meiofauna. Cuerpo dividido en 13 zonitas (segmentos cuticulares articulados). Introverto con espinas (escálidas). Cutícula con placas. Dioicos, fecundación interna, desarrollo directo (juveniles con 11 zonitas, 6 mudas). Unas 340 especies. Detritívoros." },
+          { type: "heading", level: 3, text: "Phylum Loricifera" },
+          { type: "definition", term: "Loricíferos", definition: "Muy pequeños (250 µm), descubiertos en 1983. Cuerpo dividido en introverto, cuello, tórax retráctil y abdomen recubierto por una lóriga (armadura) cuticular. Sin sistemas circulatorio ni respiratorio. Dioicos, fecundación interna. Viven en espacios intersticiales (meiofauna). Unas 38 especies." },
+          { type: "heading", level: 3, text: "Phylum Nematomorpha (gusanos de crin de caballo)" },
+          { type: "definition", term: "Nematomorfos", definition: "Adultos de vida libre (no se alimentan) de 10-150 cm de largo, muy delgados. Las larvas son parásitas de artrópodos (saltamontes, grillos, cangrejos). Controlan el comportamiento del hospedador para que se lance al agua, donde emerge el adulto. Cutícula de colágeno con mudas. Dioicos, fecundación interna. Unas 520 especies." }
+        ]
       },
       {
-        id: "nematoda",
-        title: "Nematozoa: Nematoda",
+        id: "nematodos",
+        title: "Phylum Nematoda (gusanos redondos)",
         content: [
-          { type: "heading", level: 2, text: "Nematozoa (= Nematoida)" },
-          { type: "paragraph", text: "Característicos por su simplicidad: «un tubo dentro de otro tubo». Cutícula formada principalmente por colágeno. Musculatura solo longitudinal, cordones nerviosos dorsal y ventral, cloaca común para digestivo y genitales, espermatozoides sin flagelo." },
-          { type: "heading", level: 2, text: "Phylum Nematoda" },
+          { type: "heading", level: 2, text: "La simplicidad llevada al éxito" },
+          { type: "paragraph", text: "Los nematodos son quizá los animales más abundantes y ubicuos de la Tierra. Se calcula que representan el 80% de los individuos del reino animal. Viven en todos los ambientes acuosos y terrestres, y muchas especies son parásitas de plantas, animales (incluidos humanos) y hongos." },
           { type: "list", items: [
-            "Triblásticos, bilaterales, protóstomos, pseudocelomados (mesénquima). El pseudoceloma actúa como esqueleto hidrostático.",
-            "No segmentados; eutelia (número fijo de células: una vez adultos, no crecen por división celular sino por aumento del tamaño celular).",
-            "Cutícula de colágeno con mudas.",
-            "Cuerpo cilíndrico (80 μm – 8 m).",
-            "Cordones epidérmicos que alojan los nervios longitudinales.",
-            "Sin sistema circulatorio ni respiratorio.",
-            "Excretor con células de Renette.",
-            "Órganos cefálicos quimiorreceptores (anfidios).",
-            "Dioicos o monoicos; cópula.",
-            "Ciclo directo con cuatro estadios juveniles y cuatro mudas.",
-            "Marinos, dulciacuícolas, terrestres húmedos y parásitos.",
-            "Unas 25.000 especies (probablemente subestimado)."
-          ]},
-          { type: "heading", level: 3, text: "Cutícula" },
+            "Cuerpo cilíndrico, alargado, no segmentado, con una cutícula de colágeno que mudan hasta 4 veces (eutelia: número fijo de células).",
+            "Pseudoceloma con función hidrostática; presión elevada (turgor).",
+            "Musculatura solo longitudinal (sin circular); movimiento por ondulaciones laterales.",
+            "Sistema digestivo completo (boca, faringe muscular, intestino, ano/cloaca).",
+            "Sin sistema circulatorio ni respiratorio; intercambio gaseoso por difusión cutánea.",
+            "Sistema excretor: células de Renette (glándulas grandes) con función osmorreguladora.",
+            "Sistema nervioso: anillo nervioso circumfaríngeo y cordones longitudinales (dorsal, ventral, laterales).",
+            "Organos sensoriales: anfidios (quimiorreceptores cefálicos) y fásmidos (caudales).",
+            "Dioicos (macho con espículas copuladoras y aleta caudal; hembra con vulva y ano).",
+            "Desarrollo directo con 4 estadios juveniles (larvas) separados por mudas."
+          ] },
+          { type: "heading", level: 3, text: "Alimentación y vida libre" },
+          { type: "paragraph", text: "Los nematodos de vida libre son bacteriófagos, micófagos o depredadores (algunos con estilete para perforar). Son clave en la descomposición y el reciclado de nutrientes en el suelo." },
+          { type: "heading", level: 3, text: "Parásitos de interés" },
+          { type: "definition", term: "Ascaris lumbricoides", definition: "Parásito intestinal humano, cosmopolita. Puede alcanzar 30 cm. La infección se produce por ingestión de huevos con larvas." },
+          { type: "definition", term: "Enterobius vermicularis", definition: "Oxiuros; muy común en niños. Las hembras migran al ano para poner huevos, causando prurito." },
+          { type: "definition", term: "Ancylostoma duodenale / Necator americanus", definition: "Gusanos anquilostoma. Penetran por la piel (generalmente en pies descalzos) y migran al intestino, causando anemia." },
+          { type: "definition", term: "Trichinella spiralis", definition: "Causa triquinosis. Se adquiere por consumo de carne de cerdo o jabalí mal cocida; las larvas enquistadas en músculo causan miopatías." },
+          { type: "definition", term: "Wuchereria bancrofti", definition: "Filariasis linfática. Transmitida por mosquitos. Las larvas (microfilarias) obstruyen los vasos linfáticos produciendo elefantiasis (hinchazón extrema de extremidades y genitales)." },
+          { type: "callout", variant: "warning", title: "Caenorhabditis elegans", content: "Este nematodo de vida libre (1 mm) es un organismo modelo en biología. Fue el primer animal cuyo genoma se secuenció (1998). Ha llevado a descubrimientos fundamentales en desarrollo, neurobiología y envejecimiento." }
+        ]
+      },
+      {
+        id: "resumen-lofoforados-ecdysozoa",
+        title: "Resumen general",
+        content: [
+          { type: "heading", level: 2, text: "Ideas clave" },
+          { type: "keypoint", points: [
+            "Los lofoforados (briozoos, foronídeos, braquiópodos) son sésiles, filtradores con lofóforo, y tienen larva trocófora o actinotroca.",
+            "Los briozoos son coloniales y pueden presentar polimorfismo; sus colonias son importantes en los arrecifes.",
+            "Los braquiópodos tienen concha bivalva pero con simetría dorsal-ventral, no lateral; fueron muy abundantes en el Paleozoico.",
+            "Ecdysozoa agrupa animales que mudan su cutícula (ecdisis) bajo control hormonal.",
+            "Los nematodos son los ecdisozoos más numerosos, de gran importancia ecológica y médica, con un número fijo de células (eutelia)."
+          ] }
+        ]
+      }
+    ]
+  },  {
+    id: "panartropodos-artropodos",
+    number: 12,
+    title: "Panartrópodos y generalidades de los artrópodos",
+    subtitle: "El supergrupo de la cutícula quitinosa y los apéndices articulados",
+    sections: [
+      {
+        id: "panarthropoda",
+        title: "Panarthropoda: onicóforos, tardígrados y artrópodos",
+        content: [
+          { type: "heading", level: 2, text: "¿Qué son los panartrópodos?" },
+          { type: "paragraph", text: "Panarthropoda es un clado monofilético que incluye a los artrópodos (insectos, crustáceos, arácnidos, miriápodos) junto con dos grupos más pequeños: los onicóforos (gusanos aterciopelados) y los tardígrados (osos de agua). Todos comparten un antepasado común que ya poseía apéndices pareados, cutícula quitinosa y un sistema circulatorio abierto con corazón dorsal." },
           { type: "list", items: [
-            "Lámina externa.",
-            "Lámina media esponjosa.",
-            "Lámina interna fibrosa pluriestratificada (muy desarrollada en parásitos y formas terrestres).",
-            "Lámina basal en contacto con la epidermis.",
-            "Externamente puede ser lisa, estriada o con granulaciones, sedas, escamas o papilas."
-          ]},
-          { type: "heading", level: 3, text: "Aparatos y movimiento" },
+            "Apéndices pareados ventrolaterales con uñas terminales (sinapomorfía).",
+            "Cutícula quitinosa que requiere mudas (ecdisis) para crecer.",
+            "Cavidad general del cuerpo de tipo hemocele (fusión de celoma y blastocele).",
+            "Sistema circulatorio abierto con corazón dorsal provisto de ostiolos.",
+            "Cerebro frontal-dorsal que conecta con un anillo periesofágico y una cadena ganglionar ventral (hiponeuro)."
+          ] },
+          { type: "paragraph", text: "Los panartrópodos constituyen uno de los grupos de animales más exitosos en términos de biodiversidad. Los artrópodos por sí solos representan aproximadamente el 82% de todas las especies animales descritas y la mitad de la biomasa animal del planeta." }
+        ]
+      },
+      {
+        id: "onychophora",
+        title: "Onychophora: los gusanos aterciopelados",
+        content: [
+          { type: "heading", level: 2, text: "Onicóforos" },
+          { type: "paragraph", text: "Los onicóforos (unos 200 especies actuales) son animales vermiformes, terrestres, que viven en ambientes muy húmedos (bosques tropicales y templados). Su cuerpo blando, cubierto por una cutícula fina y aterciopelada, recuerda a una oruga. Son depredadores nocturnos que cazan pequeños invertebrados." },
           { type: "list", items: [
-            "Movimiento por interacción entre cutícula elástica, pseudoceloma a presión y musculatura longitudinal (sin musculatura circular).",
-            "Aparato digestivo con labios, dientes, mandíbulas o estiletes según el tipo de alimentación.",
-            "Sin circulatorio: la circulación se da por movimientos del fluido pseudocélico.",
-            "Sin respiratorio: intercambio de gases por la cutícula. Metabolismo aerobio o anaerobio.",
-            "Excreción mediante una o dos células glandulares (Renette), no homólogas a los protonefridios. Función básicamente osmorreguladora."
-          ]},
+            "Sinapomorfías: glándulas del veneno (o del vesc) que secretan un líquido adhesivo para atrapar presas (pueden proyectarlo hasta 30 cm). Musculatura circular subcutánea de fibra lisa. Sistema traqueal (invaginaciones del tegumento) para el intercambio gaseoso, similar al de los artrópodos.",
+            "Cuerpo alargado con numerosos pares de patas cortas y no articuladas (lobópodos).",
+            "Antenas sensoriales y mandíbulas duras quitinosas.",
+            "Nefridios metaméricos y corazón dorsal.",
+            "Son fotófobos y requieren humedad porque no pueden cerrar sus estigmas traqueales (pérdida de agua).",
+            "La fecundación es interna; algunos son ovíparos y otros ovovivíparos."
+          ] },
+          { type: "callout", variant: "info", content: "Los onicóforos son considerados el grupo hermano de los artrópodos (junto con los tardígrados). Su estudio es clave para entender la transición de un cuerpo blando a uno artropodizado con exoesqueleto rígido." }
+        ]
+      },
+      {
+        id: "tardigrada",
+        title: "Tardigrada: los osos de agua",
+        content: [
+          { type: "heading", level: 2, text: "Tardígrados" },
+          { type: "paragraph", text: "Los tardígrados son animales microscópicos (50 μm a 1 mm) que habitan en musgos, líquenes, suelos y sedimentos marinos. Son famosos por su extraordinaria resistencia a condiciones extremas mediante la criptobiosis (desecación, radiación, vacío, temperaturas cercanas al cero absoluto)." },
+          { type: "list", items: [
+            "Sinapomorfías: aparato bucal con estiletes para perforar células (de plantas, algas o pequeños invertebrados). Un nervio conecta el protocerebro con el primer ganglio de la cadena ventral.",
+            "Cuerpo con cuatro pares de lobópodos (patas cortas, no articuladas) terminados en uñas (diploungulas).",
+            "Eutelia: número fijo de células en cada especie (no crecen por división celular, sino por aumento de tamaño).",
+            "Carecen de corazón, cavidades celómicas y metanefridios.",
+            "Presentan un sistema digestivo con faringe muscular succionadora y placoides (estructuras calcificadas que trituran el alimento).",
+            "La criptobiosis les permite sobrevivir años en estado seco y rehidratarse al volver las condiciones favorables."
+          ] },
+          { type: "callout", variant: "tip", content: "Los tardígrados se encuentran desde el Ártico hasta la Antártida, desde fosas abisales hasta las cumbres más altas. Su capacidad de resistir el espacio exterior los ha convertido en organismos modelo en astrobiología." }
+        ]
+      },
+      {
+        id: "arthropoda-sinapomorfias",
+        title: "Phylum Arthropoda: sinapomorfías y artropodización",
+        content: [
+          { type: "heading", level: 2, text: "¿Qué define a un artrópodo?" },
+          { type: "paragraph", text: "Los artrópodos son el filo más diverso del reino animal. Su éxito se debe a la artropodización: un proceso evolutivo que transformó un ancestro de cuerpo blando y segmentado (similar a un anélido) en un animal con exoesqueleto rígido, apéndices articulados y tagmatización (regionalización de segmentos)." },
+          { type: "list", items: [
+            "Sinapomorfías: un par de apéndices articulados por segmento corporal.",
+            "Cutícula quitinosa que forma un exoesqueleto endurecido (esclerotizado).",
+            "Metamería heterónoma o tagmosis (fusión de segmentos en unidades funcionales: cabeza, tórax, abdomen).",
+            "Ausencia de epitelio ciliado (la superficie está cubierta por cutícula).",
+            "Cavidad corporal de tipo hemocele (sistema circulatorio abierto).",
+            "Musculatura estriada en fascículos independientes, insertada en el esqueleto (apodemas)."
+          ] },
+          { type: "paragraph", text: "La artropodización permitió a los artrópodos colonizar todos los ambientes (marinos, dulceacuícolas, terrestres y aéreos). El exoesqueleto les proporciona protección contra depredadores, soporte y una superficie para la inserción muscular, pero limita el crecimiento (obligando a mudas periódicas)." }
+        ]
+      },
+      {
+        id: "cuticula-muda",
+        title: "La cutícula y la muda (ecdisis)",
+        content: [
+          { type: "heading", level: 2, text: "Exoesqueleto: estructura y funciones" },
+          { type: "paragraph", text: "La cutícula de los artrópodos es una estructura compleja secretada por la epidermis. Está formada principalmente por quitina (un polisacárido de N-acetilglucosamina) y proteínas (esclerotinas). Puede estar endurecida adicionalmente por sales cálcicas (crustáceos) o por tanado de proteínas." },
+          { type: "list", items: [
+            "Capas de la cutícula: epicutícula (capa externa delgada, con ceras y proteínas, impermeable), exocutícula (endurecida, esclerotizada, a menudo pigmentada) y endocutícula (elástica, no esclerotizada).",
+            "Escleritas y membranas: las placas rígidas se llaman escleritas (tergito dorsal, esternito ventral, pleurito lateral). Las membranas articulares (sin exocutícula) permiten el movimiento.",
+            "Formaciones cuticulares: sedas, espinas, escamas (asociadas a células tricógenas).",
+            "Endoesqueleto: invaginaciones de la cutícula (apodemas) que sirven de inserción muscular."
+          ] },
+          { type: "heading", level: 3, text: "La muda o ecdisis" },
+          { type: "paragraph", text: "El crecimiento es discontinuo. Para aumentar de tamaño, el artrópodo debe desprenderse de su exoesqueleto viejo y secretar uno nuevo. Este proceso es controlado por hormonas (ecdisona)." },
+          { type: "list", items: [
+            "Fases: apólisis (separación de la cutícula vieja de la epidermis), secreción de la nueva cutícula, ruptura de la exuvia (cutícula vieja) a lo largo de líneas de rotura preformadas, y emergencia del animal.",
+            "Durante la muda, el artrópodo es vulnerable (la nueva cutícula es blanda hasta que se endurece).",
+            "Control neuroendocrino: el protocerebro secreta hormona protoracicotrópica (PTTH) que estimula las glándulas protorácicas a producir ecdisona."
+          ] }
+        ]
+      },
+      {
+        id: "apendices-tagmosis",
+        title: "Apéndices articulados y tagmosis",
+        content: [
+          { type: "heading", level: 2, text: "Evolución de la versatilidad estructural" },
+          { type: "paragraph", text: "Los apéndices de los artrópodos son evaginaciones de las regiones pleurales de cada segmento, formados por una serie de artejos (podómeros) unidos por membranas articulares. Su musculatura intrínseca (dentro del apéndice) y extrínseca (desde el cuerpo) permite movimientos muy precisos." },
+          { type: "list", items: [
+            "Tipos de apéndices según su función: antenas (sensoriales), piezas bucales (mandíbulas, maxilas, labio), patas locomotoras, alas (en insectos), quelíceros (en arácnidos), etc.",
+            "Tagmosis: la fusión de segmentos en regiones especializadas. Por ejemplo, en insectos: cabeza (sensorial y alimentación), tórax (locomoción y alas) y abdomen (reproducción y excretor). En crustáceos: cefalotórax y abdomen. En arácnidos: prosoma y opistosoma."
+          ] },
+          { type: "callout", variant: "info", content: "La tagmosis ha permitido a los artrópodos explotar una increíble variedad de nínchos ecológicos: desde filtrar plancton (crustáceos) hasta volar (insectos) o tejer seda (arañas)." }
+        ]
+      },
+      {
+        id: "sistemas-internos-artropodos",
+        title: "Organización interna de los artrópodos",
+        content: [
+          { type: "heading", level: 2, text: "Sistemas nervioso, circulatorio, respiratorio, excretor y reproductor" },
           { type: "heading", level: 3, text: "Sistema nervioso" },
+          { type: "paragraph", text: "Hiponeuro: cerebro (ganglios supraesofágicos) con tres regiones (protocerebro, deutocerebro y tritocerebro), conectado a un anillo periesofágico y a una cadena ganglionar ventral (par de ganglios por segmento, a menudo fusionados). Los órganos sensoriales incluyen sensilias tricoides (mecanorreceptoras), sensilias campaniformes (presión) y sensilias setiformes (quimiorreceptoras)." },
+          { type: "heading", level: 3, text: "Órganos sensoriales" },
+          { type: "paragraph", text: "Ocelos (ojos simples) y ojos compuestos (formados por ommatidios). En los ojos compuestos se distinguen dos tipos: de aposición (alta agudeza visual, buena luz) y de superposición (mayor sensibilidad, poca luz)." },
+          { type: "heading", level: 3, text: "Sistemas respiratorios" },
           { type: "list", items: [
-            "Anillo nervioso circumfaríngeo.",
-            "Órganos sensoriales: ocelos, sedas y papilas táctiles, anfidios y fásmidos (quimiorreceptores)."
-          ]},
-          { type: "heading", level: 3, text: "Reproducción y ciclo vital" },
+            "Cutánea (solo en artrópodos muy pequeños o de cutícula fina).",
+            "Branquias: evaginaciones asociadas a apéndices (crustáceos).",
+            "Filotequeas o pulmones en libro: invaginaciones de la cutícula que forman láminas (arácnidos).",
+            "Tráqueas: sistema de tubos ramificados que llevan oxígeno directamente a los tejidos (insectos, miriápodos). Las traqueolas (ramificaciones terminales) son donde se produce el intercambio gaseoso. Los estigmas (aberturas) pueden abrirse y cerrarse."
+          ] },
+          { type: "heading", level: 3, text: "Sistema circulatorio" },
+          { type: "paragraph", text: "Abierto (lacunar). La hemolinfa es bombeada por un corazón dorsal tubular, con un par de ostiolos por segmento, hacia la aorta y luego a lagunas (hemocele). La hemolinfa retorna por senos peri­viscerales y branquias o pulmones. Puede contener hemocianina (azul) o hemoglobina." },
+          { type: "heading", level: 3, text: "Sistema excretor" },
           { type: "list", items: [
-            "Los machos presentan dos espículas copuladoras y órganos accesorios.",
-            "Cópula con transferencia de espermatozoides ameboideos a la vagina.",
-            "Dioicos o hermafroditas proterándricos. Partenogénesis frecuente.",
-            "Desarrollo directo, eutelia y crecimiento por aumento del tamaño celular (Caenorhabditis elegans es el modelo de estudios genéticos).",
-            "Cuatro estadios juveniles con mudas (ecdisis).",
-            "Ovoviviparismo frecuente en parásitos."
-          ]},
-          { type: "heading", level: 3, text: "Tipos de vida" },
-          { type: "list", items: [
-            "Vida libre: bacteriófagos, depredadores, fitófagos.",
-            "Parásitos: ectoparásitos o endoparásitos de animales o plantas; ciclos con uno o dos hospedadores."
-          ]},
-        ],
+            "Órganos metaméricos (mesodérmicos): glándulas antenales o maxilares (crustáceos), glándulas coxales (arácnidos).",
+            "Tubos de Malpighi: evaginaciones del tracto digestivo (endodérmicas en arácnidos, ectodérmicas en miriápodos e insectos). Excretan ácido úrico (ahorro de agua).",
+            "Sistemas criptonefríticos (acumulación de desechos)."
+          ] },
+          { type: "heading", level: 3, text: "Reproducción" },
+          { type: "paragraph", text: "La mayoría son dioicos (gonocóricos), con fecundación externa (acuáticos) o interna (terrestres). Oviparos, ovovivíparos o vivíparos. Desarrollo directo o indirecto con metamorfosis (holometabolia o hemimetabolia). Presentan a menudo dimorfismo sexual y comportamientos de cortejo complejos." }
+        ]
       },
       {
-        id: "nematomorpha",
-        title: "Phylum Nematomorpha",
+        id: "resumen-panartropodos",
+        title: "Resumen: claves de Panarthropoda",
         content: [
-          { type: "heading", level: 2, text: "Nematomorfos («gusanos crin de caballo»)" },
-          { type: "list", items: [
-            "Cutícula de colágeno con mudas.",
-            "Cuerpo largo (10–150 cm) y muy delgado (0,5–2,5 mm).",
-            "Digestivo reducido, sin sistema circulatorio, respiratorio ni excretor.",
-            "Musculatura exclusivamente longitudinal.",
-            "Dioicos con fecundación interna.",
-            "Ciclo: huevo → larva → ingestión por artrópodo → juvenil parásito → salida al agua → adulto de vida libre que no se alimenta.",
-            "Parásitos monoxenos o heteroxenos en fase larvaria. Los juveniles absorben nutrientes del insecto hospedador y manipulan su comportamiento para que se lance al agua.",
-            "Unas 520 especies."
-          ]},
-        ],
-      },
-    ],
+          { type: "heading", level: 2, text: "Ideas fundamentales" },
+          { type: "keypoint", points: [
+            "Panarthropoda incluye onicóforos, tardígrados y artrópodos; comparten apéndices pareados, cutícula quitinosa y hemocele.",
+            "Los artrópodos se caracterizan por exoesqueleto endurecido, apéndices articulados y tagmosis.",
+            "La muda (ecdisis) es el mecanismo para crecer, controlado por ecdisona.",
+            "Los sistemas respiratorios varían: branquias, pulmones en libro o tráqueas.",
+            "La excreción puede ser por glándulas antenales/coxales o por tubos de Malpighi.",
+            "El éxito evolutivo de los artrópodos se debe a la versatilidad de sus apéndices, la protección del exoesqueleto y la colonización de todos los ambientes."
+          ] }
+        ]
+      }
+    ]
   },
   {
     id: "vocabulario",

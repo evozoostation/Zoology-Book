@@ -169,6 +169,30 @@ function ContentBlockRenderer({ block }: { block: ContentBlock }) {
       );
     }
 
+    case "image": {
+      const widthClass = {
+        sm: "max-w-sm",
+        md: "max-w-md",
+        lg: "max-w-2xl",
+        full: "max-w-full",
+      }[block.width || "lg"];
+      return (
+        <figure className={cn("mt-6 mx-auto", widthClass)}>
+          <img
+            src={block.src}
+            alt={block.alt}
+            loading="lazy"
+            className="w-full h-auto rounded-xl border border-border shadow-sm"
+          />
+          {block.caption && (
+            <figcaption className="mt-2 text-center text-sm italic text-muted-foreground">
+              {renderInline(block.caption)}
+            </figcaption>
+          )}
+        </figure>
+      );
+    }
+
     case "keypoint":
       return (
         <div className="mt-6 rounded-xl border-2 border-primary/20 bg-primary/5 p-5">
