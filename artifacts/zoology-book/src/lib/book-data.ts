@@ -548,15 +548,15 @@ export const chapters: Chapter[] = [
           { type: "heading", level: 2, text: "Grandes grupos" },
           { type: "paragraph", text: "La sistemática de los protozoos es compleja y ha cambiado mucho con los análisis moleculares. Una clasificación actual ampliamente aceptada incluye los siguientes supergrupos:" },
           { type: "list", items: [
-            "Opistocontos: hongos, metazoos, coanoflagelados.",
-            "Amebozoos: amebas lobopodiales (como Amoeba proteus).",
-            "Arqueplastos: plantas verdes, clorofíceas, rodofíceas.",
-            "SAR (Stramenopiles, Alveolates, Rhizaria):",
-            "Rizarios: foraminíferos, radiolarios, silicofilóseos.",
-            "Alveolados: dinoflagelados, apicomplejos (Plasmodium), ciliados (Paramecium).",
-            "Estramenopilos: diatomeas, feofíceas.",
-            "Metamonada: parabasálidos (ej. Trichomonas).",
-            "Discoba: euglenozoos (euglénidos y cinetoplástidos como Trypanosoma y Leishmania)."
+            "**Opistocontos**: hongos, metazoos, coanoflagelados.",
+            "**Amebozoos**: amebas lobopodiales (como Amoeba proteus).",
+            "**Arqueplastos**: plantas verdes, clorofíceas, rodofíceas.",
+            "**SAR** (Stramenopiles, Alveolates, Rhizaria):",
+            "**Rizarios**: foraminíferos, radiolarios, silicofilóseos.",
+            "**Alveolados**: dinoflagelados, apicomplejos (Plasmodium), ciliados (Paramecium).",
+            "**Estramenopilos**: diatomeas, feofíceas.",
+            "**Metamonada**: parabasálidos (ej. Trichomonas).",
+            "**Discoba**: euglenozoos (euglénidos y cinetoplástidos como Trypanosoma y Leishmania)."
           ] },
           { type: "callout", variant: "info", title: "Coanoflagelados", content: "Vida libre. Pequeños flagelados marinos o de agua dulce (3-10 μm), fijos y sedentarios, solitarios o coloniales. Tienen un solo flagelo rodeado por un collar de microvellosidades (30-40). El collar y la disposición del flagelo recuerdan a los coanocitos de las esponjas." }
         ]
@@ -694,738 +694,802 @@ export const chapters: Chapter[] = [
   },
   {
     id: "poriferos",
-    number: 7,
+    number: 6,
     title: "Poríferos",
-    subtitle: "Las esponjas",
+    subtitle: "Las esponjas: metazoos sin tejidos verdaderos",
     sections: [
       {
-        id: "caracteristicas-poriferos",
+        id: "posicion-filogenetica",
+        title: "Posición filogenética",
+        content: [
+          { type: "heading", level: 2, text: "El grupo basal de los animales" },
+          { type: "paragraph", text: "Los poríferos (esponjas) son el grupo basal dentro de los metazoos, es decir, el linaje que divergió primero del resto de animales. Se consideran el grupo hermano de los coanoflagelados, unos protistas coloniales que ya estudiamos. Sin embargo, aún no está claro si los ctenóforos son aún más basales; el debate sigue abierto." },
+          { type: "paragraph", text: "Las esponjas son metazoos muy primitivos que carecen de tejidos verdaderos. Su nivel de organización es celular, no tisular. Esto significa que sus células son relativamente independientes y pueden cambiar de función, pero no forman órganos ni sistemas." },
+          { type: "callout", variant: "info", title: "Apomorfía y plesiomorfías", content: "La apomorfía (carácter derivado) de los poríferos es el sistema acuífero. Las plesiomorfías (caracteres ancestrales) que comparten con otros metazoos son los coanocitos y el nivel de organización celular." }
+        ]
+      },
+      {
+        id: "caracteristicas-generales",
         title: "Características generales",
         content: [
-          { type: "heading", level: 1, text: "Tema 2 — Poríferos (esponjas)" },
-          { type: "paragraph", text: "Los poríferos son metazoos basales sin tejidos verdaderos ni órganos. Su cuerpo está organizado alrededor de un sistema acuífero que les permite filtrar agua y obtener alimento." },
+          { type: "heading", level: 2, text: "¿Qué hace única a una esponja?" },
           { type: "list", items: [
-            "Diploblásticos sin verdaderos tejidos: organización celular.",
-            "Sésiles, mayoritariamente marinos (algunos de agua dulce).",
-            "Sin simetría definida (asimétricos o con simetría radial aproximada).",
-            "Sin sistema nervioso, digestivo, circulatorio ni excretor.",
-            "Cuerpo perforado por numerosos poros inhalantes (ostíolos) y un orificio exhalante mayor (ósculo).",
-            "Gran capacidad de regeneración."
-          ]},
-          { type: "callout", variant: "info", title: "Sinapomorfías", content: "Coanocitos, sistema acuífero con cámaras coanocitarias y espículas de soporte." },
-        ],
+            "Son metazoos muy primitivos (aparecieron en el Precámbrico, hace más de 600 millones de años).",
+            "Nivel de organización celular (no forman tejidos ni órganos). Sus células son totipotentes y pueden regenerar un individuo completo si se disocian.",
+            "Plan corporal diseñado para la filtración del agua (sistema acuífero).",
+            "Asimétricas o con simetría radial aproximada; a menudo forman estructuras modulares.",
+            "Esqueleto interno formado por espículas (silíceas o calcáreas) y fibras de colágeno (esponjina).",
+            "Carecen de células nerviosas y musculares. Las respuestas a estímulos son muy lentas.",
+            "Marinas y de agua dulce: unas 8.300 especies vivientes, la mayoría marinas (solo unas 50 de agua dulce).",
+            "Habitan todos los mares y profundidades, desde la zona intermareal hasta los abismos.",
+            "Tamaño muy variable: desde pocos milímetros hasta más de 5 metros de diámetro.",
+            "Son muy longevas: se han encontrado esponjas de hasta 2.300 años.",
+            "Presentan plasticidad morfológica y cromática: su forma y color dependen del hábitat y de las algas simbiontes.",
+            "Son sésiles (viven fijas al sustrato) y han desarrollado defensas químicas para no ser depredadas."
+          ] },
+          { type: "callout", variant: "tip", title: "Capacidad de regeneración", content: "Si se tritura una esponja hasta separar sus células, éstas pueden reorganizarse y formar una nueva esponja completa. Es un ejemplo extremo de regeneración y totipotencia celular." }
+        ]
       },
       {
-        id: "tipos-organizacion",
-        title: "Tipos de organización",
+        id: "sistema-acuifero",
+        title: "El sistema acuífero: el corazón de la esponja",
         content: [
-          { type: "heading", level: 2, text: "Ascon, sicon y leucon" },
-          { type: "paragraph", text: "Según la complejidad del sistema acuífero distinguimos tres modelos morfológicos:" },
-          { type: "definition", term: "Ascon", definition: "El más simple. El agua entra por los poróciros y llega directamente al atrio (espongocele), tapizado por coanocitos. Solo en formas pequeñas." },
-          { type: "definition", term: "Sicon", definition: "La pared se pliega y los coanocitos se sitúan en cámaras radiales. El atrio está tapizado por pinacocitos." },
-          { type: "definition", term: "Leucon", definition: "Organización más compleja: los coanocitos se agrupan en cámaras coanocitarias dispersas en el mesohilo. Es el modelo más eficiente y el de mayor tamaño." },
-          { type: "callout", variant: "tip", content: "El paso de ascon a leucon aumenta enormemente la superficie de filtración sin aumentar el volumen del cuerpo." },
-        ],
+          { type: "heading", level: 2, text: "Cómo funciona una esponja" },
+          { type: "paragraph", text: "El sistema acuífero es la estructura clave de las esponjas. El agua entra por numerosos poros inhalantes (ostiolos), circula a través de canales y cámaras internas, y sale por una o varias aberturas mayores llamadas ósculos. Este flujo constante proporciona alimento, oxígeno y elimina desechos." },
+          { type: "paragraph", text: "Las células responsables de generar la corriente son los coanocitos, que recubren las cámaras y poseen un flagelo rodeado por un collar de microvellosidades. El batido de los flagelos crea una succión que arrastra el agua." },
+          { type: "heading", level: 3, text: "Modelos estructurales" },
+          { type: "definition", term: "Asconoide", definition: "El más sencillo. El agua entra por porocitos (células perforadas) y llega directamente a una cavidad central (espongiocele) tapizada por coanocitos. Solo posible en esponjas pequeñas. Ejemplo: Clathrina." },
+          { type: "definition", term: "Siconoide", definition: "La pared se pliega formando canales radiales. Los coanocitos se sitúan en cámaras vibrátiles separadas; el atrio central está recubierto por pinacocitos, no por coanocitos. Ejemplo: Sycon." },
+          { type: "definition", term: "Leuconoide", definition: "El más complejo. Los coanocitos se agrupan en pequeñas cámaras redondas distribuidas por todo el mesohilo. El agua circula por un sistema de canales inhalantes y exhalantes. Es el modelo más eficiente y permite tamaños grandes. Ejemplo: la mayoría de las esponjas." },
+          { type: "callout", variant: "warning", title: "¡Siempre sale en examen!", content: "El profesor ha indicado que los tres modelos estructurales (ascon, sicon, leucon) son pregunta frecuente. Recuerda sus diferencias y ejemplos." }
+        ]
       },
       {
-        id: "anatomia-poriferos",
-        title: "Anatomía celular",
+        id: "tipos-celulares",
+        title: "Tipos celulares de las esponjas",
         content: [
-          { type: "heading", level: 2, text: "Tipos celulares" },
-          { type: "heading", level: 3, text: "Pinacodermo (capa externa)" },
+          { type: "heading", level: 2, text: "Una fábrica de células especializadas" },
+          { type: "paragraph", text: "Aunque las esponjas no tienen tejidos, poseen una sorprendente variedad de células con funciones específicas." },
+          { type: "heading", level: 3, text: "Pinacodermo (capa externa y revestimiento de canales)" },
           { type: "list", items: [
-            "Pinacocitos: células planas que tapizan la superficie externa y los canales.",
-            "Poróciros: células perforadas que forman los poros inhalantes."
-          ]},
-          { type: "heading", level: 3, text: "Mesohilo (capa intermedia gelatinosa)" },
+            "Pinacocitos: células planas que recubren la superficie externa (exopinacocitos), la cavidad interna (endopinacocitos) y los canales. Los basopinacocitos fijan la esponja al sustrato.",
+            "Porocitos: células cilíndricas con un poro central que conecta el exterior con el interior. Solo presentes en las formas asconoides."
+          ] },
+          { type: "heading", level: 3, text: "Mesohilo (matriz gelatinosa interna)" },
           { type: "list", items: [
-            "Arqueocitos: células ameboides totipotentes; intervienen en nutrición, transporte, excreción y reproducción.",
-            "Tesocitos: células de reserva.",
-            "Lofocitos: sintetizan colágeno (esqueleto orgánico) y espongina.",
-            "Esclerocitos: sintetizan las espículas (esqueleto inorgánico)."
-          ]},
+            "Arqueocitos: células ameboides totipotentes. Participan en la digestión, el transporte de nutrientes, la excreción y la reproducción. Pueden diferenciarse en cualquier otro tipo celular.",
+            "Esclerocitos: sintetizan las espículas (esqueleto inorgánico). Las espículas silíceas son producidas por una sola célula alrededor de un eje proteico; las calcáreas, por varias células.",
+            "Espongocitos, lofocitos y colenocitos: producen el esqueleto orgánico, principalmente colágeno y fibras de esponjina.",
+            "Esferulocitos: acumulan metabolitos secundarios y sustancias químicas de defensa (pigmentos, tóxicos). Dan color a la esponja y la protegen de depredadores."
+          ] },
           { type: "heading", level: 3, text: "Coanodermo" },
           { type: "list", items: [
-            "Coanocitos: células flageladas con collar de microvellosidades. Tapizan las cámaras coanocitarias, generan el flujo de agua y capturan partículas pequeñas. Pueden transformarse en espermatozoides."
-          ]},
-          { type: "heading", level: 3, text: "Canales y musculatura" },
+            "Coanocitos: células flageladas con un collar de microvellosidades. Generan la corriente de agua y capturan partículas alimenticias. También pueden transformarse en espermatozoides durante la reproducción sexual."
+          ] },
+          { type: "heading", level: 3, text: "Células contráctiles" },
           { type: "list", items: [
-            "Miocitos: células contráctiles alrededor de ósculos y canales. Permiten variar el diámetro de las aberturas. Respuesta lenta porque no son sensibles a estímulos eléctricos."
-          ]},
-          { type: "heading", level: 3, text: "Tipos de espículas" },
-          { type: "list", items: [
-            "Silíceas (SiO₂): formadas por una sola célula sobre un eje proteico central. Pueden ser grandes (megascleras) o pequeñas (microscleras).",
-            "Calcáreas (CaCO₃): formadas por varias células, sin eje central, translúcidas, con tres ejes. Solo megascleras."
-          ]},
-        ],
+            "Miocitos: rodean los ósculos y los canales principales. Al contraerse regulan el flujo de agua. Son células musculares primitivas, pero no responden a estímulos eléctricos (sí a químicos), por lo que su respuesta es lenta."
+          ] }
+        ]
       },
       {
-        id: "nutricion-poriferos",
-        title: "Nutrición",
+        id: "nutricion",
+        title: "Nutrición y filtración",
         content: [
-          { type: "heading", level: 2, text: "Sistema acuífero y nutrición" },
-          { type: "paragraph", text: "El agua entra por los poros inhalantes, atraviesa los canales y las cámaras coanocitarias, y sale por el ósculo. Los flagelos de los coanocitos generan la corriente. El collar de microvellosidades retiene las partículas alimenticias, que son fagocitadas." },
-          { type: "list", items: [
-            "Las partículas grandes son capturadas por los arqueocitos en los canales inhalantes.",
-            "Las partículas más pequeñas (~1 μm) son capturadas por los coanocitos y transferidas a los arqueocitos para la digestión intracelular.",
-            "Muchas esponjas albergan bacterias simbiontes que captan materia orgánica disuelta por difusión.",
-            "Las esponjas ascon y sicon pueden incorporar materia orgánica disuelta por pinocitosis."
-          ]},
-          { type: "callout", variant: "warning", title: "Excepción", content: "Las esponjas carnívoras carecen de sistema acuífero y capturan presas con tentáculos provistos de espículas. Las digieren externamente con la ayuda de bacterias simbiontes." },
-        ],
+          { type: "heading", level: 2, text: "Cómo comen las esponjas" },
+          { type: "paragraph", text: "Las esponjas se alimentan de partículas en suspensión (bacterias, microalgas, detritus orgánico). El sistema acuífero filtra grandes volúmenes de agua: una esponja de 1 cm³ puede bombear hasta 22 litros por día." },
+          { type: "paragraph", text: "Las partículas más grandes (> 50 μm) son capturadas por los arqueocitos en los canales inhalantes mediante fagocitosis. Las partículas pequeñas (~1 μm) son retenidas por el collar de los coanocitos y luego transferidas a los arqueocitos, que realizan la digestión intracelular. El material no digerido se expulsa por los canales exhalantes." },
+          { type: "paragraph", text: "Muchas esponjas albergan bacterias simbiontes (hasta el 40% de su biomasa) que capturan materia orgánica disuelta por difusión y aportan nutrientes. En aguas pobres en partículas, esta simbiosis es esencial." },
+          { type: "callout", variant: "example", title: "Una excepción fascinante", content: "Existen esponjas carnívoras (descubiertas en aguas profundas). No tienen sistema acuífero; capturan pequeños crustáceos con tentáculos recubiertos de espículas ganchudas. Digieren la presa externamente con ayuda de bacterias simbiontes y luego absorben los nutrientes." }
+        ]
       },
       {
-        id: "reproduccion-poriferos",
-        title: "Reproducción",
+        id: "reproduccion",
+        title: "Reproducción y desarrollo",
         content: [
-          { type: "heading", level: 2, text: "Reproducción asexual" },
+          { type: "heading", level: 2, text: "Asexual y sexual: dos estrategias" },
+          { type: "heading", level: 3, text: "Reproducción asexual" },
           { type: "list", items: [
-            "Fragmentación: un trozo del cuerpo origina un nuevo individuo.",
-            "Gemación: pequeñas yemas se desprenden y crecen.",
-            "Formación de gémulas: pequeñas esferas recubiertas de espículas con arqueocitos en su interior, células de resistencia que pueden sobrevivir a condiciones adversas. Típicas de esponjas de agua dulce."
-          ]},
-          { type: "heading", level: 2, text: "Reproducción sexual" },
-          { type: "paragraph", text: "Muchas esponjas son hermafroditas (monoicas), generalmente con desarrollo asincrónico de los sexos (proteróginas o proterándricas); otras son dioicas." },
+            "Fragmentación: un trozo de esponja se desprende y forma un nuevo individuo.",
+            "Gemación: yemas externas se separan y crecen.",
+            "Gémulas: estructuras de resistencia típicas de esponjas de agua dulce. Son pequeñas esferas recubiertas de espículas (microscleras) que contienen arqueocitos de reserva. Cuando mueren los tejidos, la gémula sobrevive y, al llegar la primavera, libera los arqueocitos que forman una nueva esponja."
+          ] },
+          { type: "heading", level: 3, text: "Reproducción sexual" },
+          { type: "paragraph", text: "La mayoría de las esponjas son hermafroditas (monoicas), aunque los sexos suelen madurar en momentos distintos (proteroginia o proterandria) para evitar la autofecundación. También hay especies dioicas." },
           { type: "list", items: [
-            "Los óvulos derivan de los arqueocitos; los espermatozoides, de los coanocitos.",
-            "Fecundación generalmente interna: los espermatozoides liberados son captados por otra esponja, transportados por los coanocitos hasta los arqueocitos y entregados al óvulo.",
-            "Suelen ser vivíparas (incuban larvas), aunque también las hay ovovivíparas."
-          ]},
-          { type: "heading", level: 2, text: "Tipos de larvas" },
-          { type: "definition", term: "Anfiblástula", definition: "Larva hueca con un hemisferio de células flageladas y otro sin flagelos." },
-          { type: "definition", term: "Parenquímula", definition: "Larva maciza ciliada que se asienta en el fondo y empieza a abrir cavidades en su interior." },
-        ],
+            "Los óvulos se forman a partir de arqueocitos, a menudo alimentados por células nutridoras (trofocitos).",
+            "Los espermatozoides se diferencian a partir de coanocitos, que pierden el flagelo y el collar y se transforman en células espermáticas.",
+            "La fecundación es interna: los espermatozoides liberados entran por la corriente de agua y son capturados por coanocitos de otra esponja. Estos los transportan hasta los arqueocitos, que los llevan al óvulo.",
+            "El zigoto se incuba dentro de la esponja (son vivíparas) hasta convertirse en una larva (anfiblástula o parenquímula).",
+            "La larva nada libremente, se fija al sustrato y sufre una metamorfosis para formar una esponja juvenil."
+          ] },
+          { type: "callout", variant: "tip", title: "Colonización de nuevos ambientes", content: "Las larvas nadadoras permiten la dispersión de las esponjas. Además, las gémulas de las especies de agua dulce pueden ser transportadas por aves o corrientes." }
+        ]
       },
       {
-        id: "clasificacion-poriferos",
-        title: "Clasificación",
+        id: "clasificacion",
+        title: "Clasificación de los poríferos",
         content: [
-          { type: "heading", level: 2, text: "Clases de poríferos" },
-          { type: "definition", term: "Calcáreas", definition: "Pequeñas. Espículas de CaCO₃, solo megascleras. Sin fibras de espongina. Pueden tener cualquier tipo de organización (ascon, sicon o leucon). Géneros: Clathrina, Sycon, Leucon." },
-          { type: "definition", term: "Demosponjas", definition: "Aproximadamente el 90 % de las especies. Tamaño y formas muy variables. Organización siempre leucon. Espículas de SiO₂ y fibras de espongina. Ejemplos: Suberites (simbionte de cangrejos ermitaños), Petrosia, Chondrosia, Tethya, Axinella, Agelas, Ircinia, Euspongia (esponja de baño)." },
-          { type: "definition", term: "Hexactinélidas", definition: "Esponjas vítreas. Sin pinacodermo ni coanodermo verdaderos: estructuras sincitiales complejas. Espículas de SiO₂, generalmente hexactinas, organizadas en redes tridimensionales. Bentónicas de aguas profundas. Ejemplos: Euplectella, Hyalonema." },
-          { type: "definition", term: "Homosclerómorfas", definition: "Esqueleto variable, con o sin espículas pequeñas de SiO₂ sin eje central. Presentan una lámina basal que delimita tejidos rudimentarios. Ejemplo: Oscarella." },
-          { type: "callout", variant: "info", title: "Formas externas", content: "Arborescentes/ramificadas (Axinella), tubulares (Agelas), reticuladas, laminares (Phaquelia), incrustantes (Crambe crambe) y masivas (Ircinia). La forma depende del hábitat y la genética; la coloración depende a menudo de algas simbiontes." },
-        ],
+          { type: "heading", level: 2, text: "Cuatro clases actuales" },
+          { type: "definition", term: "Clase Calcáreas", definition: "Esponjas pequeñas, de hasta 10 cm. Espículas de carbonato cálcico (calcita), solo megascleras. Sin fibras de esponjina. Pueden presentar los tres tipos de organización (ascon, sicon, leucon). Ejemplos: Clathrina (ascon), Sycon (sicon), Leuconia (leucon)." },
+          { type: "definition", term: "Clase Demosponjas", definition: "El 90% de las especies. Tamaño y formas muy variables. Organización siempre leucon. Espículas de sílice (SiO₂) y fibras de esponjina (colágeno). Formas comunes: incrustantes, masivas, ramificadas, tubulares. Ejemplos: Suberites (vive sobre conchas de cangrejos ermitaños), Petrosia, Chondrosia, Tethya, Axinella, Agelas, Ircinia, y la esponja de baño (Euspongia)." },
+          { type: "definition", term: "Clase Hexactinélidas", definition: "Esponjas vítreas (vidrio) de aguas profundas. Presentan un esqueleto de espículas silíceas hexactinas (con seis radios) fusionadas en una red tridimensional. Carecen de pinacodermo y coanodermo verdaderos; el cuerpo es un sincitio (células fusionadas). Ejemplos: Euplectella (esponja cesta de Venus, vive en el Pacífico), Hyalonema (presente en el Mediterráneo)." },
+          { type: "definition", term: "Clase Homoscleromorfas", definition: "Pequeñas, con esqueleto variable (pueden carecer de espículas o tener espículas silíceas diminutas sin eje central). Presentan una lámina basal que recuerda a un tejido rudimentario. Algunos autores las consideran el grupo más cercano a los eumetazoos. Ejemplo: Oscarella." },
+          { type: "heading", level: 3, text: "Formas externas (plasticidad morfológica)" },
+          { type: "paragraph", text: "La misma especie puede adoptar formas diferentes según el ambiente (corrientes, luz, profundidad). Entre las morfologías habituales encontramos: arborescente/ramificada (Axinella), tubular (Agelas), laminar (Phaquelia), incrustante (Crambe crambe), masiva (Ircinia) y reticulada." }
+        ]
       },
-    ],
+      {
+        id: "importancia-ecologica",
+        title: "Importancia ecológica y aplicaciones",
+        content: [
+          { type: "heading", level: 2, text: "Las esponjas como ingenieras de ecosistemas" },
+          { type: "paragraph", text: "Las esponjas filtran enormes cantidades de agua, contribuyendo a la claridad y a la calidad del agua en arrecifes y fondos marinos. Proporcionan refugio a muchos invertebrados pequeños (crustáceos, poliquetos). Sus defensas químicas son fuente de compuestos bioactivos de interés farmacológico (anticancerígenos, antivirales, antiinflamatorios)." },
+          { type: "paragraph", text: "Tradicionalmente, las esponjas de baño (Euspongia, Hippospongia) se han recolectado para uso humano. Hoy en día, la acuicultura de esponjas proporciona material sostenible." },
+          { type: "keypoint", points: [
+            "Las esponjas son filtradoras clave en ecosistemas marinos.",
+            "Producen compuestos químicos únicos de gran interés biomédico.",
+            "Su capacidad de regeneración las convierte en modelos para estudiar la totipotencia celular.",
+            "El debate sobre su posición (poríferos vs ctenóforos basales) sigue activo en la comunidad científica."
+          ] }
+        ]
+      }
+    ]
   },
   {
     id: "cnidarios",
-    number: 8,
+    number: 7,
     title: "Cnidarios",
-    subtitle: "Pólipos, medusas y corales",
+    subtitle: "Pólipos, medusas y la conquista de la simetría radial",
     sections: [
       {
-        id: "caracteristicas-cnidarios",
+        id: "caracteristicas-generales",
         title: "Características generales",
         content: [
-          { type: "heading", level: 1, text: "Tema 3 — Cnidarios" },
-          { type: "paragraph", text: "Los cnidarios son el grupo hermano de los bilaterales. Comparten con éstos rasgos plesiomórficos como las dos capas embrionarias, la simetría radial y la larva plánula." },
-          { type: "callout", variant: "info", title: "Sinapomorfía", content: "Cnidocitos (células urticantes), exclusivos del grupo." },
+          { type: "heading", level: 2, text: "¿Qué son los cnidarios?" },
+          { type: "paragraph", text: "Los cnidarios son animales diploblásticos (ectodermo y endodermo separados por una mesoglea) con simetría radial. Constituyen el grupo hermano de los bilaterales, es decir, el linaje más próximo a los animales con simetría bilateral. Su nombre proviene de las células urticantes o cnidocitos, su principal sinapomorfía." },
           { type: "list", items: [
-            "Diploblásticos: ectodermo y endodermo separados por una mesoglea.",
-            "Simetría radial.",
-            "Acuáticos, mayoritariamente marinos (algunos de agua dulce).",
-            "No cefalizados (en las medusas, algunos órganos sensoriales se agrupan en racimos).",
-            "Cavidad gastrovascular con una sola abertura (boca = ano).",
-            "Grado de organización tisular: tejidos definidos pero órganos rudimentarios.",
-            "Ciclo vital típico con alternancia de pólipo y medusa (excepto antozoos).",
-            "Unas 10.000 especies conocidas."
-          ]},
-        ],
+            "Son acuáticos, mayoritariamente marinos (algunas especies de agua dulce, como la hidra).",
+            "Presentan dos formas corporales básicas: el pólipo (sésil, tubular) y la medusa (libre nadadora, con forma de campana).",
+            "Carecen de cefalización (los órganos sensoriales, cuando existen, se agrupan en racimos).",
+            "Poseen una cavidad gastrovascular con una sola abertura (boca y ano son la misma).",
+            "Tienen tejidos definidos pero órganos rudimentarios.",
+            "Su ciclo vital típicamente alterna entre pólipo (reproducción asexual) y medusa (reproducción sexual), aunque existen variaciones.",
+            "Se conocen unas 10.000 especies actuales."
+          ] },
+          { type: "callout", variant: "info", title: "Sinapomorfías vs plesiomorfías", content: "La sinapomorfía exclusiva de los cnidarios es el cnidocito. Las plesiomorfías que comparten con los ancestros son: dos capas embrionarias, simetría radial, larva plánula, red nerviosa motora y células mioepiteliales de origen ectodérmico y endodérmico." }
+        ]
       },
       {
         id: "polipo-medusa",
-        title: "Pólipo y medusa",
+        title: "Pólipo y medusa: dos caras de una misma moneda",
         content: [
-          { type: "heading", level: 2, text: "Las dos formas corporales" },
-          { type: "table", headers: ["Característica", "Pólipo (sésil)", "Medusa (pelágica)"], rows: [
-            ["Posición", "Boca y tentáculos hacia arriba", "Boca y manubrio hacia abajo"],
-            ["Cuerpo", "Disco pedio + columna + corona oral", "Umbrela con tentáculos + manubrio con boca"],
-            ["Mesoglea", "Reducida", "Muy desarrollada (forma la campana)"],
-            ["Función", "Vegetativa, asexual", "Sexual, dispersiva"]
-          ]},
-          { type: "callout", variant: "tip", content: "Un pólipo es como una medusa invertida: si gira, se expande adoptando forma de umbrela." },
-        ],
+          { type: "heading", level: 2, text: "Formas corporales" },
+          { type: "paragraph", text: "El pólipo es la forma sésil. Tiene forma de saco con la boca y los tentáculos hacia arriba, fijado al sustrato por un disco basal. La medusa es la forma libre nadadora, con la boca hacia abajo y los tentáculos en el borde de la umbrela (campana). Un pólipo es como una medusa invertida." },
+          { type: "table", headers: ["Característica", "Pólipo", "Medusa"], rows: [
+            ["Estilo de vida", "Sésil, fijo al sustrato", "Pelágico, nada libremente"],
+            ["Forma", "Cilíndrica (copa o tubo)", "Umbrela (campana) con manubrio"],
+            ["Boca y tentáculos", "Hacia arriba", "Hacia abajo"],
+            ["Mesoglea", "Poco desarrollada", "Muy desarrollada, gelatinosa"],
+            ["Reproducción", "Asexual (gemación, fisión)", "Sexual (gametos)"]
+          ] },
+          { type: "callout", variant: "tip", content: "Una medusa se forma a partir de un pólipo por un proceso llamado estrobilación (en escifozoos) o por gemación (en hidrozoos)." }
+        ]
       },
       {
         id: "cnidocitos",
-        title: "Cnidocitos",
+        title: "Cnidocitos: la célula urticante",
         content: [
-          { type: "heading", level: 2, text: "La célula urticante" },
-          { type: "paragraph", text: "El cnidocito es la célula encargada de la defensa y la captura de presas. Contiene una cápsula (cnidocisto o nematocisto) con un filamento enrollado bajo gran presión." },
-          { type: "paragraph", text: "Cuando el cnidocilio (prolongación sensorial externa) es estimulado, se abre el opérculo y el filamento sale disparado para clavarse o adherirse a la presa. Funciones: adhesivos, penetrantes, envolventes y venenosos." },
-        ],
+          { type: "heading", level: 2, text: "El arma secreta de los cnidarios" },
+          { type: "paragraph", text: "Los cnidocitos son células especializadas en la defensa y la captura de presas. Contienen una cápsula llamada cnidocisto (o nematocisto) que alberga un filamento enrollado bajo alta presión. En la superficie externa de la célula hay un cnidocilio (pelillo sensorial). Cuando se estimula, el cnidocilio desencadena la apertura del opérculo y el filamento se dispara, clavándose o enrollándose en la presa." },
+          { type: "paragraph", text: "Existen varios tipos de cnidocistos según su función: penetrantes (inyectan toxina), envolventes (rodean a la presa), adhesivos (pegan la presa) y glutinantes." },
+          { type: "callout", variant: "warning", title: "Importancia médica", content: "Algunas medusas (como la avispa de mar, Chironex fleckeri) tienen veneno extremadamente potente que puede matar a un humano en pocos minutos. Otras producen irritaciones cutáneas dolorosas (carabela portuguesa, Physalia)." }
+        ]
       },
       {
-        id: "anatomia-cnidarios",
+        id: "anatomia-fisiologia",
         title: "Anatomía y fisiología",
         content: [
-          { type: "heading", level: 2, text: "Capas corporales" },
-          { type: "definition", term: "Epidermis", definition: "Células epitelio-musculares con fibras contráctiles longitudinales en su parte externa y circulares en la interna." },
-          { type: "definition", term: "Gastrodermis", definition: "Células nutritivo-musculares y flageladas, con capacidad fagocítica. Movilizan el agua y capturan fragmentos digeridos." },
-          { type: "definition", term: "Mesoglea", definition: "Capa gelatinosa intermedia, acelular en hidrozoos y con células dispersas en escifozoos y antozoos." },
-          { type: "paragraph", text: "Las células intersticiales son totipotentes y permiten regenerar cualquier tipo celular." },
+          { type: "heading", level: 2, text: "Capas del cuerpo y sistemas" },
+          { type: "heading", level: 3, text: "Epidermis (ectodermo)" },
+          { type: "paragraph", text: "Formada por células epitelio-musculares con miofibrillas longitudinales. También contiene cnidocitos, células sensoriales y células intersticiales totipotentes (capaces de regenerar cualquier tipo celular)." },
+          { type: "heading", level: 3, text: "Gastrodermis (endodermo)" },
+          { type: "paragraph", text: "Compuesta por células nutritivo-musculares con miofibrillas circulares y flagelos que mueven el agua dentro de la cavidad gastrovascular. Participan en la digestión intracelular." },
+          { type: "heading", level: 3, text: "Mesoglea" },
+          { type: "paragraph", text: "Capa gelatinosa acelular (en hidrozoos) o con células dispersas (en escifozoos y antozoos). Aporta rigidez y flotabilidad." },
           { type: "heading", level: 3, text: "Sistema nervioso" },
-          { type: "paragraph", text: "Red difusa de neuronas multipolares y bipolares en contacto con células sensoriales. Transmisión lenta y bidireccional. En las medusas hay un anillo nervioso que recuerda a un cerebro simple." },
+          { type: "paragraph", text: "Red difusa de neuronas multipolares y bipolares sin centros integradores. La transmisión es lenta y bidireccional. En las medusas existe un anillo nervioso que coordina la natación. Los cnidarios no tienen cerebro." },
           { type: "heading", level: 3, text: "Órganos sensoriales (solo en medusas)" },
           { type: "list", items: [
-            "Estatocistos: marcan la gravedad gracias a un estatolito.",
-            "Ocelos: detectan la luz y formas básicas."
-          ]},
-          { type: "heading", level: 3, text: "Funciones biológicas" },
-          { type: "paragraph", text: "Respiración y excreción se realizan por difusión. Son carnívoros: macrófagos (capturan presas con los tentáculos) o micrófagos (captan plancton). La digestión es extra e intracelular. Muchas especies establecen simbiosis con algas fotosintéticas (zooxantelas)." },
-        ],
+            "Estatocistos: detectan la gravedad (equilibrio). Contienen un estatolito (concreción calcárea) que se mueve por gravedad y estimula cilios sensoriales.",
+            "Ocelos: fotorreceptores simples que distinguen luz de oscuridad; en algunas medusas pueden formar imágenes rudimentarias."
+          ] }
+        ]
       },
       {
-        id: "reproduccion-cnidarios",
-        title: "Reproducción y ciclos",
+        id: "alimentacion-digestion",
+        title: "Alimentación y digestión",
         content: [
-          { type: "heading", level: 2, text: "Reproducción asexual y sexual" },
-          { type: "list", items: [
-            "Asexual: gemación (puede formar colonias) y fisión.",
-            "Gran capacidad de regeneración.",
-            "Sexual: las gónadas son poco estructuradas; los gametos derivan de células intersticiales.",
-            "Generalmente ovíparos, aunque algunos incuban los huevos.",
-            "Segmentación holoblástica, indeterminada y radial.",
-            "Larva plánula ciliada, libre nadadora."
-          ]},
-          { type: "heading", level: 2, text: "Tipos de ciclo biológico" },
-          { type: "definition", term: "Holopelágico", definition: "Solo fase medusa (ej. Aglaura)." },
-          { type: "definition", term: "Bentopelágico", definition: "Combinación de pólipo y medusa. Es el más habitual." },
-          { type: "definition", term: "Holobentónico", definition: "Solo fase pólipo (ej. Hydra)." },
-        ],
+          { type: "heading", level: 2, text: "Carnívoros por excelencia" },
+          { type: "paragraph", text: "Los cnidarios son carnívoros. Los pólipos capturan presas del plancton (micrófagos) o pequeños crustáceos y peces (macrófagos) con sus tentáculos. Las medusas atrapan presas que quedan adheridas a sus tentáculos urticantes." },
+          { type: "paragraph", text: "La digestión comienza en la cavidad gastrovascular (extracelular) gracias a enzimas secretadas por la gastrodermis. Los fragmentos semidigeridos son fagocitados por las células nutritivo-musculares, donde se completa la digestión (intracelular). Los residuos se expulsan por la boca." },
+          { type: "paragraph", text: "Muchos cnidarios (como los corales y algunas medusas) mantienen simbiosis con algas zooxantelas (dinoflagelados). Las algas realizan fotosíntesis y aportan hasta el 90% de los nutrientes del cnidario, a cambio de protección y nutrientes." },
+          { type: "callout", variant: "example", title: "Corales y zooxantelas", content: "Esta simbiosis es la base de los arrecifes coralinos. El estrés térmico provoca la expulsión de las algas, causando el blanqueamiento y la muerte del coral." }
+        ]
       },
       {
-        id: "clasificacion-cnidarios",
-        title: "Clasificación",
+        id: "reproduccion-ciclos",
+        title: "Reproducción y ciclos biológicos",
         content: [
-          { type: "heading", level: 2, text: "Clases principales" },
+          { type: "heading", level: 2, text: "Asexual y sexual se combinan" },
+          { type: "heading", level: 3, text: "Reproducción asexual" },
           { type: "list", items: [
-            "Anthozoa: solo pólipo (Octocorallia, Hexacorallia, Ceriantharia).",
-            "Medusozoa: alternancia pólipo-medusa (Hydrozoa, Staurozoa, Cubozoa, Scyphozoa).",
-            "Endocnidozoa: cnidarios parásitos extremadamente modificados (Myxozoa y Polypodiozoa)."
-          ]},
-        ],
+            "Gemación: el pólipo produce yemas que se separan o permanecen unidas formando colonias.",
+            "Fisión: el pólipo se divide longitudinal o transversalmente en dos individuos.",
+            "Gran capacidad de regeneración: un pequeño fragmento puede reconstruir todo el animal."
+          ] },
+          { type: "heading", level: 3, text: "Reproducción sexual" },
+          { type: "paragraph", text: "Las gónadas son simples engrosamientos del epitelio (epidermis en hidrozoos, gastrodermis en el resto). Los gametos derivan de células intersticiales. La fecundación puede ser externa (en medusas) o interna (en antozoos). El desarrollo da lugar a una larva plánula ciliada que nada hasta fijarse y transformarse en pólipo." },
+          { type: "heading", level: 3, text: "Tipos de ciclo vital" },
+          { type: "definition", term: "Holopelágico", definition: "Solo existe la fase medusa (ej. Aglaura). El ciclo es directo, sin pólipo." },
+          { type: "definition", term: "Bentopelágico", definition: "Alternancia de generaciones: pólipo (bentónico) produce medusas (pelágicas), y las medusas producen gametos que originan nuevos pólipos. Es el ciclo más común, típico de muchos hidrozoos y escifozoos." },
+          { type: "definition", term: "Holobentónico", definition: "Solo existe la fase pólipo; las medusas están ausentes o son muy reducidas. Ejemplo: Hydra (hidrozoo de agua dulce)." }
+        ]
       },
       {
-        id: "anthozoa",
-        title: "Clase Anthozoa",
+        id: "clasificacion",
+        title: "Clasificación de los cnidarios",
         content: [
-          { type: "heading", level: 2, text: "Anthozoa" },
+          { type: "heading", level: 2, text: "Cuatro clases vivientes" },
+          { type: "heading", level: 3, text: "Clase Anthozoa (antozoos)" },
+          { type: "paragraph", text: "Son exclusivamente pólipos (no hay fase medusa). Son los cnidarios más diversos (más de 6.000 especies). Su cavidad gastrovascular está dividida por mesenterios (septos). Incluyen las anémonas, los corales duros (madreporarios), los corales blandos (octocorales) y las gorgonias. Importantes constructores de arrecifes." },
+          { type: "heading", level: 3, text: "Clase Medusozoa (medusozoos)" },
+          { type: "paragraph", text: "Agrupa a los cnidarios que presentan fase medusa en su ciclo (aunque a veces muy reducida). Se subdivide en varias subclases:" },
           { type: "list", items: [
-            "Cavidad gastrovascular dividida en cámaras por septos (mesenterios).",
-            "Actinofaringe: tubo que va desde la boca hacia el interior.",
-            "Sifonoglifos: surcos ciliados que mantienen la circulación de agua.",
-            "Mesoglea con células; cnidocitos en epidermis y gastrodermis.",
-            "Pólipos solitarios o coloniales, marinos.",
-            "Ciclo sin fase medusa.",
-            "Gónadas en la gastrodermis (internas).",
-            "Pueden tener esqueleto o no."
-          ]},
-          { type: "heading", level: 3, text: "Subclases" },
-          { type: "definition", term: "Hexacorallia", definition: "Tentáculos lisos no pinnados, mesenterios múltiples de 6. Solitarios o coloniales. Anémonas, madréporas (corales duros, constructores de arrecifes), corales negros." },
-          { type: "definition", term: "Octocorallia", definition: "Siempre coloniales. 8 tentáculos pinnados y 8 mesenterios. Esqueletos axiales córneos (gorgonias) o de calcita con espículas (coral rojo Corallium). Plumas de mar." },
-          { type: "definition", term: "Ceriantharia", definition: "Pólipos solitarios que viven en un tubo mucoso con filamentos especiales (pticocistos). Sin disco pedio. Dos coronas de tentáculos (marginales y labiales)." },
-          { type: "callout", variant: "warning", title: "Arrecifes coralinos", content: "Los hexacoralarios madreporarios construyen arrecifes en simbiosis con zooxantelas. Crecimiento muy lento (1–2 cm/año). El blanqueamiento por aumento de temperatura amenaza estos ecosistemas: los corales expulsan las algas y mueren." },
-        ],
+            "Hydrozoa (hidrozoos): pólipos generalmente coloniales y medusas con velo (velarium). Ejemplos: Hydra (pólipo solitario de agua dulce), Obelia (colonia marina), Physalia (carabela portuguesa, una colonia flotante).",
+            "Scyphozoa (escifozoos): medusas grandes sin velo, con mesoglea muy desarrollada. El pólipo (escifistoma) produce medusas por estrobilación. Ejemplos: Aurelia (medusa luna), Pelagia, Rhizostoma (pulmón de mar).",
+            "Cubozoa (cubozoos): medusas en forma de cubo, con cuatro tentáculos (o grupos de tentáculos) y velario. Potente veneno. Ejemplos: Chironex fleckeri (avispa de mar, letal), Carybdea marsupialis (Mediterráneo).",
+            "Staurozoa (estaurozoos): medusas sésiles (viven fijas al sustrato), con forma de copa y 8 brazos. Ejemplos: Lucernaria."
+          ] },
+          { type: "callout", variant: "info", title: "Endocnidozoa: cnidarios parásitos", content: "Incluye a Myxozoa y Polypodiozoa, antiguamente considerados protistas. Son parásitos intracelulares de peces e invertebrados. Su morfología está extremadamente simplificada, pero conservan cnidocistos." }
+        ]
       },
       {
-        id: "medusozoa",
-        title: "Clase Medusozoa",
+        id: "antozoos",
+        title: "Antozoos en detalle",
         content: [
-          { type: "heading", level: 2, text: "Medusozoa" },
-          { type: "heading", level: 3, text: "Subclase Hydrozoa" },
+          { type: "heading", level: 2, text: "Las anémonas y los corales" },
+          { type: "paragraph", text: "Los antozoos tienen una cavidad gastrovascular dividida por septos completos o incompletos. La boca se abre en una actinofaringe (tubo que desciende hacia el interior). En los extremos de los septos pueden tener filamentos mesentéricos con cnidocitos y glándulas digestivas." },
           { type: "list", items: [
-            "Altísima diversidad, mayoritariamente marinos (algunos de agua dulce).",
-            "Ciclo con alternancia de pólipos y medusas (hidromedusas con velo).",
-            "Cavidad gastrodérmica no tabicada; cnidocitos solo en la epidermis.",
-            "Gónadas generalmente epidérmicas (externas), a diferencia de otras clases.",
-            "Pólipos coloniales (zooides) homomorfos o polimorfos: gonozooides, gastrozooides, dactilozooides.",
-            "Ejemplo de ciclo típico: Obelia. Hydra es un caso de ciclo solo pólipo (atecada)."
-          ]},
-          { type: "heading", level: 3, text: "Subclase Scyphozoa" },
-          { type: "list", items: [
-            "Grandes medusas sin velo, con gran cavidad subumbrelar.",
-            "Mesoglea con células.",
-            "Gastrodermis con cuatro bolsas y canales anulares de circulación.",
-            "Gónadas endodérmicas.",
-            "Pólipo pequeño (escifistoma) que se reproduce por estrobilación.",
-            "Unas 200 especies; depredadoras; oceánicas y litorales.",
-            "Ejemplos: Pelagia, Aurelia, Chrysaora, Rhizostoma (pulmón de mar), Cotylorhiza (huevo frito)."
-          ]},
-          { type: "callout", variant: "info", title: "Proliferaciones de medusas", content: "Aumento de temperatura, exceso de nutrientes, sobrepesca de depredadores (tortugas) y corrientes superficiales favorecen su proliferación." },
-          { type: "heading", level: 3, text: "Subclase Staurozoa" },
-          { type: "list", items: [
-            "Sésiles: «medusas» fijadas al sustrato (estauromedusas).",
-            "Ocho brazos alrededor de la boca.",
-            "Reproducción sexual con larva plánula no nadadora.",
-            "Unas 50 especies en aguas frías y someras."
-          ]},
-          { type: "heading", level: 3, text: "Subclase Cubozoa" },
-          { type: "list", items: [
-            "Mayor importancia de la fase medusa.",
-            "Cada pólipo produce una sola cubomedusa (sin estrobilación).",
-            "Medusas cuadrangulares con tentáculos en pedalios.",
-            "Velario en lugar de velo.",
-            "Ropalios con ocelos y nematocistos: muy desarrollados.",
-            "Grandes nadadoras y depredadoras: «avispas de mar» (Chironex fleckeri puede matar a una persona en pocos minutos).",
-            "Tropicales y subtropicales."
-          ]},
-        ],
+            "Hexacorallia: tentáculos lisos, no pinnados. Los mesenterios son múltiplos de 6. Incluyen anémonas de mar (Actiniaria), corales madreporarios (Scleractinia, constructores de arrecifes) y corales negros (Antipatharia).",
+            "Octocorallia: ocho tentáculos pinnados (con plumas) y ocho mesenterios. Incluyen corales blandos (Alcyonacea), gorgonias (Gorgoniidae) y coral rojo (Corallium rubrum). Su esqueleto puede ser de espículas calcáreas sueltas o de un eje axial córneo.",
+            "Ceriantharia: anémonas tubícolas que viven dentro de un tubo mucoso. Tienen dos coronas de tentáculos (marginales y labiales). No poseen disco pedal, sino un extremo aboral perforado."
+          ] },
+          { type: "callout", variant: "warning", title: "Blanqueamiento de corales", content: "El aumento de la temperatura del mar provoca que los corales expulsen las zooxantelas, perdiendo su color y su principal fuente de alimentación. Si la situación se prolonga, el coral muere. Este fenómeno afecta gravemente a los arrecifes de todo el mundo." }
+        ]
       },
-    ],
+      {
+        id: "hidrozoos",
+        title: "Hidrozoos: pequeños pero diversos",
+        content: [
+          { type: "heading", level: 2, text: "Los cnidarios más versátiles" },
+          { type: "paragraph", text: "Los hidrozoos presentan alternancia de generaciones con pólipos coloniales (raramente solitarios) y medusas pequeñas con velo (el velo es una membrana que reduce la abertura de la umbrela). Las medusas tienen gónadas epidérmicas (visibles desde el exterior)." },
+          { type: "paragraph", text: "Los pólipos pueden ser polimórficos dentro de una misma colonia: gastrozooides (alimentación), gonozooides (reproducción), dactilozooides (defensa). La colonia puede estar recubierta por un perisacro quitinoso (tecada) o no (atecada)." },
+          { type: "list", items: [
+            "Ejemplo de ciclo típico: Obelia. Los gonozooides liberan medusas que producen gametos; el zigoto da una larva plánula que se fija y origina una nueva colonia.",
+            "Hydra: hidrozoo de agua dulce sin fase medusa; se reproduce asexualmente por gemación y sexualmente con gónadas temporales.",
+            "Physalia (carabela portuguesa): no es una medusa sino una colonia flotante de pólipos especializados. Su velo urticante puede ser peligroso para los humanos."
+          ] }
+        ]
+      },
+      {
+        id: "escifozoos-cubozoos",
+        title: "Escifozoos y cubozoos: las grandes medusas",
+        content: [
+          { type: "heading", level: 2, text: "Medusas sin velo y medusas cúbicas" },
+          { type: "heading", level: 3, text: "Scyphozoa" },
+          { type: "paragraph", text: "Las medusas escifozoas son las típicas grandes medusas de hasta 2 metros de diámetro. Carecen de velo, tienen la mesoglea con células y la cavidad gastrovascular presenta cuatro bolsas y canales. El pólipo (escifistoma) es pequeño y se reproduce asexualmente por estrobilación: se divide transversalmente en una pila de discos (éfiros) que se liberan y se convierten en medusas adultas." },
+          { type: "list", items: [
+            "Órdenes destacados: Semaeostomeae (Aurelia, Chrysaora, Pelagia) y Rhizostomeae (Rhizostoma, Cotylorhiza).",
+            "Algunas presentan simbiosis con zooxantelas (Cassiopea, la medusa invertida)."
+          ] },
+          { type: "heading", level: 3, text: "Cubozoa" },
+          { type: "paragraph", text: "Medusas cúbicas con cuatro lados planos, de ahí su nombre. Son nadadoras activas y depredadoras eficaces. Presentan un velarium (un repliegue del margen) en lugar de velo. Cada tentáculo termina en una pedalia. Los ropalios (órganos sensoriales) contienen ocelos complejos y estatocistos." },
+          { type: "list", items: [
+            "Su veneno es neurotóxico y cardiotóxico extremadamente potente. Chironex fleckeri (avispa de mar) es considerada el animal marino más venenoso.",
+            "En el Mediterráneo está presente Carybdea marsupialis, cuya picadura es muy dolorosa pero raramente mortal."
+          ] }
+        ]
+      },
+      {
+        id: "arrecifes-coralinos",
+        title: "Arrecifes coralinos: las selvas del mar",
+        content: [
+          { type: "heading", level: 2, text: "Estructura, ecología y amenazas" },
+          { type: "paragraph", text: "Los arrecifes coralinos son formaciones rocosas calcáreas construidas principalmente por corales madreporarios (Scleractinia). Los pólipos segregan un esqueleto de carbonato cálcico que se acumula generación tras generación. Su crecimiento es muy lento: de 1 a 2 cm por año." },
+          { type: "paragraph", text: "La simbiosis con zooxantelas (algas dinoflageladas) es imprescindible. Por eso los arrecifes se limitan a aguas cálidas (temperatura > 18°C), transparentes y menos de 40 metros de profundidad." },
+          { type: "list", items: [
+            "Los arrecifes albergan cerca del 25% de la biodiversidad marina, a pesar de ocupar menos del 1% del fondo oceánico.",
+            "Son barreras naturales que protegen las costas de la erosión y los temporales.",
+            "Sustentan pesquerías y el turismo en muchas regiones tropicales."
+          ] },
+          { type: "callout", variant: "warning", title: "El blanqueamiento masivo", content: "El calentamiento global provoca episodios de blanqueamiento a gran escala. En 2016 y 2017, la Gran Barrera de Coral perdió más de la mitad de sus corales vivos por este fenómeno. Sin una reducción de las emisiones de CO₂, se prevé que la mayoría de los arrecifes desaparezcan en 2050." }
+        ]
+      },
+      {
+        id: "resumen-cnidarios",
+        title: "Resumen: claves de los cnidarios",
+        content: [
+          { type: "heading", level: 2, text: "Lo que hay que recordar" },
+          { type: "keypoint", points: [
+            "Los cnidarios son diploblásticos con simetría radial y cnidocitos (células urticantes).",
+            "Alternancia de generaciones: pólipo (asexual) y medusa (sexual), aunque algunos grupos han perdido una de las fases.",
+            "La digestión es mixta (extracelular en cavidad gastrovascular e intracelular en gastrodermis).",
+            "Los antozoos (corales y anémonas) son exclusivamente pólipos; los medusozoos incluyen hidrozoos, escifozoos, cubozoos y estaurozoos.",
+            "Los arrecifes de coral son ecosistemas esenciales y están en peligro por el cambio climático."
+          ] }
+        ]
+      }
+    ]
   },
   {
     id: "platelmintos",
-    number: 9,
+    number: 8,
     title: "Platelmintos",
-    subtitle: "Gusanos planos",
+    subtitle: "Gusanos planos: vida libre y parasitismo",
     sections: [
       {
-        id: "caracteristicas-platelmintos",
+        id: "caracteristicas-generales",
         title: "Características generales",
         content: [
-          { type: "heading", level: 1, text: "Tema 4 — Platelmintos (gusanos planos)" },
-          { type: "paragraph", text: "Los platelmintos son los primeros bilaterales que estudiamos, con morfología dorsiventral. La búsqueda activa de alimento introduce el concepto de bilateralidad y la diferenciación entre una región anterior y una posterior." },
-          { type: "callout", variant: "info", title: "Posición filogenética", content: "Pertenecen a Nephrozoa (animales con sistema excretor) y a Spiralia (segmentación espiral del huevo)." },
+          { type: "heading", level: 2, text: "¿Qué son los platelmintos?" },
+          { type: "paragraph", text: "Los platelmintos son los primeros animales bilaterales que estudiamos. Presentan una marcada morfología dorsiventral (aplastados). Su simetría bilateral y la búsqueda activa de alimento llevaron a la cefalización (concentración de órganos sensoriales y nerviosos en la región anterior)." },
           { type: "list", items: [
-            "Triblásticos, bilaterales, protóstomos y acelomados (sin cavidad interna verdadera).",
-            "Cefalizados.",
-            "Cuerpo blando y aplanado.",
-            "Epidermis celular o sincitial.",
-            "Sistema digestivo con un solo orificio (como los cnidarios).",
-            "Sistema excretor por protonefridios (sinapomorfía de Nephrozoa).",
+            "Triblásticos, bilaterales, protóstomos y acelomados (no tienen cavidad interna).",
+            "Cuerpo blando y aplanado, vermiforme en muchos grupos.",
+            "Epidermis celular o sincitial (en parásitos).",
+            "Sistema digestivo incompleto: un solo orificio (boca y ano son la misma abertura).",
+            "Sistema excretor con protonefridios (células flamígeras).",
             "Generalmente hermafroditas (monoicos).",
-            "Desarrollo directo o indirecto (la mayoría de los parásitos, indirecto).",
-            "Segmentación espiral.",
-            "Vida libre o parásitos.",
-            "Sin sistema circulatorio ni respiratorio."
-          ]},
-          { type: "callout", variant: "tip", title: "Compromiso superficie/volumen", content: "El cuerpo plano facilita la difusión interna en ausencia de circulatorio. Los limita a hábitats acuáticos, terrestres muy húmedos o al parasitismo." },
-        ],
+            "Desarrollo directo o indirecto (con larvas).",
+            "Segmentación espiral del huevo (carácter de Spiralia).",
+            "Sin sistema circulatorio ni respiratorio; el intercambio gaseoso se realiza por difusión a través del tegumento."
+          ] },
+          { type: "callout", variant: "info", title: "Compromiso superficie/volumen", content: "La ausencia de sistemas de transporte obliga a que el cuerpo sea aplanado o muy pequeño para que la difusión sea eficaz. Por eso los platelmintos viven en medios acuáticos o muy húmedos, o como parásitos." }
+        ]
       },
       {
-        id: "clasificacion-platelmintos",
-        title: "Clasificación",
+        id: "clasificacion",
+        title: "Clasificación de los platelmintos",
         content: [
           { type: "heading", level: 2, text: "Grupos principales" },
-          { type: "paragraph", text: "Los antiguos «turbelarios» son hoy un grupo parafilético de vida libre. Frente a ellos, los Neodermata son un clado de parásitos que han perdido la epidermis ciliada y la han sustituido por un tegumento sincitial." },
-          { type: "definition", term: "Archoophora", definition: "El ovocito ya contiene vitelo (sustancias de reserva) cuando se forma el huevo." },
-          { type: "definition", term: "Neoophora", definition: "Las células vitelinas son aparte y proporcionan el vitelo al huevo (huevos ectolecíticos)." },
-        ],
+          { type: "paragraph", text: "Tradicionalmente se dividían en Turbelarios (vida libre), Trematodos (duelas), Monogéneos (ectoparásitos de peces) y Cestodos (tenias). Hoy se sabe que los turbelarios son un grupo parafilético y que los parásitos forman un clado llamado Neodermata, caracterizado por un tegumento sincitial (pérdida de la epidermis ciliada)." },
+          { type: "list", items: [
+            "Turbelarios (parafilético): vida libre, marinos, dulceacuícolas o terrestres húmedos.",
+            "Neodermata: parásitos con tegumento sincitial, ventosas y ganchos.",
+            "  - Trematodos (duelas): parásitos internos de moluscos y vertebrados.",
+            "  - Monogéneos: ectoparásitos de peces, ciclo directo.",
+            "  - Cestodos (tenias): parásitos del intestino de vertebrados, sin tubo digestivo."
+          ] }
+        ]
       },
       {
         id: "turbelarios",
-        title: "Turbelarios",
+        title: "Turbelarios (vida libre)",
         content: [
-          { type: "heading", level: 2, text: "Turbelarios (vida libre)" },
-          { type: "paragraph", text: "Mayoritariamente de vida libre, pueden ser marinos, dulciacuícolas, terrestres o parásitos. Como ejemplo se utilizan los Tricládidos, capaces de proyectar la faringe como una trompa y con tres ramas intestinales bien definidas." },
+          { type: "heading", level: 2, text: "Turbolarios" },
+          { type: "paragraph", text: "Los turbelarios de vida libre como las tricládidas son acelomados con el cuerpo cubierto por una epidermis ciliada que contiene numerosas glándulas y rabditos (estructuras defensivas que secretan mucus). El mesénquima (parénquima) rellena el espacio entre órganos y contiene células totipotentes (neoblastos) que permiten una extraordinaria capacidad de regeneración." },
           { type: "list", items: [
-            "Epidermis con numerosas células glandulares y rabditos (secreciones mucosas y defensivas).",
-            "Mesénquima (parénquima) con células fijas, contráctiles, cromatóforos, células secretoras y neoblastos (totipotentes, permiten la regeneración).",
-            "Locomoción muco-ciliar y por contracción muscular."
-          ]},
-          { type: "heading", level: 3, text: "Aparato digestivo" },
-          { type: "paragraph", text: "Es un saco con la faringe muy desarrollada y ramas intestinales que sustituyen al sistema circulatorio. Carnívoros, con digestión extra e intracelular y succión intestinal mediante faringe suctora." },
-          { type: "heading", level: 3, text: "Excreción y sistema nervioso" },
-          { type: "list", items: [
-            "Red de protonefridios con células flamígeras: regulan la presión osmótica y eliminan amonio.",
-            "Cefalización con concentración de órganos sensoriales: ocelos en copa pigmentada, estatocistos, receptores táctiles y quimiorreceptores."
-          ]},
-          { type: "heading", level: 3, text: "Reproducción" },
-          { type: "list", items: [
-            "Sexual: hermafroditas, fecundación interna, cruzada y recíproca.",
-            "Huevos endolecíticos o ectolecíticos.",
-            "Desarrollo directo o indirecto (larva de Müller).",
-            "Asexual: fisión y regeneración."
-          ]},
-        ],
+            "Locomoción: por cilios (moco ciliar) y contracciones musculares.",
+            "Aparato digestivo: faringe evaginable (trompa) e intestino ramificado (tres ramas en tricládidos). Digestión extracelular e intracelular.",
+            "Sistema excretor: protonefridios con células flamígeras (flame cells) que regulan la presión osmótica y eliminan amoníaco.",
+            "Sistema nervioso: ganglios cerebrales y cordones nerviosos longitudinales (hiponeuro). Órganos sensoriales: ocelos (manchas oculares), estatocistos, receptores táctiles y quimiorreceptores.",
+            "Reproducción: hermafroditas, fecundación cruzada interna. Huevos endolecíticos o ectolecíticos. Desarrollo directo o indirecto (larva de Müller en algunos marinos).",
+            "Reproducción asexual: fisión y regeneración (un fragmento puede reconstruir todo el animal)."
+          ] },
+          { type: "callout", variant: "example", title: "Planaria", content: "Dugesia (planaria de agua dulce) es un modelo clásico en estudios de regeneración: un trozo de 1/279 del animal puede regenerar un individuo completo." }
+        ]
       },
       {
         id: "neodermata",
-        title: "Neodermata (parásitos)",
+        title: "Neodermata: adaptaciones al parasitismo",
         content: [
-          { type: "heading", level: 2, text: "Adaptaciones a la vida parasitaria" },
+          { type: "heading", level: 2, text: "¿Qué tienen en común los platelmintos parásitos?" },
           { type: "list", items: [
-            "Epitelio ciliado sustituido por un sincitio citoplasmático no ciliado (tegumento).",
-            "Estructuras de fijación al hospedador: ventosas, ganchos, espinas.",
-            "Reducción del sistema digestivo (las tenias lo han perdido por completo).",
-            "Sistema nervioso y órganos sensoriales reducidos.",
-            "Adaptación a ambientes con poco oxígeno (respiración aerobia o anaerobia).",
-            "Aparato reproductor voluminoso y complejo, con ciclos vitales a menudo heteroxenos."
-          ]},
-          { type: "heading", level: 2, text: "Trematodos" },
-          { type: "list", items: [
-            "Aspidogastros y Digeneos (forma de hoja con boca apical y dos ventosas).",
-            "Hermafroditas con reproducción sexual (y fases asexuales en larvas).",
-            "Ciclo heteroxeno: hospedador definitivo + uno o más intermediarios.",
-            "Estadios larvarios: miracidio → esporocisto → redia → cercaria → metacercaria."
-          ]},
-          { type: "callout", variant: "example", title: "Ejemplos clínicos", content: "Clonorchis sinensis (clonorquiosis, ligada al consumo de pescado crudo, puede derivar en cáncer biliar); Fasciola hepatica (distomatosis hepática); Schistosoma mansoni (esquistosomiasis: dioico, vive en vasos sanguíneos del intestino, sus huevos espinosos atraviesan capilares)." },
-          { type: "heading", level: 2, text: "Monogeneos" },
-          { type: "list", items: [
-            "Hermafroditas con fecundación cruzada.",
-            "Ovíparos u ovovivíparos; larva ciliada oncomiracidio.",
-            "Un solo hospedador (mayoría ectoparásitos de peces).",
-            "Estructuras de fijación: prohaptor (anterior) y opistohaptor (posterior).",
-            "Ejemplo: Gyrodactylus salaris, ectoparásito grave de salmónidos, ovovivíparo."
-          ]},
-          { type: "heading", level: 2, text: "Cestodos" },
-          { type: "list", items: [
-            "Cuerpo dividido en escólex (zona homóloga a la cabeza) y estróbilo formado por proglótides.",
-            "Ausencia total de sistema digestivo: absorben los nutrientes a través del tegumento.",
-            "Ciclos heteroxenos complejos.",
-            "Ejemplos: Taenia solium (teniasis y cisticercosis, peligrosa cuando los cisticercos se localizan en el SNC) y Echinococcus granulosus (quiste hidatídico que puede comportarse como un tumor cerebral)."
-          ]},
-        ],
+            "Pérdida de la epidermis ciliada; sustituida por un tegumento sincitial (neodermis) que protege al parásito de las enzimas del hospedador y absorbe nutrientes.",
+            "Órganos de fijación: ventosas, ganchos, espinas (ventosa oral, ventosa ventral, bothridios, etc.).",
+            "Reducción o pérdida del sistema digestivo (en cestodos, ausente por completo).",
+            "Sistema nervioso y órganos sensoriales muy reducidos.",
+            "Adaptaciones metabólicas: respiración anaerobia en ambientes pobres en oxígeno.",
+            "Aparato reproductor muy desarrollado (proglótides en cestodos, alta producción de huevos).",
+            "Ciclos vitales complejos con uno o varios hospedadores."
+          ] }
+        ]
       },
-    ],
+      {
+        id: "trematodos",
+        title: "Trematodos (duelas)",
+        content: [
+          { type: "heading", level: 2, text: "Digenia: el ciclo más complejo" },
+          { type: "paragraph", text: "Los trematodos digeneos tienen forma de hoja, con dos ventosas (oral y ventral). Son parásitos de moluscos (primer hospedador) y vertebrados (hospedador definitivo)." },
+          { type: "list", items: [
+            "Hermafroditas (excepto los esquitosomas, que son dioicos).",
+            "Fecundación interna cruzada.",
+            "Ciclo heteroxeno: huevo → miracidio (larva ciliada) → esporocisto → redia → cercaria → metacercaria (enquistada) → adulto.",
+            "Proliferación asexual dentro del hospedador intermediario (esporocistos y redias)."
+          ] },
+          { type: "heading", level: 3, text: "Ejemplos de interés médico-veterinario" },
+          { type: "definition", term: "Clonorchis sinensis", definition: "Parásito de los conductos biliares de humanos y otros mamíferos. Se adquiere por consumo de pescado de agua dulce crudo (metacercarias en el músculo). Muy frecuente en el sudeste asiático; puede causar colangitis y cáncer de vías biliares." },
+          { type: "definition", term: "Fasciola hepatica", definition: "Duela hepática de rumiantes y humanos. Ciclo con caracol de agua dulce (Lymnaea) como primer hospedador. Las metacercarias se enquistan en vegetación acuática; el consumo de berros infectados produce fascioliasis (lesiones hepáticas)." },
+          { type: "definition", term: "Schistosoma spp.", definition: "Parásitos dioicos (macho y hembra separados). Viven en las venas del intestino o de la vejiga. Los huevos espinosos atraviesan los capilares y salen con heces u orina. La cercaria furcocerca (cola bifurcada) penetra activamente por la piel humana durante el baño. Causa esquistosomiasis (bilarziasis), enfermedad crónica debilitante que afecta a más de 200 millones de personas en África, Asia y América del Sur." }
+        ]
+      },
+      {
+        id: "monogeneos",
+        title: "Monogéneos",
+        content: [
+          { type: "heading", level: 2, text: "Ectoparásitos de peces" },
+          { type: "paragraph", text: "Los monogéneos son parásitos principalmente de peces (branquias, piel), aunque también de anfibios y reptiles marinos. Su característica principal es el ciclo directo (un solo hospedador) y la presencia de un opistohaptor (órgano de fijación posterior con ganchos y ventosas)." },
+          { type: "list", items: [
+            "Hermafroditas, fecundación cruzada.",
+            "Ovíparos u ovovivíparos.",
+            "Larva ciliada llamada oncomiracidio que busca activamente al hospedador.",
+            "Pueden producir graves pérdidas económicas en acuicultura."
+          ] },
+          { type: "callout", variant: "warning", title: "Gyrodactylus salaris", content: "Este monogéneo es una amenaza para las poblaciones de salmón atlántico. Se introdujo en Noruega a través de peces de piscifactoría y causó el colapso de varios ríos salmoneros. Es ovovivíparo y puede transmitirse directamente por contacto." }
+        ]
+      },
+      {
+        id: "cestodos",
+        title: "Cestodos (tenias)",
+        content: [
+          { type: "heading", level: 2, text: "Parásitos intestinales sin tubo digestivo" },
+          { type: "paragraph", text: "Los cestodos son parásitos del intestino de vertebrados. Su cuerpo está dividido en escólex (órgano de fijación, con ventosas o ganchos), cuello (zona de crecimiento) y estróbilo (serie de proglótides). Cada proglótide contiene un aparato reproductor completo (hermafrodita)." },
+          { type: "list", items: [
+            "Carecen completamente de sistema digestivo; absorben nutrientes directamente a través del tegumento.",
+            "Proglótides maduras (grávidas) se desprenden y liberan huevos al exterior.",
+            "Ciclo heteroxeno: uno o dos hospedadores intermediarios (herbívoros, peces, artrópodos).",
+            "Larvas: oncosfera (con ganchos) y cisticerco, cisticercoide, hidátide, etc."
+          ] },
+          { type: "heading", level: 3, text: "Ejemplos" },
+          { type: "definition", term: "Taenia solium", definition: "Tenía del cerdo (hospedador intermediario) y humana (hospedador definitivo). El consumo de cerdo mal cocido infecta con cisticercos. Si el ser humano ingiere los huevos (por fecalismo oral), se desarrollan cisticercos en el sistema nervioso central (cisticercosis neurocística), una enfermedad grave que puede causar epilepsia y muerte." },
+          { type: "definition", term: "Echinococcus granulosus", definition: "Parásito pequeño (unos pocos milímetros) de cánidos (perros, lobos). Los hospedadores intermediarios son ovejas, caballos y humanos. La larva forma quistes hidatídicos en hígado y pulmones. El quiste crece lentamente y puede alcanzar grandes tamaños; la rotura causa reacciones anafilácticas muy graves." },
+          { type: "definition", term: "Diphyllobothrium latum", definition: "Tenía del pescado (amplio en zonas con consumo de pescado crudo, como el norte de Europa). Causa anemia por deficiencia de vitamina B12." }
+        ]
+      },
+      {
+        id: "vocabulario-platelmintos",
+        title: "Vocabulario clave",
+        content: [
+          { type: "heading", level: 2, text: "Términos esenciales" },
+          { type: "definition", term: "Acelomado", definition: "Animal sin cavidad corporal interna; el mesodermo es compacto. Ejemplo: platelmintos." },
+          { type: "definition", term: "Protonefridio", definition: "Sistema excretor con células flamígeras (solenocitos). Típico de platelmintos, nemertinos y larvas de otros grupos." },
+          { type: "definition", term: "Neoblasto", definition: "Célula totipotente del mesénquima de turbelarios; responsable de la regeneración." },
+          { type: "definition", term: "Neodermis", definition: "Tegumento sincitial característico de los platelmintos parásitos (Neodermata). Sustituye a la epidermis ciliada." },
+          { type: "definition", term: "Proglótide", definition: "Segmento del estróbilo de un cestodo; contiene un aparato reproductor completo." },
+          { type: "definition", term: "Cisticerco", definition: "Larva de cestodo en forma de vesícula con un escólex invaginado. Típica de Taenia." },
+          { type: "definition", term: "Miracidio", definition: "Primera larva de los trematodos digeneos, ciliada, que busca activamente al caracol hospedador." },
+          { type: "definition", term: "Cercaria", definition: "Larva de trematodo con cola, que abandona el caracol y busca al segundo hospedador o se enquista." }
+        ]
+      },
+      {
+        id: "resumen-platelmintos",
+        title: "Resumen: claves de los platelmintos",
+        content: [
+          { type: "heading", level: 2, text: "Lo que hay que recordar" },
+          { type: "keypoint", points: [
+            "Son acelomados, bilaterales y protóstomos con segmentación espiral.",
+            "Los de vida libre (turbelarios) tienen gran capacidad de regeneración por neoblastos.",
+            "Los parásitos (Neodermata) han perdido la epidermis ciliada y desarrollaron ventosas y ganchos.",
+            "Los trematodos tienen ciclos complejos con reproducción asexual en caracoles (esporocistos, redias).",
+            "Los cestodos carecen de tubo digestivo y están formados por proglótides; su larva (cisticerco, hidátide) puede ser muy patológica en humanos."
+          ] }
+        ]
+      }
+    ]
   },
   {
     id: "anelidos",
-    number: 10,
+    number: 9,
     title: "Anélidos",
-    subtitle: "Gusanos segmentados",
+    subtitle: "Gusanos segmentados: del mar al suelo",
     sections: [
       {
-        id: "caracteristicas-anelidos",
+        id: "caracteristicas-generales",
         title: "Características generales",
         content: [
-          { type: "heading", level: 1, text: "Tema 5 — Anélidos (gusanos segmentados)" },
+          { type: "heading", level: 2, text: "¿Qué hace únicos a los anélidos?" },
+          { type: "paragraph", text: "Los anélidos son el primer grupo de animales que presenta una verdadera segmentación (metamería). Su cuerpo está formado por la repetición seriada de unidades estructurales llamadas metámeros o anillos. Esta organización les ha permitido colonizar ambientes marinos, de agua dulce y terrestres." },
           { type: "list", items: [
-            "Segmentados y metamerizados: el celoma se repite en cada segmento y actúa como esqueleto hidrostático.",
-            "Quetas: estructuras en forma de espinas para moverse y fijarse al sustrato.",
-            "Órganos nucales: estructura sensorial quimiorreceptora detrás del primer segmento (algunos grupos los pierden).",
-            "Cuerpo vermiforme, cilíndrico y de simetría bilateral.",
-            "Celomados protóstomos con celoma muy desarrollado.",
-            "Segmentación espiral, esquizocélicos, larva trocófora.",
-            "Segmentación homónoma con crecimiento teloblástico (se añaden segmentos antes del último).",
-            "Sistema excretor con metanefridios.",
-            "Cutícula de colágeno que no se muda; epidermis a veces ciliada.",
-            "Sistema nervioso hiponeuro (como en platelmintos).",
-            "Sistema circulatorio cerrado.",
+            "Triblásticos, bilaterales, protóstomos y celomados.",
+            "Celoma muy desarrollado que actúa como esqueleto hidrostático.",
+            "Metamería homónoma (segmentos similares) o heterónoma (especialización regional).",
+            "Crecimiento teloblástico: nuevos segmentos se añaden delante del pigidio.",
+            "Pared corporal con cutícula de colágeno (no se muda).",
+            "Quetas (estructuras quitinosas de fijación y locomoción) producidas por quetoblastos.",
             "Sistema digestivo completo (boca y ano).",
-            "Unas 17.000 especies en hábitats marinos, dulciacuícolas y terrestres."
-          ]},
-          { type: "callout", variant: "info", title: "Novedades evolutivas", content: "Sistema circulatorio cerrado, sistema digestivo completo y desarrollo del celoma." },
-        ],
+            "Sistema circulatorio cerrado (sangre circula por vasos).",
+            "Sistema excretor con metanefridios (un par por segmento).",
+            "Sistema nervioso hiponeuro: ganglios cerebrales y cordón nervioso ventral doble.",
+            "Muchas especies con larva trocófora (carácter plesiomórfico).",
+            "Unas 17.000 especies descritas, mayoritariamente marinas."
+          ] },
+          { type: "callout", variant: "info", title: "Novedades evolutivas", content: "Con los anélidos aparecen por primera vez el sistema circulatorio cerrado, el sistema digestivo completo y un celoma bien compartimentado." }
+        ]
       },
       {
-        id: "metameria-anelidos",
-        title: "Metamería y anatomía",
+        id: "metameria",
+        title: "Metamería y organización corporal",
         content: [
-          { type: "heading", level: 2, text: "Metamería" },
-          { type: "paragraph", text: "Solo tres segmentos son distintos del resto: prostomio (anterior), peristomio (con la boca) y pigidio (con el ano). Los segmentos intermedios son metámeros homólogos que se generan por crecimiento teloblástico." },
-          { type: "heading", level: 2, text: "Celoma" },
-          { type: "paragraph", text: "Es el esqueleto hidrostático del animal. Está dividido en dos mitades por mesenterios, que albergan el vaso dorsal (VD), el vaso ventral (VV) y el tubo digestivo (TD)." },
-          { type: "heading", level: 2, text: "Quetas" },
-          { type: "paragraph", text: "Son producidas por células llamadas quetoblastos. La presencia de musculatura asociada permite que sean retráctiles (la acícula moviliza las quetas). No son sinapomorfía exclusiva de los anélidos: también las presentan los lofoforados." },
-          { type: "heading", level: 2, text: "Órganos nucales" },
-          { type: "paragraph", text: "Fositas quimiorreceptoras situadas en el prostomio, inervadas desde la parte posterior del cerebro. Muy desarrolladas en los anélidos más activos y ausentes en clitelados." },
-        ],
+          { type: "heading", level: 2, text: "La fuerza de repetir segmentos" },
+          { type: "paragraph", text: "En los anélidos, el cuerpo se divide en tres regiones diferenciadas: prostomio (primer segmento, delante de la boca), peristomio (segmento que contiene la boca) y pigidio (último segmento, con el ano). Los segmentos intermedios son metámeros homólogos que pueden estar especializados (tagmatización)." },
+          { type: "definition", term: "Metamería homónoma", definition: "Todos los segmentos son muy similares entre sí, excepto los extremos. Ejemplo: lombriz de tierra." },
+          { type: "definition", term: "Metamería heterónoma", definition: "Los segmentos se agrupan en regiones con funciones distintas (tagmas). Ejemplo: poliquetos con región cefálica, tórax y abdomen." },
+          { type: "paragraph", text: "Cada segmento contiene una porción del celoma, ganglios nerviosos, metanefridios, vasos sanguíneos y a veces quetas o parapodios. Los septos (tabiques) separan los segmentos y permiten hidrostatizar cada metámero de forma independiente, lo que facilita la locomoción ondulatoria." }
+        ]
       },
       {
-        id: "polychaeta",
-        title: "Polychaeta",
+        id: "pared-corporal-quetas",
+        title: "Pared corporal, quetas y locomoción",
         content: [
-          { type: "heading", level: 2, text: "Polychaeta" },
-          { type: "paragraph", text: "Grupo parafilético. Plan corporal típico:" },
-          { type: "definition", term: "Cabeza", definition: "Prostomio (con antenas, palpos, ojos y cirros peristomiales) y peristomio (con la boca, faringe musculosa retráctil y mandíbulas)." },
-          { type: "definition", term: "Tronco", definition: "Segmentos con parapodios y quetas; pueden tener cirros ventrales o dorsales, élitros y branquias para el intercambio de gases." },
-          { type: "definition", term: "Pigidio", definition: "Último segmento con el ano y cirros pigidiales." },
-          { type: "callout", variant: "info", content: "Muchas especies viven en tubos mucosos formados agregando partículas de arena." },
-          { type: "heading", level: 3, text: "Sistemas internos" },
+          { type: "heading", level: 2, text: "Estructura externa y movimiento" },
+          { type: "paragraph", text: "La pared del cuerpo está formada por epidermis (células cilíndricas con cutícula colágena), una capa de musculatura circular y otra de musculatura longitudinal, y el celoma interno presurizado. La contracción alternante de estos músculos permite el movimiento ondulatorio o peristáltico." },
+          { type: "paragraph", text: "Las quetas son estructuras quitinosas en forma de espinas que se proyectan desde la pared del cuerpo. Son producidas por células llamadas quetoblastos y pueden estar agrupadas en haces. En los poliquetos se insertan en los parapodios (apéndices laterales). En oligoquetos e hirudíneos son más simples y menos numerosas." },
+          { type: "definition", term: "Parapodios", definition: "Apéndices laterales locomotores, típicos de poliquetos, divididos en notopodio (rama dorsal) y neuropodio (rama ventral). Cada parapodio lleva una o varias quetas y a menudo branquias." },
+          { type: "callout", variant: "tip", content: "Las lombrices de tierra usan las quetas para anclarse al suelo mientras contraen y expanden sus segmentos. Las sanguijuelas, en cambio, han perdido las quetas y se desplazan con ventosas." }
+        ]
+      },
+      {
+        id: "sistemas-internos",
+        title: "Sistemas internos",
+        content: [
+          { type: "heading", level: 2, text: "Organización funcional" },
+          { type: "heading", level: 3, text: "Aparato digestivo" },
+          { type: "paragraph", text: "Completo (boca, faringe, esófago, buche, molleja, intestino y ano). Adaptado a diferentes dietas: depredadores (con mandíbulas), detritívoros (ingieren sedimento), filtradores (con tentáculos ciliados) y hematófagos (hirudíneos con ventosas y secreciones anticoagulantes)." },
+          { type: "heading", level: 3, text: "Sistema circulatorio" },
+          { type: "paragraph", text: "Cerrado. La sangre circula por vasos longitudinales (dorsal y ventral) y vasos transversales (arcos aórticos, que actúan como corazones). La hemoglobina (o clorocruorina, de color verde) está disuelta en el plasma. En los oligoquetos, el vaso dorsal es contráctil y bombea sangre hacia delante." },
+          { type: "heading", level: 3, text: "Sistema excretor" },
+          { type: "paragraph", text: "Metanefridios: un par por segmento. Cada metanefridio consta de un nefrostoma (embudo ciliado que recoge líquido celómico), un conducto contorneado y un nefridioporo (abertura externa). Eliminan desechos nitrogenados y regulan el equilibrio hídrico." },
+          { type: "heading", level: 3, text: "Sistema nervioso" },
+          { type: "paragraph", text: "Hiponeuro: cerebro (ganglios supraesofágicos) conectado por comisuras periesofágicas a un cordón nervioso ventral doble, con un par de ganglios por segmento. Los poliquetos presentan ocelos, estatocistos y órganos nucales (quimiorreceptores)." },
+          { type: "heading", level: 3, text: "Respiración" },
+          { type: "paragraph", text: "Cutánea a través del tegumento (debe mantenerse húmedo). Los poliquetos marinos desarrollan branquias ramificadas en los parapodios. La lombriz de tierra respira por la piel y requiere ambientes húmedos." }
+        ]
+      },
+      {
+        id: "poliquetos",
+        title: "Poliquetos (Polychaeta)",
+        content: [
+          { type: "heading", level: 2, text: "Los anélidos más diversos" },
+          { type: "paragraph", text: "Los poliquetos son mayoritariamente marinos, bentónicos o pelágicos. Se caracterizan por presentar parapodios con abundantes quetas (de ahí su nombre: muchas quetas). Incluyen formas errantes (depredadoras, como Nereis) y sedentarias (tubícolas, filtradoras, como los gusanos tubícolas o el gusano de Navidad)." },
           { type: "list", items: [
-            "Pared corporal con cuatro grandes haces musculares para el movimiento ondulatorio.",
-            "Sistema nervioso hiponeuro: ganglio bilobulado (cerebro), conectivos circumfaríngicos, ganglios segmentarios y nervios laterales con axones gigantes.",
-            "Órganos sensoriales: antenas, palpos, cirros tentaculares, cirros ventrales y dorsales, cirros pigidiales, ocelos y carúncula.",
-            "Sistema excretor con metanefridios (un par por metámero) y podocitos asociados a vasos sanguíneos.",
-            "Sistema circulatorio cerrado con vaso dorsal (hacia el cerebro) y vaso ventral (hacia el pigidio); los vasos son contráctiles, sin un corazón definido.",
-            "Respiración cutánea o por branquias dorsales en los parapodios.",
-            "Pigmentos respiratorios diversos: hemoglobina, clorocruorina (verde), hemeritrina (violeta-rosada)."
-          ]},
-        ],
+            "Cabeza diferenciada: prostomio (con antenas, palpos, ojos) y peristomio (con la boca y a menudo cirros tentaculares).",
+            "Parapodios con dos ramas (notopodio y neuropodio) provistas de quetas y a menudo con cirros dorsales y ventrales.",
+            "Faringe evaginable con mandíbulas quitinosas en formas depredadoras.",
+            "Algunos desarrollan branquias para el intercambio gaseoso.",
+            "Reproducción dioica (sexos separados). Fecundación externa. Desarrollo indirecto con larva trocófora.",
+            "En algunas especies, fenómeno de epitoquia: el animal produce una región posterior especializada (epitoco) que se separa y libera los gametos (reproducción sincronizada)."
+          ] },
+          { type: "callout", variant: "example", title: "Arenicola marina", content: "El gusano de la arena, común en playas, es un poliqueto sedentario que vive en galerías en forma de U. Excava el sedimento y se alimenta de la materia orgánica que contiene." }
+        ]
       },
       {
-        id: "metanefridios-vs-protonefridios",
-        title: "Metanefridios vs. protonefridios",
+        id: "clitelados",
+        title: "Clitelados: oligoquetos e hirudíneos",
         content: [
-          { type: "heading", level: 2, text: "Comparación" },
-          { type: "table", headers: ["Característica", "Protonefridios", "Metanefridios"], rows: [
-            ["Animales", "Sin celoma ni circulatorio", "Con celoma y circulatorio"],
-            ["Funciones", "Transporte, ultrafiltración, reabsorción", "Transporte y reabsorción"],
-            ["Filtración", "Activa con células flamígeras", "Ultrafiltración de hemolinfa con podocitos"]
-          ]},
-        ],
-      },
-      {
-        id: "estrategias-alimentacion",
-        title: "Estrategias alimentarias",
-        content: [
-          { type: "heading", level: 2, text: "Tipos de alimentación en anélidos" },
+          { type: "heading", level: 2, text: "El clitelo, una innovación reproductora" },
+          { type: "paragraph", text: "Los clitelados son un grupo monofilético de anélidos que se caracterizan por la presencia del clitelo, una banda glandular en los segmentos anteriores que secreta un capullo donde se depositan los huevos. Incluyen a los oligoquetos (lombrices de tierra y acuáticas) y los hirudíneos (sanguijuelas)." },
+          { type: "heading", level: 3, text: "Oligoquetos (Oligochaeta)" },
+          { type: "paragraph", text: "Poseen pocas quetas (de ahí su nombre) insertadas directamente en la pared del cuerpo, sin parapodios. Son hermafroditas con fecundación interna. El clitelo produce un capullo que recibe los óvulos y los espermatozoides. Desarrollo directo (sin larva)." },
           { type: "list", items: [
-            "Depredadores: con probóscide y mandíbulas para capturar presas.",
-            "Herbívoros y detritívoros.",
-            "Filtradores: corona de tentáculos o branquias modificadas.",
-            "Sedimentívoros: ingieren sustrato y digieren su materia orgánica.",
-            "Hematófagos: sanguijuelas con mandíbulas y secreciones anestésicas (hirudina), anticoagulantes y vasodilatadoras."
-          ]},
-        ],
+            "Ejemplo: lombriz de tierra (Lumbricus terrestris).",
+            "Vida en el suelo (edáfica) o en agua dulce.",
+            "Se alimentan de detritus orgánico (geófagos); su digestión puede incluir una molleja con partículas de arena.",
+            "Importancia ecológica: airean y mezclan el suelo, mejoran su estructura y fertilidad."
+          ] },
+          { type: "heading", level: 3, text: "Hirudíneos (Hirudinea)" },
+          { type: "paragraph", text: "Sanguijuelas. Carecen de quetas y parapodios. Tienen ventosas anterior (alrededor de la boca) y posterior (fijación). El número de segmentos es fijo (33 en la mayoría), pero externamente pueden estar subdivididos en anillos secundarios." },
+          { type: "list", items: [
+            "La mayoría son hematófagas (sangre de vertebrados), aunque algunas son depredadoras de pequeños invertebrados.",
+            "Glándulas salivales secretan anestésico, anticoagulante (hirudina) y vasodilatador.",
+            "Hermafroditas con fecundación interna mediante espermatóforos (inyección hipodérmica).",
+            "El clitelo produce un capullo que se deposita en el sustrato; desarrollo directo.",
+            "Se emplearon históricamente en sangrías (medicina humoral) y hoy en microcirugía para reducir hematomas."
+          ] },
+          { type: "callout", variant: "warning", title: "Parasitismo", content: "Algunas sanguijuelas son vectores de protozoos (por ejemplo, transmiten Trypanosoma a peces). En acuicultura pueden causar pérdidas económicas." }
+        ]
       },
       {
-        id: "clitellata",
-        title: "Clitellata",
+        id: "reproduccion-anelidos",
+        title: "Reproducción en anélidos",
         content: [
-          { type: "heading", level: 2, text: "Clitelados" },
-          { type: "paragraph", text: "Anélidos con clitelo (banda glandular del epitelio) que produce el capullo donde se depositan los huevos. Incluyen oligoquetos (lombrices) e hirudíneos (sanguijuelas)." },
-          { type: "heading", level: 3, text: "Reproducción" },
-          { type: "list", items: [
-            "Hermafroditas con fecundación interna por cópula (penis o inyección hipodérmica de espermatóforos).",
-            "Gónadas bien diferenciadas con celomiductos.",
-            "El clitelo no interviene en la fecundación pero genera el capullo.",
-            "Desarrollo directo, sin larva."
-          ]},
-          { type: "paragraph", text: "Los orificios sexuales coinciden con la región del clitelo: 10 pares de testículos y 1 par de ovarios inmersos en el mesénquima. El espermiducto se enrolla formando una vesícula seminal (epidídimo); el canal eyaculador es evaginable y actúa como pene; los gonoporos son ventrales." },
-        ],
+          { type: "heading", level: 2, text: "Estrategias diversas" },
+          { type: "definition", term: "Poliquetos (generalmente dioicos)", definition: "Fecundación externa (liberación sincronizada de gametos, a menudo con epitoquia). Desarrollo indirecto con larva trocófora." },
+          { type: "definition", term: "Oligoquetos (hermafroditas)", definition: "Dos individuos se aparean y transfieren espermatozoides. Cada uno secreta un capullo por el clitelo, que se desliza hacia delante recogiendo los óvulos y los espermatozoides. Desarrollo directo." },
+          { type: "definition", term: "Hirudíneos (hermafroditas)", definition: "Cópula con espermatóforos que pueden introducirse mediante un pene o por inyección hipodérmica. El capullo se deposita fuera del cuerpo." }
+        ]
       },
       {
-        id: "aplicaciones-anelidos",
-        title: "Aplicaciones e impacto",
+        id: "importancia-anelidos",
+        title: "Importancia ecológica y aplicada",
         content: [
-          { type: "heading", level: 2, text: "Importancia ecológica y aplicada" },
-          { type: "list", items: [
-            "Constituyen aproximadamente un tercio de la diversidad del bentos marino.",
-            "Capitella capitata es bioindicador de aguas eutrofizadas.",
-            "Las sanguijuelas pueden parasitar peces y anfibios y causar problemas en acuicultura.",
-            "Vectores de enfermedades: las sanguijuelas pueden transmitir flagelados; los oligoquetos son hospedadores secundarios de mixosporidios."
-          ]},
-        ],
-      },
-    ],
+          { type: "heading", level: 2, text: "Ingenieros del suelo y clave en redes tróficas" },
+          { type: "paragraph", text: "Las lombrices de tierra son fundamentales para la fertilidad del suelo: excavan galerías que airean y drenan el terreno, incorporan materia orgánica a capas profundas y sus deyecciones (vermicompost) son ricas en nutrientes." },
+          { type: "paragraph", text: "En el mar, los poliquetos son una parte importante de la dieta de peces y crustáceos. Algunas especies son indicadoras de calidad ambiental (Capitella capitata, por ejemplo, prolifera en zonas eutrofizadas)." },
+          { type: "paragraph", text: "Las sanguijuelas tienen aplicaciones médicas (mejoran la circulación en injertos) y farmacológicas (la hirudina se produce por ingeniería genética como anticoagulante)." },
+          { type: "keypoint", points: [
+            "Los anélidos son los primeros celomados con verdadera segmentación (metamería).",
+            "El sistema circulatorio cerrado y el digestivo completo son novedades evolutivas importantes.",
+            "Los poliquetos son el grupo más diverso, con parapodios y quetas abundantes.",
+            "Los clitelados (oligoquetos e hirudíneos) tienen clitelo y desarrollo directo.",
+            "Las lombrices mejoran la calidad del suelo; las sanguijuelas tienen interés médico."
+          ] }
+        ]
+      }
+    ]
   },
   {
     id: "moluscos",
-    number: 11,
+    number: 10,
     title: "Moluscos",
-    subtitle: "Cuerpo blando, gran diversidad",
+    subtitle: "El cuerpo blando que conquistó todos los ambientes",
     sections: [
       {
-        id: "posicion-moluscos",
-        title: "Posición filogenética",
-        content: [
-          { type: "heading", level: 1, text: "Tema 6 — Moluscos" },
-          { type: "paragraph", text: "Los moluscos son uno de los filos más diversos en planes corporales y tamaños. Pertenecen a Lophotrochozoa: bilaterales protóstomos con segmentación espiral y larva trocófora." },
-          { type: "list", items: [
-            "Bivalvos: almejas, mejillones.",
-            "Cefalópodos: pulpos, calamares, sepias.",
-            "Gasterópodos: caracoles y babosas (la mayoría de moluscos).",
-            "Solenogastros y Caudofoveatos.",
-            "Poliplacóforos (quitones).",
-            "Monoplacóforos.",
-            "Escafópodos."
-          ]},
-        ],
-      },
-      {
-        id: "caracteristicas-moluscos",
+        id: "caracteristicas-generales",
         title: "Características generales",
         content: [
-          { type: "heading", level: 2, text: "Características" },
+          { type: "heading", level: 2, text: "¿Qué define a un molusco?" },
+          { type: "paragraph", text: "Los moluscos son uno de los filos más diversos del reino animal, con más de 100.000 especies vivientes. Su nombre significa \"blandos\", en referencia a su cuerpo no segmentado y desprovisto de esqueleto interno rígido (aunque muchos secretan una concha calcárea externa). Han colonizado todos los ambientes: mares, aguas dulces y tierra firme." },
           { type: "list", items: [
-            "Cuerpo blando, no segmentado (triblásticos).",
-            "Hábitats muy variados: marinos, dulciacuícolas y terrestres.",
-            "Múltiples estrategias alimentarias: ramoneadores, suspensívoros, depredadores...",
-            "Simetría bilateral, secundariamente asimétrica en los gasterópodos por la torsión.",
-            "Cavidad celómica reducida, limitada a pequeños espacios alrededor de gónadas, corazón y nefridios.",
-            "Sistema circulatorio abierto (cerrado en cefalópodos).",
-            "Pie muscular ventral en la mayoría.",
-            "Masa visceral que concentra los órganos internos.",
-            "Manto: capa epidérmica que recubre la masa visceral y forma la cavidad paleal.",
-            "Aparato bucal con odontóforo y rádula.",
-            "Tubo digestivo completo con intestino regionalizado y un gran ciego digestivo.",
-            "Aparato respiratorio con branquias o ctenidios (acuáticos), branquias secundarias (nudibranquios) o pulmón (gasterópodos pulmonados).",
-            "Sistema excretor con metanefridios (a menudo llamados riñones)."
-          ]},
-          { type: "callout", variant: "info", title: "Sinapomorfías de los moluscos", content: "Pie, cavidad paleal, concha y rádula." },
-        ],
+            "Triblásticos, bilaterales, protóstomos, celomados (celoma reducido).",
+            "Cuerpo dividido en tres regiones: cabeza (con órganos sensoriales), pie muscular (locomoción) y masa visceral (órganos internos).",
+            "Manto: pliegue dorsal de la pared corporal que segrega la concha (cuando existe) y delimita la cavidad paleal.",
+            "Concha (a menudo reducida o perdida secundariamente) de carbonato cálcico, con tres capas: periostraco (orgánico), ostraco (prismas de calcita) e hipostraco (láminas de aragonito, a veces nacarado).",
+            "Rádula: estructura quitinosa raspadora (excepto en bivalvos).",
+            "Sistema circulatorio abierto (excepto cefalópodos, que lo tienen cerrado).",
+            "Respiración por branquias (ctenidios), pulmón (gasterópodos terrestres) o superficie del manto.",
+            "Sistema excretor con metanefridios (riñones).",
+            "Sistema nervioso ganglionar; en cefalópodos es el más complejo de los invertebrados.",
+            "Desarrollo con larva trocófora y a menudo larva veliger (en muchos marinos)."
+          ] },
+          { type: "callout", variant: "info", title: "Sinapomorfías del filo", content: "Pie muscular, manto, concha (aunque secundariamente perdida en algunos) y rádula (excepto bivalvos)." }
+        ]
       },
       {
-        id: "morfologia-moluscos",
+        id: "morfologia-corporal",
         title: "Morfología corporal",
         content: [
-          { type: "heading", level: 2, text: "El pie" },
-          { type: "paragraph", text: "Estructura ciliada y muscular con glándulas mucosas que crean una superficie de deslizamiento. Permite moverse y huir de depredadores. En cefalópodos se ha modificado en brazos y sifón, lo que les permite una natación muy activa." },
-          { type: "heading", level: 2, text: "El manto" },
-          { type: "paragraph", text: "Pliegue dorsal que envuelve el cuerpo, forma la cavidad paleal, protege las vísceras y secreta la concha. Tiene tres lóbulos: secretor, sensorial y muscular." },
-          { type: "heading", level: 2, text: "La concha" },
-          { type: "paragraph", text: "Función protectora y de soporte. Está formada por carbonato cálcico y proteínas. Pluriestratificada en tres capas:" },
-          { type: "list", items: [
-            "Periostraco: capa externa de conquiolina (proteína), aspecto córneo.",
-            "Ostraco: prismas hexagonales de calcita perpendiculares a la superficie.",
-            "Hipostraco: láminas finas de aragonito (rómbico) que pueden ser iridiscentes (nácar)."
-          ]},
-          { type: "callout", variant: "tip", title: "Procesos clave en la evolución del molusco", content: "Torsión (gasterópodos): giro de 180° de la masa visceral durante la fase de larva veliger. Espiralización: solución para aumentar la masa visceral sin perder funcionalidad." },
-          { type: "heading", level: 2, text: "La rádula" },
-          { type: "paragraph", text: "Hilera de dientes quitinosos que actúan como un raspador. Permite explotar diversos nichos tróficos: micrófagos (muchos dientes en hilera), filtradores (rádula reducida o ausente, como los bivalvos) y carnívoros (pocos dientes y grandes). La rádula toxoglosa de algunos gasterópodos es afilada y venenosa." },
-          { type: "callout", variant: "warning", content: "No confundir la rádula con las mandíbulas, estructuras endurecidas presentes en muchos moluscos para pellizcar y desgarrar." },
-          { type: "heading", level: 2, text: "Cavidad paleal" },
-          { type: "paragraph", text: "Recoge productos de excreción, heces y gametos, y protege los ctenidios. Contiene osfradios (quimiorreceptores) y glándulas defensivas. Presenta tres poros: anal, nefróporo y gonóporo." },
-        ],
+          { type: "heading", level: 2, text: "Plan básico del molusco" },
+          { type: "definition", term: "Pie", definition: "Estructura muscular ventral, generalmente con glándulas mucosas y cilios. Función locomotora (reptación, excavación o natación). En cefalópodos se ha transformado en brazos y sifón." },
+          { type: "definition", term: "Manto", definition: "Pliegue dorsal del cuerpo. Protege la masa visceral, segrega la concha y crea la cavidad paleal donde se alojan las branquias, los osfradios (quimiorreceptores) y los poros excretor y genital." },
+          { type: "definition", term: "Concha", definition: "Estructura calcárea protectora. Capas: periostraco (córneo), ostraco (calcita) e hipostraco (aragonito, nácar). Puede estar reducida (algunos gasterópodos) o ausente (babosas, pulpos)." },
+          { type: "definition", term: "Rádula", definition: "Órgano raspador situado en la boca, formado por una cinta quitinosa con filas de dientes. Se mueve sobre una estructura cartilaginosa (odontóforo). Permite raspar algas, perforar conchas o inyectar veneno (en conos)." },
+          { type: "paragraph", text: "Dos procesos evolutivos clave: la torsión (exclusiva de gasterópodos) y la espiralización de la concha (para compactar la masa visceral)." }
+        ]
       },
       {
-        id: "sistemas-moluscos",
+        id: "sistemas-internos",
         title: "Sistemas internos",
         content: [
-          { type: "heading", level: 2, text: "Aparato digestivo" },
-          { type: "paragraph", text: "Boca con regiones especializadas, estómago compartimentalizado, ciegos digestivos en el intestino. Los bivalvos presentan un estilo cristalino que rota gracias al saco del estilo y digiere el cordón alimenticio mucoso." },
-          { type: "heading", level: 2, text: "Sistema nervioso" },
-          { type: "paragraph", text: "Anillo periesofágico ganglionar y un anillo ventral. Presenta torsión en gasterópodos (estreptoneuria, en forma de 8) y forma de escalera en aculíferos. Está reducido en bivalvos. En cefalópodos el cerebro es masivo: son los invertebrados con mayor capacidad cognitiva." },
-          { type: "list", items: [
-            "Tentáculos: tactoreceptores.",
-            "Estatocistos con estatolitos.",
-            "Fotorreceptores y ojos complejos.",
-            "Osfradios: quimiorreceptores.",
-            "Astetes en poliplacóforos."
-          ]},
-          { type: "heading", level: 2, text: "Sistema circulatorio" },
-          { type: "paragraph", text: "Generalmente abierto (cerrado en cefalópodos). La hemolinfa contiene hemocianina (de cobre, sangre azulada) y, en algunos, hemoglobina. La mioglobina aparece a nivel muscular." },
-          { type: "heading", level: 2, text: "Branquias y respiración" },
-          { type: "paragraph", text: "Las branquias filtran alimento y permiten la respiración cutánea. Algunos moluscos las pierden y desarrollan branquias secundarias o pulmones (moluscos terrestres)." },
-          { type: "heading", level: 2, text: "Reproducción" },
-          { type: "list", items: [
-            "Gonocoristas o hermafroditas (solenogastros, monoplacóforos, gasterópodos heterobranquios, algunos bivalvos).",
-            "Generalmente un par de gónadas, aunque a menudo una se atrofia.",
-            "Fecundación externa o interna mediante cópula.",
-            "Desarrollo indirecto con larva trocófora seguida de larva veliger en gasterópodos y bivalvos.",
-            "Desarrollo directo en algunos marinos, en especies de agua dulce, terrestres y cefalópodos."
-          ]},
-        ],
+          { type: "heading", level: 2, text: "Fisiología" },
+          { type: "heading", level: 3, text: "Aparato digestivo" },
+          { type: "paragraph", text: "Completo, con boca (rádula, glándulas salivales), esófago, estómago (con glándula digestiva o hepatopáncreas), intestino y ano que desemboca en la cavidad paleal. En bivalvos, filtradores, la rádula ha desaparecido y el estómago recibe el estilo cristalino (masa de mucus y enzimas) y el escudo gástrico (superficie quitinosa que protege la pared del estómago)." },
+          { type: "heading", level: 3, text: "Sistema circulatorio" },
+          { type: "paragraph", text: "Abierto (lacunar) en la mayoría: el corazón (ventrículo + aurículas) bombea hemolinfa hacia la aorta, que se vacía en lagunas (hemocele); luego retorna por senos venosos y branquias. En cefalópodos es cerrado (más eficiente) y tienen corazones branquiales accesorios. Pigmento respiratorio: hemocianina (azul) o, raramente, hemoglobina." },
+          { type: "heading", level: 3, text: "Sistema respiratorio" },
+          { type: "paragraph", text: "Los moluscos acuáticos usan ctenidios (branquias) situados en la cavidad paleal. Los terrestres han desarrollado un pulmón (cavidad paleal vascularizada) que se abre al exterior por un neumostoma. Algunos nudibranquios tienen branquias secundarias desnudas (ceratas)." },
+          { type: "heading", level: 3, text: "Sistema excretor" },
+          { type: "paragraph", text: "Metanefridios (riñones) que filtran el hemocele y eliminan desechos a la cavidad paleal. En cefalópodos, las venas branquiales atraviesan los riñones para ultrafiltración." },
+          { type: "heading", level: 3, text: "Sistema nervioso y órganos sensoriales" },
+          { type: "paragraph", text: "Ganglionar, con anillo periesofágico (cerebro, ganglios pedal y pleurales). En gasterópodos, la torsión produce la quiastoncuria (cruzamiento de los conectivos nerviosos en forma de 8). En cefalópodos hay una verdadera masa cerebral protegida por cartílago y axones gigantes para la contracción rápida del sifón. Los órganos sensoriales incluyen tentáculos (tacto), estatocistos (equilibrio), ojos (desde simples ocelos hasta ojos con cristalino en cefalópodos) y osfradios (quimiorreceptores en la cavidad paleal)." }
+        ]
       },
       {
-        id: "aculifera",
-        title: "Aculifera",
+        id: "reproduccion-desarrollo",
+        title: "Reproducción y desarrollo",
         content: [
-          { type: "heading", level: 2, text: "Grupo Aculifera" },
-          { type: "paragraph", text: "Moluscos sin concha verdadera, con espículas calcáreas consideradas homólogas a la concha." },
-          { type: "definition", term: "Aplacophora", definition: "Cuerpo vermiforme, pequeño en general. Incluye Caudofoveata (sin pie, infaunales, sedimentívoros, marinos) y Solenogastres (sin cabeza, con surco ventral, escamas calcáreas, hermafroditas, carnívoros)." },
-          { type: "definition", term: "Polyplacophora", definition: "Concha formada por 8 placas articuladas. Mantel con perinotum y espículas. Cuerpo deprimido dorsoventralmente. Cefalización reducida, rádula presente. Corazón con un ventrículo y dos aurículas. Marinos herbívoros. Los ctenidios producen una pseudometamería visible." },
-        ],
+          { type: "heading", level: 2, text: "Estrategias reproductivas" },
+          { type: "list", items: [
+            "La mayoría dioicos (sexos separados), aunque muchos gasterópodos son hermafroditas.",
+            "Fecundación externa (bivalvos, algunos gasterópodos) o interna (cefalópodos, gasterópodos terrestres).",
+            "Desarrollo indirecto: huevo → larva trocófora → larva veliger (con velo ciliado y concha embrionaria) → juvenil.",
+            "En cefalópodos, desarrollo directo (huevos telolecíticos con mucho vitelo).",
+            "Los bivalvos de agua dulce tienen larva gloquidio, parásita temporal de peces."
+          ] },
+          { type: "callout", variant: "tip", content: "La larva veliger es una adaptación al plancton que permite la dispersión de los moluscos marinos. En algunos grupos puede permanecer meses en el plancton." }
+        ]
+      },
+      {
+        id: "clasificacion-aculifera",
+        title: "Aculifera (moluscos sin concha verdadera)",
+        content: [
+          { type: "heading", level: 2, text: "Aplacóforos y poliplacóforos" },
+          { type: "heading", level: 3, text: "Clase Caudofoveata" },
+          { type: "paragraph", text: "Sin pie ni concha, con cutícula quitinosa y escamas calcáreas (espículas). Boca rodeada de un escudo. Viven enterrados verticalmente en sedimentos marinos, con la cavidad paleal (con un par de ctenidios) en contacto con el agua. Son infaunales, sedimentívoros. Unisexuales." },
+          { type: "heading", level: 3, text: "Clase Solenogastres" },
+          { type: "paragraph", text: "Sin concha, sin pie diferenciado; presentan un surco ventral con crestas longitudinales. Rádula a menudo ausente. Cuerpo cubierto de escamas calcáreas. Cavidad paleal posterior sin ctenidios (branquias secundarias). Hermafroditas. Carnívoros de cnidarios." },
+          { type: "heading", level: 3, text: "Clase Polyplacophora (quitones)" },
+          { type: "paragraph", text: "Concha formada por 8 placas articuladas. Perinotum (borde carnoso del manto) que sobresale de la concha y puede llevar espículas, espinas o sedas calcáreas. Cuerpo deprimido dorsoventralmente. Pie ancho y muscular. Herbívoros marinos, de la zona intermareal. Con rádula. Corazón con un ventrículo y dos aurículas. Los ctenidios se disponen a los lados del pie, dando sensación de pseudometamería." }
+        ]
       },
       {
         id: "conchifera",
-        title: "Conchifera",
+        title: "Conchifera (con concha única o dos valvas)",
         content: [
-          { type: "heading", level: 2, text: "Grupo Conchifera" },
-          { type: "definition", term: "Monoplacophora", definition: "Concha cónica única, parcialmente enrollada. Pie grande y circular. Pseudometamería con 5–6 pares de ctenidios, 6 pares de nefridios y 8 pares de músculos retractores. Marinos sedimentívoros." },
-          { type: "definition", term: "Scaphopoda", definition: "Forma de colmillo, concha cónica perforada en ambos extremos (2–150 mm). Pie excavador. Sin cefalización marcada; rádula presente. Unas 650 especies marinas, todas excavadoras de fondos blandos. Capturan alimento con tentáculos llamados captáculos." },
-        ],
+          { type: "heading", level: 2, text: "Monoplacóforos, escafópodos, bivalvos" },
+          { type: "heading", level: 3, text: "Clase Monoplacophora" },
+          { type: "paragraph", text: "Concha única, cónica, parcialmente enrollada. Cuerpo pequeño (3-30 mm). Pie grande y circular. Presentan pseudometamería (repetición de órganos): 5-6 pares de ctenidios, 6 pares de nefridios, 8 pares de músculos retractores. Viven en fondos marinos profundos. Se consideran fósiles vivientes (Neopilina)." },
+          { type: "heading", level: 3, text: "Clase Scaphopoda" },
+          { type: "paragraph", text: "Concha cónica, alargada (forma de colmillo) y abierta por ambos extremos. Pie muscular excavador (permite enterrarse). Tentáculos captáculos alrededor de la boca (ciliados) para capturar foraminíferos y otros microorganismos. Marinos, enterrados en sedimentos arenosos." },
+          { type: "heading", level: 3, text: "Clase Bivalvia" },
+          { type: "paragraph", text: "Concha con dos valvas articuladas por una charnela (puede ser taxodonta (numerosos dientes iguales) o heterodonta (2-3 dientes cardinales y laterales)). Cabeza reducida (acéfalos); sin rádula. Branquias modificadas para la filtración. Tipos de branquias: protobranquias (bipectinadas), filibranquias (plegadas, unidas por cilios), eulamelibranquias (plegadas, unidas por tejido con ostiolos) y septibranquias (tabiques musculares)." },
+          { type: "list", items: [
+            "Sifones inhalante y exhalante (formados por el manto) cuando viven enterrados.",
+            "Estilo cristalino (rota constantemente dentro del estómago, ayuda a digerir).",
+            "Escudo gástrico (superficie quitinosa que protege el estómago).",
+            "Mayoritariamente dioicos; fecundación externa; larva veliger (en agua dulce, larva gloquidio ectoparásita de peces)."
+          ] },
+          { type: "callout", variant: "example", title: "Cultivo de mejillón", content: "Mytilus galloprovincialis. Las larvas gloquidio no existen en bivalvos marinos; son exclusivas de los unionidos de agua dulce." }
+        ]
       },
       {
-        id: "bivalvia",
-        title: "Bivalvia",
+        id: "gasteropodos",
+        title: "Gasterópodos: torsión y diversificación",
         content: [
-          { type: "heading", level: 2, text: "Bivalvia" },
-          { type: "callout", variant: "info", title: "Sinapomorfías", content: "Concha bivalva articulada y ausencia de rádula." },
+          { type: "heading", level: 2, text: "El giro evolutivo de 180°" },
+          { type: "paragraph", text: "La torsión es un proceso embrionario único de los gasterópodos. Durante la larva veliger, la masa visceral y la cavidad paleal giran 180° en sentido antihorario en dos fases: primero un giro rápido de 90° por contracción del músculo retractor derecho, luego un giro lento de 90° por crecimiento diferencial. Esto sitúa la cavidad paleal (con las branquias y el ano) por delante de la cabeza, protegiendo la región cefálica, pero causa problemas de contaminación (las heces caen sobre la cabeza)." },
           { type: "list", items: [
-            "Filtradores: locomoción reducida, pie modificado para excavar (pelecípodos, en forma de cuña).",
-            "Acéfalos: órganos sensoriales poco desarrollados.",
-            "Branquias adaptadas tanto a la respiración como a la captura de alimento.",
-            "Marinos y dulciacuícolas.",
-            "Algunas especies tienen hasta 200 ojos rudimentarios.",
-            "Originalmente epibentónicos reptantes; evolutivamente pasaron a vida excavadora (compresión lateral, fusión del manto y formación de sifones) y a la filtración (desarrollo de los ctenidios y pérdida de la rádula)."
-          ]},
-          { type: "heading", level: 3, text: "Morfología externa" },
-          { type: "list", items: [
-            "Umbo: parte más antigua de la concha.",
-            "Charnera con dos modelos: taxodonta (numerosos dientes iguales) o heterodonta (2–3 dientes cardinales centrales y dientes laterales)."
-          ]},
-          { type: "heading", level: 3, text: "Filtración" },
-          { type: "paragraph", text: "El agua entra por el sifón inhalante; los cilios de las branquias capturan las partículas y las dirigen hacia un surco alimentario. Las partículas, envueltas en mucus, se transportan por movimientos ciliares hasta la boca. El agua sale por el sifón exhalante." },
-          { type: "heading", level: 3, text: "Tipos de branquias" },
-          { type: "table", headers: ["Tipo", "Descripción"], rows: [
-            ["Protobranquias", "Ctenidios primitivos bipectinados"],
-            ["Filibranquias", "Branquias plegadas en W unidas por cilios"],
-            ["Eulamelibranquias", "Branquias en W unidas por tejidos perforados (ostíolos)"],
-            ["Septibranquias", "Tabiques musculares modificados"]
-          ]},
-          { type: "heading", level: 3, text: "Reproducción y desarrollo" },
-          { type: "list", items: [
-            "Mayoritariamente dioicos (excepto en algunas especies de agua dulce y ostras).",
-            "Fecundación externa (a veces interna).",
-            "Desarrollo indirecto con larva trocófora y larva veliger (con dos valvas).",
-            "Los bivalvos de agua dulce tienen una larva especial llamada gloquidio, ectoparásita de peces."
-          ]},
-          { type: "callout", variant: "example", title: "Formación de perlas", content: "Cualquier cuerpo extraño que quede entre la concha y el manto se recubre de capas de nácar formando una perla." },
-          { type: "heading", level: 3, text: "Tipos de vida" },
-          { type: "list", items: [
-            "Filtradores de fondos blandos (modelo original).",
-            "Sedimentívoros con sifones aspiradores.",
-            "Colonización de fondos duros: con mecanismos de adhesión, libres nadadores o excavadores de roca y madera."
-          ]},
-          { type: "heading", level: 3, text: "Concha de bivalvos" },
-          { type: "list", items: [
-            "Integripaliales: línea paleal continua, sin seno.",
-            "Sinupaliales: con seno paleal donde se alojan los conductos sifonales."
-          ]},
-          { type: "callout", variant: "tip", title: "Ejemplos comunes", content: "Mytilus (mejillón), Lithophaga (dátil de mar), Crassostrea y Ostrea (ostras), Acanthocardia (verrucosa), Glycymeris (almendra de mar), Ruditapes (almeja), Venus, Chamelea, Arca, Pecten (vieira), Pinna (nacra), Donax (coquina), Ensis (navaja)." },
-        ],
+            "Consecuencias anatómicas: pérdida de un ctenidio (el del lado derecho), una aurícula y un nefridio; desplazamiento de las vísceras hacia la izquierda; quiastoncuria (cordones nerviosos cruzados en forma de 8).",
+            "Soluciones evolutivas: desarrollo de sifones, detorsión secundaria (en opistobranquios), pérdida de branquias (nudibranquios).",
+            "Espiralización de la concha para compactar la masa visceral; la mayoría dextrógira (enrollamiento a la derecha)."
+          ] },
+          { type: "heading", level: 3, text: "Subclases" },
+          { type: "definition", term: "Prosobranquios", definition: "Mayoritariamente marinos; branquias delante del corazón; concha operculada; sexos separados. Ejemplos: lapas (Patella), bígaros (Littorina), caracolas (Buccinum), caracol de mar (Stramonita)." },
+          { type: "definition", term: "Opistobranquios", definition: "Marinos; detorsión parcial o total; pérdida frecuente de la concha y del opérculo; branquias secundarias o ceratas. Hermafroditas. Ejemplos: liebre de mar (Aplysia), nudibranquios (Chromodoris, Flabellina), babosas marinas." },
+          { type: "definition", term: "Pulmonados", definition: "Terrestres o de agua dulce; sin branquias; cavidad paleal transformada en pulmón (neumostoma). Concha a veces reducida (Helix, caracol terrestre) o ausente (babosa Limax). Hermafroditas. Desarrollo directo." }
+        ]
       },
       {
-        id: "gastropoda",
-        title: "Gastropoda",
+        id: "cefalopodos",
+        title: "Cefalópodos: invertebrados inteligentes",
         content: [
-          { type: "heading", level: 2, text: "Gastropoda" },
-          { type: "callout", variant: "info", title: "Sinapomorfía", content: "Torsión de 180° de la masa visceral." },
+          { type: "heading", level: 2, text: "Depredadores activos de gran cerebro" },
+          { type: "paragraph", text: "Los cefalópodos (sepias, calamares, pulpos) son moluscos exclusivamente marinos, depredadores, con una organización muy compleja: sistema circulatorio cerrado (con corazones branquiales), cerebro desarrollado (masa periesofágica protegida por cartílago), ojos con cristalino (convergencia con vertebrados), y comportamiento sofisticado (aprendizaje, uso de herramientas)." },
           { type: "list", items: [
-            "Concha dorsal única, a menudo espiralizada.",
-            "Cabeza muy desarrollada; rádula presente.",
-            "Pie ventral, reptador y alargado.",
-            "Cavidad paleal anterior con un ctenidio en la mayoría (consecuencia de la torsión).",
-            "Marinos, terrestres o de agua dulce; gran diversidad de formas de vida y alimentación."
-          ]},
-          { type: "heading", level: 3, text: "Organización general" },
-          { type: "list", items: [
-            "Cefalización acentuada.",
-            "Crecimiento dorsal de la masa visceral.",
-            "Espiralización de la concha: la concha plano-espiral primitiva (exogástrica o endogástrica) evoluciona en una concha helicoidal más compacta. Para mantener el centro de gravedad, el lado derecho pierde masa visceral.",
-            "Torsión de la masa visceral: giro de 180° antihorario que sitúa la cavidad paleal en posición anterior. Es independiente de la espiralización y posterior evolutivamente.",
-            "Se produce en las últimas fases de la larva veliger en dos pasos: un giro rápido de 90° por contracción del músculo retractor derecho y un giro lento de 90° por crecimiento diferencial."
-          ]},
-          { type: "definition", term: "Eutineuria", definition: "Cordones nerviosos no cruzados (sin torsión o con detorsión)." },
-          { type: "definition", term: "Estreptoneuria", definition: "Cordones nerviosos cruzados en forma de 8 (consecuencia de la torsión)." },
-          { type: "callout", variant: "info", title: "Efectos anatómicos de la torsión", content: "Pérdida de una gónada, pérdida de la simetría bilateral (las vísceras se desplazan hacia la izquierda) y pérdida de un ctenidio." },
-        ],
+            "Pie modificado en una corona de brazos (8 en pulpos, 8 brazos + 2 tentáculos en calamares y sepias).",
+            "Sifón (embudo) que permite la propulsión a chorro.",
+            "Concha reducida e interna: pluma en calamares (Loligo), jibia en sepias (Sepia). Nautilus conserva una concha externa planoespirada con cámaras (flotación). Belemnites (fósiles) tenían un fragmocono. En pulpos ha desaparecido por completo.",
+            "Cromatóforos (células pigmentarias bajo control nervioso) que permiten cambios de color rápidos (camuflaje, comunicación). Algunos presentan bioluminiscencia por bacterias simbiontes o fotóforos intrínsecos.",
+            "Tinta (melanina) en bolsa conectada al recto; se expulsa para despistar depredadores.",
+            "Mandíbulas córneas (pico de loro) y rádula para desgarrar presas.",
+            "Fecundación interna mediante espermatóforos transferidos por un brazo modificado (hectocótilo)."
+          ] },
+          { type: "callout", variant: "warning", title: "Inteligencia cefalópoda", content: "Se ha demostrado que los pulpos resuelven laberintos, abren frascos con tapa de rosca y reconocen a los cuidadores. Su sistema nervioso tiene unos 500 millones de neuronas, con axones gigantes que permiten contracciones muy rápidas (escape)." }
+        ]
       },
       {
-        id: "cephalopoda",
-        title: "Cephalopoda",
+        id: "importancia-moluscos",
+        title: "Importancia ecológica y humana",
         content: [
-          { type: "heading", level: 2, text: "Cephalopoda" },
+          { type: "heading", level: 2, text: "Recursos, plagas y biomedicina" },
+          { type: "paragraph", text: "Los moluscos son fundamentales en la acuicultura y pesca mundial. Mejillones, ostras, almejas, calamares y pulpos son recursos de alto valor comercial." },
           { type: "list", items: [
-            "Estrategia eco-evolutiva semejante a la de los vertebrados marinos: nadadores pelágicos rápidos.",
-            "Reducción e internalización (o pérdida) de la concha: pasa a ser un esqueleto interno.",
-            "Cuerpo fusiforme.",
-            "Sistema nervioso y órganos de los sentidos muy desarrollados.",
-            "Sistema circulatorio cerrado.",
-            "Un par de branquias.",
-            "Unas 800 especies vivientes, de gran interés económico."
-          ]},
-          { type: "heading", level: 3, text: "Superórdenes" },
-          { type: "definition", term: "Decapodiformes", definition: "8 brazos y 2 tentáculos largos. Incluyen Sepiida (sepias y sepiolas), Myopsida (calamares) y Oegopsida (pota)." },
-          { type: "definition", term: "Octopodiformes", definition: "8 brazos iguales. Octopoda incluye Octopodidae, Eledonidae y Argonautidae." },
-          { type: "heading", level: 3, text: "Evolución de la concha" },
-          { type: "list", items: [
-            "Belemnites: fragmocono (órgano de flotación), prostro (centro de gravedad) y proóstraco (esquelético, soporte muscular).",
-            "Spirula: concha espiralizada interna.",
-            "Loligo (calamar): pluma quitinosa interna homóloga al proóstraco.",
-            "Sepia: concha calcárea interna que actúa como órgano de flotación.",
-            "Octopus: pérdida total de la concha."
-          ]},
-        ],
-      },
-    ],
+            "Los bivalvos filtran grandes volúmenes de agua, mejorando su claridad y sirviendo como bioindicadores de calidad ambiental.",
+            "Algunos moluscos son vectores de parásitos (caracoles de agua dulce hospedan trematodos como Schistosoma).",
+            "Caracoles terrestres pueden ser plagas en agricultura (helícidos).",
+            "Del manto de algunos bivalvos se obtienen perlas (nácar).",
+            "Compuestos bioactivos de moluscos se investigan como fármacos (antitumorales, analgésicos, antivirales)."
+          ] },
+          { type: "keypoint", points: [
+            "Los moluscos tienen un plan corporal exitoso que ha permitido colonizar todos los ambientes.",
+            "La rádula, el manto y el pie son sus sinapomorfías (excepto rádula en bivalvos).",
+            "La torsión de los gasterópodos es un proceso evolutivo único con consecuencias anatómicas profundas.",
+            "Los cefalópodos tienen el sistema nervioso más complejo entre los invertebrados y ojos análogos a los de vertebrados.",
+            "Los bivalvos son excelentes bioindicadores y filtradores clave en ecosistemas acuáticos."
+          ] }
+        ]
+      }
+    ]
   },
   {
     id: "lofoforados",
