@@ -20,8 +20,7 @@ export type ContentBlock =
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "callout"; variant: "info" | "warning" | "tip" | "example"; title?: string; content: string }
   | { type: "keypoint"; points: string[] }
-  | { type: "image"; src: string; alt: string; caption?: string; width?: "sm" | "md" | "lg" | "full" }
-  | { type: "video"; src: string; caption?: string; width?: "sm" | "md" | "lg" | "full" };
+  | { type: "image"; src: string; alt: string; caption?: string; width?: "sm" | "md" | "lg" | "full" };
 
 export const chapters: Chapter[] = [
   {
@@ -34,16 +33,16 @@ export const chapters: Chapter[] = [
         id: "biodiversidad",
         title: "Biodiversidad del mundo viviente",
         content: [
-                  {
+               { type: "heading", level: 2, text: "Biodiversidad del mundo viviente" },
+          { type: "paragraph", text: "La vida fue unicelular durante más de 2.500 millones de años. Todo cambió cuando las cianobacterias comenzaron a liberar oxígeno a la atmósfera. Ese gas, tóxico para muchos organismos primitivos, resultó ser el combustible que permitiría el salto hacia formas de vida más complejas: los eucariotas." },
+          {
             type: "image",
             src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/q_auto/f_auto/v1777131292/Gemini_Generated_Image_j1rhksj1rhksj1rh_vvhbqm.png",
             alt: "Filogenia de los Eucariotas: Relaciones evolutivas entre los grandes linajes",
             caption: "árbol filogenético circular de los Eucariotas, que ilustra las relaciones evolutivas entre los grandes grupos de seres vivos",
             width: "lg"
-          },{ type: "heading", level: 2, text: "Biodiversidad del mundo viviente" },
-          { type: "paragraph", text: "La vida fue unicelular durante más de 2.500 millones de años. Todo cambió cuando las cianobacterias comenzaron a liberar oxígeno a la atmósfera. Ese gas, tóxico para muchos organismos primitivos, resultó ser el combustible que permitiría el salto hacia formas de vida más complejas: los eucariotas." },
-          {
-            type: "image",
+          },
+          {type: "image",
             src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/f_auto,q_auto/v1777128668/Gemini_Generated_Image_ckkjc4ckkjc4ckkj_piqy6h.png",
             alt: "Árbol de la vida de los Eucariotas",
             caption: "**El Árbol de la Vida Eucariota:** Relaciones filogenéticas entre los cinco grandes supergrupos y el origen de la multicelularidad.",
@@ -67,7 +66,7 @@ export const chapters: Chapter[] = [
           { type: "paragraph", text: "Entre los parientes unicelulares más cercanos a los animales se encuentran los coanoflagelados. Estos protistas coloniales poseen un flagelo rodeado por un collar de microvellosidades, una estructura prácticamente idéntica a los coanocitos de las esponjas. Su estudio es clave para entender cómo se originó la pluricelularidad." },
           {
             type: "video",
-            src: "https://res.cloudinary.com/dhtyvmi5f/video/upload/q_auto/f_auto/v1777133640/videoplayback_ohw9w4.mp4",
+            src: "https://res.cloudinary.com/dhtyvmi5f/video/upload/v1777133640/videoplayback_ohw9w4.mp4",
             caption: "**Dinámica colonial de *C. flexa*:** Observación de dinoflagelados ovalados y colonias de coanoflagelados en agua marina de Curazao, mostrando su capacidad de contraerse en esferas y expandirse en forma de copa.",
           },
           { type: "callout", variant: "info", title: "¿Sabías que...?", content: "Los coanoflagelados son los parientes unicelulares más cercanos a los animales. Sus colonias nos dan pistas de cómo pudo surgir la pluricelularidad." }
@@ -1837,8 +1836,497 @@ export const chapters: Chapter[] = [
     ]
   },
   {
-    id: "vocabulario",
+    id: "ambulacraria-hemicordats-equino",
     number: 13,
+    title: "Ambulacraria, Hemicordados y Equinodermos",
+    subtitle: "Deuteróstomos con celoma trímero y simetría radial secundaria",
+    sections: [
+      {
+        id: "ambulacraria-general",
+        title: "Ambulacraria: el clado de los deuteróstomos con celoma trímero",
+        content: [
+          { type: "heading", level: 2, text: "¿Qué son los ambulacrarios?" },
+          { type: "paragraph", text: "Ambulacraria es un clado monofilético de deuteróstomos que incluye a dos filos: Hemicordata (gusanos bellota y pterobranquios) y Echinodermata (estrellas, ofiuras, erizos, holoturias y crinoideos). Las evidencias moleculares (18S rRNA, genes mitocondriales) y los caracteres morfológicos (larva con bandas ciliadas y presencia de un celoma trímero) confirman su parentesco. Son exclusivamente marinos." },
+          { type: "heading", level: 3, text: "Morfología larvaria: la larva tornaria y sus derivados" },
+          { type: "paragraph", text: "Las larvas de los ambulacrarios presentan bandas ciliadas que utilizan para nadar y alimentarse (planctotróficas). La boca se sitúa en posición medial y el tubo digestivo es completo. En los hemicordados, la larva se llama tornaria, con una banda ciliada preoral característica en forma de herradura. En los equinodermos, según la clase, las larvas reciben nombres distintos: bipinnaria y brachiolaria (asteroideos), pluteus (equinoideos y ofiuroideos), auricularia (holoturoideos) y doliolaria (crinoideos). Todas estas larvas son bilaterales y de vida pelágica, lo que permite la dispersión. La metamorfosis transforma la larva bilateral en un adulto con simetría pentarradiada (en equinodermos) o en un adulto bilateral (en hemicordados)." },
+          { type: "heading", level: 3, text: "Celoma trímero (arquicería)" },
+          { type: "paragraph", text: "Durante el desarrollo embrionario, el celoma se origina a partir de tres pares de cavidades independientes (arquicería) que corresponden a tres regiones corporales: protocel (axocel), mesocel (hidrocel) y metacel (somatocel). Esta organización tripartita es una sinapomorfía de los ambulacrarios. En hemicordados, estas tres cavidades persisten en el adulto y se corresponden con la probóscide (protocel), el collar (mesocel) y el tronco (metacel). En equinodermos, el protocel se reduce, el mesocel forma el sistema vascular acuífero (hidrocel) y el metacel se convierte en el celoma perivisceral (somatocel) que rodea las vísceras." },
+          { type: "callout", variant: "info", content: "La arquitectura trímera del celoma es una de las pruebas más sólidas del parentesco entre hemicordados y equinodermos, y no aparece en otros deuteróstomos como los cordados." }
+        ]
+      },
+      {
+        id: "hemichordata-detalle",
+        title: "Phylum Hemichordata: gusanos con collar y hendiduras faríngeas",
+        content: [
+          { type: "heading", level: 2, text: "Características generales de los hemicordados" },
+          { type: "paragraph", text: "Los hemicordados son animales vermiformes (con forma de gusano), de simetría bilateral, marinos y bentónicos, con distribución cosmopolita. Viven desde la zona intermareal hasta grandes profundidades. Son sedentarios o sésiles, micrófagos (sedimentívoros o filtradores) y se alimentan con ayuda de cilios. El cuerpo se divide en tres regiones que coinciden con las tres cavidades celomáticas: probóscide (protosoma), collar (mesosoma) y tronco (metasoma)." },
+          { type: "list", items: [
+            "Presentan hendiduras faríngeas (faringotremia) en el tronco, que son poros que comunican la faringe con el exterior; son homólogas a las hendiduras branquiales de los cordados.",
+            "Divertículo bucal (estomocordio) en la probóscide; es una estructura hueca que se proyecta hacia delante y contiene células capaces de fijar yodo (homólogo de la endóstilo de los urocordados y cefalocordados, y precursor de la glándula tiroides de los vertebrados).",
+            "Estructura excretora única: el glomérulo renal, situado en el interior de la probóscide, que filtra los desechos de la hemolinfa y los expulsa al exterior por un poro dorsal.",
+            "Sexos separados (dioicos), fecundación externa y desarrollo indirecto con larva tornaria planctónica (similar a la bipinnaria de los equinodermos).",
+            "También se reproducen asexualmente por fisión (escisión transversal) en muchas especies."
+          ] },
+          { type: "heading", level: 3, text: "Clase Enteropneusta (gusanos bellota)" },
+          { type: "paragraph", text: "Son hemicordados solitarios, de tamaño variable (10-40 cm, aunque algunos pueden alcanzar hasta 2 m de longitud). Viven en galerías en forma de U en el sedimento de fondos marinos, desde la zona intermareal hasta los abismos. Se alimentan de partículas orgánicas del sedimento (sedimentívoros). Su cuerpo musculoso les permite excavar. La probóscide es cónica y muy contráctil; el collar es corto y lleva la boca en su cara ventral; el tronco es alargado y puede tener hasta 200 pares de hendiduras faríngeas. Unas 120 especies. Ejemplos: Balanoglossus, Saccoglossus." },
+          { type: "heading", level: 3, text: "Clase Pterobranchia" },
+          { type: "paragraph", text: "Son hemicordados coloniales o que forman agregaciones, con individuos de tamaño muy pequeño (0,1-5 mm). Viven en aguas frías, a menudo en profundidad. Se alimentan mediante un lofóforo (corona de tentáculos ciliados) que rodea la boca, una estructura convergente con los lofoforados (braquiópodos, briozoos). El cuerpo está dividido en probóscide (escudo cefálico), collar (con los tentáculos) y tronco (que puede secretar un tubo quitinoso). Unas 20 especies. El orden más conocido es Rhabdopleura (fósil viviente, se conocen formas similares desde el Cámbrico)." }
+        ]
+      },
+      {
+        id: "echinodermata-intro",
+        title: "Phylum Echinodermata: introducción y características generales",
+        content: [
+          { type: "heading", level: 2, text: "Los equinodermos: piel espinosa" },
+          { type: "paragraph", text: "Los equinodermos (del griego echinos, espina, y derma, piel) son animales exclusivamente marinos, bentónicos, con una simetría pentarradiada (de cinco radios) en el estado adulto, pero con larvas bilaterales. Su nombre alude al esqueleto dérmico calcáreo que poseen, a menudo provisto de espinas. Presentan una gran diversidad morfológica y de tamaños (de menos de 1 cm a más de 3 m). Se conocen unas 7.300 especies vivientes y unas 15.000 fósiles, con un registro excepcional debido a la facilidad de fosilización de sus placas calcáreas." },
+          { type: "list", items: [
+            "Simetría pentarradiada secundaria (derivada de la bilateral ancestral). La simetría radial es una adaptación a la vida bentónica sésil o de desplazamiento lento.",
+            "Endoesqueleto calcáreo (ossículos o placas) formado por carbonato cálcico (calcita) con una microestructura porosa (estereoma). Está producido por células mesenquimáticas de la dermis y recubierto por una fina epidermis ciliada.",
+            "Sistema vascular acuífero (o ambulacral) lleno de agua de mar, que utilizan para la locomoción, alimentación, respiración y funciones sensoriales. Es una de sus sinapomorfías más características.",
+            "Sistema hemal (o sanguíneo) derivado del celoma, con función de transporte de nutrientes y hormonas; está formado por canales y lagunas, sin un corazón propulsor.",
+            "Sistema nervioso descentralizado, con un anillo nervioso central (periesofágico) y cordones radiales que recorren cada ambulacro. Carecen de cerebro.",
+            "Excreción principalmente por difusión a través de la superficie corporal (piel, podios, branquias dérmicas) y mediante celomocitos especializados que fagocitan desechos.",
+            "Gran capacidad de regeneración: pueden regenerar brazos (asteroideos, ofiuroideos), podios, e incluso órganos internos (holoturoideos). Algunas especies se reproducen asexualmente por fisión (división del disco).",
+            "Reproducción sexual generalmente gonocórica (dioica), con fecundación externa y desarrollo indirecto (larva planctotrófica o lecitotrófica). También hay hermafroditismo en algunas especies (especialmente en crinoideos y algunos ofiuroideos)."
+          ] },
+          { type: "callout", variant: "info", content: "Los equinodermos son deuteróstomos, lo que significa que durante el desarrollo embrionario el blastoporo se convierte en el ano y la boca se forma de neoformación. Comparten este carácter con los cordados y hemicordados." }
+        ]
+      },
+      {
+        id: "sistema-acuifero-detalle",
+        title: "El sistema vascular acuífero (ambulacral)",
+        content: [
+          { type: "heading", level: 2, text: "Un sistema hidráulico para la locomoción y la alimentación" },
+          { type: "paragraph", text: "El sistema vascular acuífero es una red de canales llenos de agua de mar, que se origina a partir del mesocel (hidrocel) embrionario. Está formado por los siguientes componentes (desde la entrada del agua hasta los podios):" },
+          { type: "list", items: [
+            "Madreporita: placa calcárea perforada situada en la cara aboral (excepto en crinoideos y algunas holoturias). Filtra el agua de mar que entra al sistema.",
+            "Canal pétreo: conducto calcificado que conecta la madreporita con el canal anular.",
+            "Canal anular: rodea el esófago; de él parten los canales radiales y los canales de Tiedemann (que producen celomocitos).",
+            "Canales radiales: recorren cada brazo o ambulacro por el interior de la cara oral (o por surcos abiertos en asteroideos).",
+            "Ampollas: pequeñas vesículas musculares situadas en la base de cada podio; su contracción impulsa el agua hacia el podio.",
+            "Podios (pies ambulacrales): estructuras musculares tubulares con una ventosa distal (a menudo). Su función es locomotora, adhesiva, respiratoria y sensorial."
+          ] },
+          { type: "paragraph", text: "El funcionamiento es hidráulico: al contraerse la ampolla, el agua es forzada hacia el podio, que se alarga y presiona contra el sustrato (o contra la presa). La ventosa se adhiere por succión o por secreción de mucus. La relajación de la ampolla y la contracción del podio retraen el pie. La coordinación de miles de podios permite el desplazamiento lento pero constante." },
+          { type: "heading", level: 3, text: "Variaciones del sistema acuífero en los diferentes grupos" },
+          { type: "list", items: [
+            "Asteroideos: surcos ambulacrales abiertos, podios con ventosa, madreporita en la cara aboral. Poseen además órganos sensoriales en los extremos de los brazos (ocelos).",
+            "Ofiuroideos: surcos cerrados, podios sin ventosa (no locomotores), madreporita en la cara oral. La locomoción es por movimiento serpentiforme de los brazos.",
+            "Echinoideos (erizos regulares): surcos ambulacrales cerrados, podios con ventosa que sobresalen por las placas ambulacrales. Sistema acuífero asociado a la linterna de Aristóteles.",
+            "Holoturoideos: podios modificados en tentáculos bucales (alimentación) y podios locomotores ventrales (a menudo con ventosa). Madreporita interna, conectada al celoma (no al exterior).",
+            "Crinoideos: carecen de madreporita; el agua entra por hidroporos en la placa madreporítica (o por el tegumento). Podios son los tentáculos de las pinnulas, sin ventosa, usados para la captura de partículas."
+          ] }
+        ]
+      },
+      {
+        id: "esqueleto-y-tegumento",
+        title: "Endoesqueleto, espinas y tegumento",
+        content: [
+          { type: "heading", level: 2, text: "El esqueleto calcáreo: protección y soporte" },
+          { type: "paragraph", text: "El esqueleto de los equinodermos es de origen mesodérmico (a diferencia del exoesqueleto de artrópodos, que es ectodérmico). Está formado por pequeñas placas u ossículos de carbonato cálcico (calcita) con una microestructura porosa única, el estereoma. Los ossículos pueden estar fusionados formando una teca rígida (erizos, crinoideos), articulados entre sí (brazos de ofiuras y crinoideos) o dispersos en la dermis (holoturias)." },
+          { type: "list", items: [
+            "En las estrellas de mar, los ossículos forman una malla flexible unida por tejido conectivo; esta disposición permite cierta movilidad del cuerpo.",
+            "En los erizos de mar, las placas están soldadas formando un caparazón globular o aplanado (teca). Las espinas (largas o cortas) se articulan sobre los tubérculos de las placas.",
+            "En las ofiuras, los brazos tienen vértebras calcáreas articuladas (proporcionan gran movilidad lateral). El disco central está protegido por placas imbricadas.",
+            "En las holoturias, los ossículos son microscópicos (espículas) en forma de anclas, ganchos o mesas; la pared del cuerpo es blanda y coriácea.",
+            "En los crinoideos, las placas forman un cáliz rígido que protege las vísceras, y los brazos están compuestos por vértebras articuladas."
+          ] },
+          { type: "paragraph", text: "El tegumento está formado por una epidermis externa ciliada (con células sensoriales y glandulares) y una dermis gruesa que contiene el esqueleto. En la dermis también se encuentra colágeno mutable, un tejido que puede cambiar rápidamente su rigidez bajo control nervioso (permite la autotomía y la regeneración)." }
+        ]
+      },
+      {
+        id: "sistemas-internos-equino",
+        title: "Sistemas circulatorio, nervioso, excretor y reproductor",
+        content: [
+          { type: "heading", level: 2, text: "Organización interna de los equinodermos" },
+          { type: "heading", level: 3, text: "Sistema hemal (o sanguíneo)" },
+          { type: "paragraph", text: "Deriva del celoma y está formado por canales y lagunas sin revestimiento endotelial. Funcionalmente transporta nutrientes, hormonas y celomocitos. No es un sistema cerrado ni tiene un corazón propulsor; el movimiento de la hemolinfa se debe a la acción de los cilios y a las contracciones del sistema acuífero. Comprende un anillo hemal periesofágico, lagunas genitales y lagunas asociadas a la glándula digestiva (hepática). En holoturias, el sistema hemal está muy desarrollado." },
+          { type: "heading", level: 3, text: "Sistema nervioso" },
+          { type: "paragraph", text: "Es descentralizado, sin un cerebro definido. Consta de tres componentes: el sistema nervioso ectoneural (de origen ectodérmico), el hiponeural (de origen mesodérmico) y el sistema entérico (asociado al digestivo). El sistema ectoneural incluye un anillo nervioso periesofágico y cordones radiales que recorren cada ambulacro. En los asteroideos, los nervios radiales están situados en el fondo de los surcos ambulacrales. En ofiuroideos y equinoideos, los nervios son internos. Los órganos sensoriales son simples: ocelos en los extremos de los brazos de estrellas y erizos, estatocistos en holoturias, y numerosas células sensoriales en la epidermis (tacto, quimiorrecepción)." },
+          { type: "heading", level: 3, text: "Aparato digestivo" },
+          { type: "paragraph", text: "Varía según la clase. En los asteroideos, la boca lleva a un estómago cardíaco (que puede evaginarse para la digestión externa), un estómago pilórico (con glándulas digestivas que se extienden a los brazos) y un intestino corto que termina en el ano (en la cara aboral). Los ofiuroideos carecen de ano; los residuos se expulsan por la boca. Los equinoideos tienen un intestino largo enrollado, con una linterna de Aristóteles (estructura masticadora) en la región bucal. Las holoturias tienen un intestino largo y recto que desemboca en el ano posterior; algunas son sedimentívoras. Los crinoideos tienen un tracto digestivo en forma de U o de lazo." },
+          { type: "heading", level: 3, text: "Respiración y excreción" },
+          { type: "paragraph", text: "La respiración se realiza principalmente a través de la superficie del cuerpo, especialmente a través de los podios y branquias dérmicas (papilas en asteroideos). En holoturias, los árboles respiratorios (divertículos del intestino posterior) aumentan enormemente la superficie de intercambio. En ofiuroides, las bursas (invaginaciones de la pared del disco) cumplen función respiratoria y también albergan las gónadas. La excreción de amoníaco se realiza por difusión a través de la piel; los celomocitos fagocitan partículas de desecho y las acumulan en células especializadas (esferocitos)." },
+          { type: "heading", level: 3, text: "Reproducción y desarrollo" },
+          { type: "paragraph", text: "La mayoría de los equinodermos son dioicos (sexos separados), aunque algunas especies (especialmente crinoideos y ofiuroideos) son hermafroditas. Las gónadas son múltiples (de dos a diez, según la clase) y se abren al exterior por gonoporos. La fecundación es externa (los gametos se liberan al agua). El desarrollo es indirecto: zigoto → blástula → gástrula → larva planctónica (bipinnaria, pluteus, auricularia, doliolaria). La larva sufre una metamorfosis para convertirse en un juvenil de simetría pentarradiada. En algunas especies polares o de aguas profundas, el desarrollo puede ser directo (sin larva, incubación de los embriones). La reproducción asexual por fisión (división del disco) se da en varias especies de asteroideos y ofiuroideos." }
+        ]
+      },
+      {
+        id: "clase-asteroidea-detalle",
+        title: "Clase Asteroidea: las estrellas de mar",
+        content: [
+          { type: "heading", level: 2, text: "Estrellas de mar: depredadoras de brazos móviles" },
+          { type: "paragraph", text: "Las estrellas de mar tienen un disco central poco diferenciado de los brazos (generalmente 5, pero pueden tener 4 a 40). La simetría es pentarradiada, con la boca en el centro de la cara oral (hacia el sustrato) y el ano en la cara aboral. Presentan surcos ambulacrales abiertos a lo largo de cada brazo, con hileras de podios provistos de ventosa." },
+          { type: "list", items: [
+            "Morfología externa: espinas dérmicas cortas (a veces provistas de pedicelarios, pequeñas pinzas que limpian la superficie y capturan larvas). Pápulas (branquias dérmicas) en la cara aboral para el intercambio gaseoso. Ocelos en el extremo de cada brazo (sensibles a la luz).",
+            "Esqueleto: ossículos calcáreos formando una malla flexible. Musculatura muy desarrollada en los podios.",
+            "Aparato digestivo: estómago cardíaco evaginable (puede salir por la boca para digerir presas externamente, como moluscos bivalvos). Glándulas pilóricas (dos por brazo) que secretan enzimas y absorben nutrientes.",
+            "Sistema acuífero: madreporita en la cara aboral, canal pétreo, anillo periesofágico, canales radiales en cada brazo, ampollas y podios.",
+            "Reproducción: dioicas, con gónadas en cada brazo (por pares). Fecundación externa. Larva bipinnaria, que evoluciona a brachiolaria antes de la metamorfosis. Algunas especies incuban los huevos (como Leptasterias).",
+            "Regeneración: extraordinaria; pueden regenerar brazos perdidos (incluso un individuo completo a partir de un solo brazo con parte del disco central).",
+            "Ecología trófica: depredadoras activas (estrellas de mar comunes) o carroñeras; algunas son suspensívoras. Se alimentan de moluscos, crustáceos, anélidos, etc. La estrella corona de espinas (Acanthaster planci) se alimenta de corales y ha causado graves daños en la Gran Barrera de Coral cuando sus poblaciones crecen descontroladamente (posiblemente debido a la desaparición de sus depredadores naturales)."
+          ] },
+          { type: "callout", variant: "example", title: "Ejemplos de asteroideos", content: "Asterias rubens (estrella de mar común del Atlántico), Marthasterias glacialis (estrella espinosa), Luidia ciliaris (con largas espinas marginales), Acanthaster planci (corona de espinas)." }
+        ]
+      },
+      {
+        id: "clase-ophiuroidea-detalle",
+        title: "Clase Ophiuroidea: ofiuras o estrellas quebradizas",
+        content: [
+          { type: "heading", level: 2, text: "Ofiuras: brazos serpentiformes para moverse rápidamente" },
+          { type: "paragraph", text: "Las ofiuras se distinguen de las estrellas de mar por tener el disco central claramente diferenciado y brazos largos, delgados y muy móviles (movimiento serpentiforme). Los surcos ambulacrales están cerrados, y los podios carecen de ventosa y no participan en la locomoción (ésta se realiza mediante la musculatura de los brazos y las espinas laterales). Presentan dos morfologías básicas: ofiuras típicas (con brazos cilíndricos) y frinofiúrides (con brazos aplanados y ramificados, adaptados a la suspensión)." },
+          { type: "list", items: [
+            "Morfología externa: disco central cubierto por placas imbricadas (escamas). Los brazos están formados por vértebras calcáreas articuladas que permiten un movimiento lateral muy amplio. En los brazos hay espinas (laterales) que protegen los podios y participan en el desplazamiento.",
+            "Sistema digestivo: carecen de ano; los residuos no digeridos se expulsan por la boca. La digestión es intracelular (dentro de los fagocitos de la glándula digestiva).",
+            "Bursas: invaginaciones de la pared del disco en la base de los brazos. Función respiratoria, excretora y albergan las gónadas. El intercambio de gases se produce a través de la fina pared de las bursas.",
+            "Sistema acuífero: madreporita en la cara oral (a menudo en una de las placas bucales). Canales radiales internos, podios sin ampollas, poco funcionales.",
+            "Reproducción: dioicas, con gónadas en las bursas. Fecundación externa. Larva pluteus (diferente de la de los equinoideos, con brazos alados). Algunas especies incuban los embriones en las bursas.",
+            "Ecología trófica: muy diversas: depredadoras (capturan pequeños crustáceos), carroñeras, detritívoras selectivas o suspensívoras (filtran partículas con los podios y las espinas). Algunas son comensales (viven en el interior de esponjas, corales, etc.). Pueden alcanzar grandes densidades en fondos blandos."
+          ] },
+          { type: "callout", variant: "example", title: "Ejemplos de ofiuroideos", content: "Ophiothrix fragilis (ofiura común de fondos rocosos), Ophioderma longicaudum (de brazos largos), Gorgonocephalus (ofiura de la gorgona, con brazos ramificados)." }
+        ]
+      },
+      {
+        id: "clase-holothuroidea-detalle",
+        title: "Clase Holothuroidea: pepinos de mar",
+        content: [
+          { type: "heading", level: 2, text: "Holoturias: el cuerpo blando y los árboles respiratorios" },
+          { type: "paragraph", text: "Las holoturias (pepinos de mar) tienen el cuerpo alargado, cilíndrico, de simetría bilateral secundaria (se arrastran sobre el sustrato). La boca está rodeada por tentáculos bucales (podios modificados, de 10 a 30) que utilizan para la alimentación; el ano se sitúa en el extremo posterior. La pared del cuerpo es blanda y coriácea, con espículas microscópicas en la dermis. Carecen de brazos y espinas externas." },
+          { type: "list", items: [
+            "Locomoción: mediante podios ventrales (con ventosa) y movimientos peristálticos del cuerpo. Algunas holoturias son excavadoras y viven enterradas en el sedimento.",
+            "Esqueleto: reducido a espículas calcáreas de formas muy variadas (anclas, ganchos, mesas con torre, etc.) que tienen valor taxonómico.",
+            "Sistema acuífero: madreporita interna, conectada al celoma (no al exterior). Los tentáculos bucales son podios muy modificados.",
+            "Árboles respiratorios: divertículos del intestino posterior que se ramifican dentro del celoma, aumentando la superficie de intercambio gaseoso y excretor. Expulsan agua a través del ano (contracción del intestino).",
+            "Tubos de Cuvier: estructuras defensivas situadas en la base de los árboles respiratorios. Al ser irritadas, las holoturias expulsan largos filamentos blanquecinos, pegajosos y tóxicos que pueden disuadir a los depredadores. Los tubos se regeneran posteriormente.",
+            "Evisceración: mecanismo extremo de defensa mediante el cual el animal expulsa sus órganos internos (intestino, árboles respiratorios, gónadas) por el ano o por rotura de la pared corporal. Los órganos se regeneran en pocas semanas.",
+            "Colágeno mutable: la dermis puede cambiar su rigidez bajo control nervioso (endurecerse o licuarse), permitiendo la autotomía y la regeneración.",
+            "Reproducción: dioicas (pocas hermafroditas), con una sola gónada (tubular). Desarrollo indirecto con larva auricularia que se transforma en doliolaria y luego en pentácula (juvenil).",
+            "Ecología trófica: sedimentívoras (ingieren arena y extraen materia orgánica) o suspensívoras (capturan partículas con los tentáculos mucosos). Son importantes en el reciclaje de nutrientes en fondos marinos."
+          ] },
+          { type: "callout", variant: "warning", title: "Sobreexplotación", content: "Los pepinos de mar son capturados en muchas regiones (Indo-Pacífico) para la alimentación humana (beche-de-mer, trepang). Muchas especies están sobreexplotadas y algunas en peligro de extinción. Además, el cambio climático (acidificación del océano) afecta a la formación de sus espículas calcáreas." }
+        ]
+      },
+      {
+        id: "clase-crinoidea-detalle",
+        title: "Clase Crinoidea: lirios de mar y comátulas",
+        content: [
+          { type: "heading", level: 2, text: "Crinoideos: los equinodermos más antiguos" },
+          { type: "paragraph", text: "Los crinoideos son los equinodermos más antiguos (dominaron los fondos marinos del Paleozoico). Su cuerpo tiene forma de cáliz (protegido por placas calcáreas) del que parten brazos ramificados (a menudo 5, pero se subdividen). La mayoría vive fija al sustrato mediante un pedúnculo (lirios de mar); otros pueden desplazarse usando los brazos (comátulas)." },
+          { type: "list", items: [
+            "Morfología externa: cáliz con la boca y el ano en la cara supina (hacia arriba). Los brazos están divididos en pinnulas (ramificaciones) que llevan los podios (tentáculos alimentarios). Los podios carecen de ventosa y son ciliados.",
+            "Sistema acuífero: sin madreporita visible; el agua entra por hidroporos en la placa madrepórica (o por el tegumento). Canales radiales recorren los brazos y las pinnulas.",
+            "Sistema digestivo: tracto en forma de U o de lazo, con el ano en una pequeña protuberancia (chimenea anal) cerca de la boca. Son suspensívoros: las pinnulas generan corrientes que atrapan partículas, transportadas por cilios hacia la boca.",
+            "Reproducción: dioicas (algunas hermafroditas). Las gónadas se encuentran en las pinnulas de los brazos. Fecundación externa, desarrollo indirecto con larva doliolaria (con bandas ciliadas) que se fija y metamorfosea en un juvenil pedunculado (lirio). En comátulas, el pedúnculo se pierde al madurar.",
+            "Regeneración: pueden regenerar brazos perdidos. Algunas especies son muy longevas (decenas de años)."
+          ] },
+          { type: "callout", variant: "example", title: "Ejemplos de crinoideos", content: "Pentacrinus (lirio de mar pedunculado), Antedon (comátula común del Mediterráneo), Metacrinus (especies de aguas profundas)." }
+        ]
+      },
+      {
+        id: "clase-echinoidea-detalle",
+        title: "Clase Echinoidea: erizos de mar",
+        content: [
+          { type: "heading", level: 2, text: "Erizos regulares e irregulares: del pastoreo a la excavación" },
+          { type: "paragraph", text: "Los erizos de mar tienen un esqueleto globular (regulares) o aplanado (irregulares) formado por placas soldadas (caparazón), que está cubierto por espinas móviles articuladas sobre tubérculos. La boca se sitúa en el centro de la cara oral y posee una estructura masticadora especializada, la linterna de Aristóteles, con cinco dientes calcáreos. El ano puede estar en la cara aboral (regulares) o desplazado hacia el extremo posterior (irregulares)." },
+          { type: "list", items: [
+            "Erizos regulares (ej. Paracentrotus lividus, Arbacia lixula): simetría pentarradiada evidente, cuerpo esférico semirrígido. Viven sobre sustratos duros (rocas, praderas de algas). Se alimentan de algas (herbívoros, aunque algunos pueden ser omnívoros). Tienen una linterna de Aristóteles bien desarrollada para raspar las algas. Los podios ambulacrales tienen ventosas y son locomotores y sensoriales. Madreporita y ano en la cara aboral.",
+            "Erizos irregulares (ej. Spatangus purpureus, Clypeaster, Echinocardium): simetría bilateral secundaria (cuerpo acorazonado o aplanado). Viven enterrados en sedimentos blandos (arena, fango). Son detritívoros o sedimentívoros (ingen canales de arena para extraer materia orgánica). La linterna de Aristóteles está reducida o ausente; el aparato masticador puede ser sustituido por una estructura de filtración. El ano se ha desplazado hacia el posterior, y las espinas y podios están adaptados para la excavación.",
+            "Sistema acuífero: similar al de asteroideos, pero con podios que salen por pares de poros en las placas ambulacrales. En los irregulares, los podios dorsales pueden tener función respiratoria (formando áreas petaloides).",
+            "Linterna de Aristóteles: formada por cinco dientes calcáreos (piramidales) sostenidos por estructuras esqueléticas (apófisis, epífisis, rótulas). Es operada por potentes músculos y permite raspar o triturar.",
+            "Reproducción: dioicas con 5 pares de gónadas (en regulares) o 4 pares (en irregulares). Fecundación externa. Larva pluteus (con forma de estrella, con brazos esqueléticos calcáreos). Después de la metamorfosis, el juvenil se fija al sustrato y adquiere la simetría pentarradiada.",
+            "Ecología: Los erizos regulares son importantes controladores de las poblaciones de algas. Su sobrepastoreo (cuando faltan depredadores como nutrias o peces) puede convertir praderas de algas en eriales (barrenos marinos). Los erizos irregulares bioturban el sedimento y contribuyen a su oxigenación.",
+            "Valor humano: Las gónadas (huevas) de erizos regulares (Paracentrotus lividus, Strongylocentrotus) son un manjar (ou de mar, uni). Se recolectan o cultivan intensamente, lo que en algunas áreas ha llevado a la sobreexplotación.",
+            "Cambio climático: El aumento de la temperatura del mar está favoreciendo a especies termófilas como Arbacia lixula (más carnívora/omívora) en detrimento de Paracentrotus lividus, alterando las comunidades bentónicas."
+          ] },
+          { type: "callout", variant: "info", content: "La linterna de Aristóteles (presente sólo en equinoideos) es una estructura exclusiva que permite la masticación. En los erizos irregulares esta estructura está ausente o muy reducida porque se alimentan de partículas finas." }
+        ]
+      },
+      {
+        id: "regeneracion-y-defensa",
+        title: "Regeneración, autotomía y defensas químicas",
+        content: [
+          { type: "heading", level: 2, text: "Capacidades sorprendentes: regenerar y defenderse" },
+          { type: "paragraph", text: "Los equinodermos poseen una extraordinaria capacidad de regeneración. Pueden reconstruir brazos (asteroideos, ofiuroideos), podios, espinas, e incluso órganos internos completos (intestino, árboles respiratorios, gónadas). En algunos casos, un solo brazo con parte del disco central puede regenerar un animal entero (asteroideos). La regeneración es posible gracias a células indiferenciadas (amebocitos) y a la reorganización de tejidos." },
+          { type: "paragraph", text: "La autotomía (desprendimiento voluntario de un brazo o de las vísceras) es un mecanismo de defensa frecuente. Los ofiuroideos desprenden brazos cuando son atacados; los asteroideos pueden sacrificar un brazo; las holoturias expulsan los tubos de Cuvier o realizan evisceración (expulsión del intestino y los árboles respiratorios). En todos los casos, las estructuras perdidas se regeneran en semanas o meses." },
+          { type: "paragraph", text: "Además de la autotomía, muchos equinodermos producen sustancias tóxicas o repelentes (saponinas, asterosaponinas) que disuaden a los depredadores. Las holoturias poseen toxinas en los tubos de Cuvier y en la pared del cuerpo. Algunas estrellas de mar son venenosas (Crown-of-thorns)." }
+        ]
+      },
+      {
+        id: "ecologia-y-conservacion",
+        title: "Importancia ecológica y conservación",
+        content: [
+          { type: "heading", level: 2, text: "Equinodermos en los ecosistemas marinos" },
+          { type: "paragraph", text: "Los equinodermos cumplen funciones ecológicas clave. Las estrellas de mar y las ofiuras son importantes depredadores que regulan las poblaciones de moluscos, crustáceos y erizos. Los erizos regulares, al pastar algas, determinan la estructura de las comunidades de macroalgas. Los erizos irregulares y las holoturias son ingenieros del sedimento (bioturbación) y contribuyen al reciclaje de nutrientes. Los crinoideos y ofiuras suspensívoras filtran partículas del agua." },
+          { type: "paragraph", text: "Sin embargo, muchas poblaciones de equinodermos están amenazadas por la actividad humana. La sobreexplotación pesquera (recogida de erizos para consumo, pesca de pepinos de mar) ha llevado a la disminución de algunas especies. El cambio climático (calentamiento del mar, acidificación) afecta la formación del esqueleto calcáreo (dificultad para precipitar carbonato cálcico) y provoca desplazamientos de especies. Las especies invasoras (como la estrella de mar del norte, Asterias amurensis) han causado graves daños en ecosistemas de Australia." },
+          { type: "keypoint", points: [
+            "Ambulacraria es un clado monofilético de deuteróstomos con celoma trímero y larvas planctotróficas con bandas ciliadas.",
+            "Hemicordados: gusanos bellota (enteropneustos) y pterobranquios. Presentan hendiduras faríngeas, estomocordio y glomérulo renal.",
+            "Equinodermos: simetría pentarradiada secundaria, sistema vascular acuífero, endoesqueleto calcáreo y regeneración notable.",
+            "Clases principales: Asteroidea (estrellas), Ophiuroidea (ofiuras), Holothuroidea (holoturias), Crinoidea (lirios y comátulas) y Echinoidea (erizos regulares e irregulares).",
+            "Importancia ecológica: depredación, pastoreo, bioturbación, filtración. Algunas especies tienen valor comercial y están amenazadas."
+          ] }
+        ]
+      }
+    ]
+  },
+  {
+    id: "chordata",
+    number: 14,
+    title: "Chordata",
+    subtitle: "Cordados: del notocordio a la columna vertebral",
+    sections: [
+      {
+        id: "generalidades-sinapomorfias",
+        title: "Generalidades y sinapomorfías del filo Chordata",
+        content: [
+          { type: "heading", level: 2, text: "¿Qué define a un cordado?" },
+          { type: "paragraph", text: "El filo Chordata agrupa a animales que presentan en algún momento de su desarrollo (normalmente en la fase embrionaria o larvaria) cuatro estructuras características: notocordio, tubo neural dorsal, hendiduras faríngeas (faringotremia) y cola postanal. Estas sinapomorfías son compartidas por todos los cordados, aunque en muchos grupos adultos se modifican o desaparecen (como el notocordio, que puede ser reemplazado por la columna vertebral)." },
+          { type: "list", items: [
+            "Notocordio: barra esquelética flexible de origen mesodérmico, situada dorsal al tubo digestivo y ventral al tubo neural. Proporciona soporte y sirve de anclaje para la musculatura. En los vertebrados, es sustituido por las vértebras (cartilaginosas u óseas).",
+            "Tubo neural dorsal (epineuria): sistema nervioso central en forma de tubo hueco, situado en posición dorsal (por encima del notocordio). Se forma por invaginación de la placa neural durante la neurulación. Da lugar al cerebro y la médula espinal.",
+            "Faringotremia: presencia de hendiduras faríngeas (faringotomos) que perforan la pared de la faringe y comunican la cavidad faríngea con el exterior. En los cordados acuáticos, estas hendiduras forman las branquias; en los tetrápodos, se transforman en otras estructuras (amígdalas, oído medio, glándulas paratiroides).",
+            "Cola postanal: prolongación del cuerpo que se extiende más allá del ano. Contiene el notocordio, el tubo neural y músculos, y está relacionada con la locomoción (en especial en formas acuáticas). En muchos vertebrados terrestres la cola es vestigial o está muy reducida.",
+            "Endostilo: surco ciliado en el suelo de la faringe, con células que secretan mucus y que fijan yodo. En los cefalocordados y urocordados, el endostilo ayuda a capturar partículas alimenticias. En vertebrados, evoluciona hacia la glándula tiroides."
+          ] },
+          { type: "callout", variant: "info", content: "Los cordados son deuteróstomos (el blastoporo se convierte en ano) y pertenecen al clado Olfactores (junto con urocordados y cefalocordados). Su ancestro común probablemente era un pequeño filtrador bentónico parecido a los actuales cefalocordados." }
+        ]
+      },
+      {
+        id: "subfilo-urochordata",
+        title: "Subfilo Urochordata (Tunicata): los tunicados",
+        content: [
+          { type: "heading", level: 2, text: "Urocordados: cordados solo en la larva" },
+          { type: "paragraph", text: "Los urocordados (tunicados) son animales exclusivamente marinos, con unas 3.000 especies, desde aguas superficiales hasta abisales. El nombre “tunicados” se debe a la túnica, una cubierta externa de glucoproteínas y celulosa (tunicina) secretada por el manto. La mayoría son sésiles en estado adulto (ascidias), pero algunos son pelágicos (sáldas, pirosomas, apendicularias). Presentan las sinapomorfías de los cordados solo en la larva nadadora (con forma de renacuajo), que sufre una metamorfosis drástica." },
+          { type: "heading", level: 3, text: "Clase Ascidiacea (ascidias)" },
+          { type: "paragraph", text: "Adultos sésiles (fijos al sustrato), solitarios o coloniales. El cuerpo tiene forma de saco, con dos sifones (inhalante y exhalante). El agua entra por el sifón oral (inhalante), pasa a la faringe (con numerosas hendiduras faríngeas), donde se filtran las partículas alimenticias; el agua sale por el sifón atrial (exhalante). El endostilo secreta mucus que atrapa las partículas y las conduce al esófago. Carecen de notocordio y tubo neural en el adulto. La larva (renacuajo) tiene notocordio en la cola, tubo neural y un otolito (estatocisto). La metamorfosis fija la larva por la cabeza y reabsorbe la cola, perdiendo las características de cordado. Son hermafroditas (proterándricos) con fecundación externa. Pueden reproducirse asexualmente por gemación (colonias)." },
+          { type: "heading", level: 3, text: "Clase Thaliacea (sáldas, pirosomas, doliolos)" },
+          { type: "paragraph", text: "Tunicados pelágicos, coloniales o solitarios. Su cuerpo es transparente, con forma de barril o cilíndrica. Los sifones están en extremos opuestos. Nadan por contracción muscular (propulsión a chorro). Alternan generaciones asexual y sexual (metagénesis). Ejemplo: Salpa, Pyrosoma (forman colonias bioluminiscentes)." },
+          { type: "heading", level: 3, text: "Clase Appendicularia (Larvacea)" },
+          { type: "paragraph", text: "Pequeños tunicados (menos de 1 cm) que retienen la morfología de larva (neotenia): conservan el notocordio y la cola en la edad adulta, pero no tienen túnica; segregan una “casa” gelatinosa (filtro) que renuevan periódicamente. Son planctónicos. Ejemplo: Oikopleura." },
+          { type: "callout", variant: "info", content: "Los urocordados son el grupo hermano de los vertebrados (junto con los cefalocordados forman el clado Olfactores). Su genoma ha sufrido una simplificación secundaria." }
+        ]
+      },
+      {
+        id: "subfilo-cephalochordata",
+        title: "Subfilo Cephalochordata: los anfioxos",
+        content: [
+          { type: "heading", level: 2, text: "Cefalocordados: el modelo de cordado primitivo" },
+          { type: "paragraph", text: "Los cefalocordados (anfioxos, del género Branchiostoma) son pequeños animales marinos (hasta 8 cm) que viven enterrados en fondos arenosos de aguas templadas y tropicales. Presentan las cuatro sinapomorfías de los cordados durante toda su vida (no sufren metamorfosis). Su organización corporal es muy simple y se considera un modelo del plan corporal ancestral de los cordados." },
+          { type: "list", items: [
+            "Cuerpo en forma de pez, aplanado lateralmente, con aleta dorsal, caudal y anal (sin aletas pares).",
+            "Notocordio que se extiende desde la punta del hocico hasta la cola (de ahí el nombre cefalocordado, “cuerda en la cabeza”).",
+            "Tubo neural dorsal con una vesícula cerebral rudimentaria (sin cerebro diferenciado).",
+            "Faringe con hasta 200 pares de hendiduras faríngeas (que comunican con el atrio, una cavidad ventral), con función filtradora. El endostilo secreta mucus.",
+            "Músculos segmentados en miómeros dispuestos en forma de V (carácter plesiomórfico).",
+            "Sistema circulatorio cerrado sin corazón (el vaso ventral contráctil bombea la sangre). Sin pigmentos respiratorios.",
+            "Excreción por protonefridios (en los primeros segmentos).",
+            "Sexos separados (dioicos), fecundación externa. Desarrollo indirecto con una larva que sufre una metamorfosis para fijarse en el sedimento.",
+            "Unas 35 especies (géneros Branchiostoma, Epigonichthys)."
+          ] }
+        ]
+      },
+      {
+        id: "subfilo-craniata",
+        title: "Subfilo Craniata (Vertebrata): innovaciones clave",
+        content: [
+          { type: "heading", level: 2, text: "Los vertebrados: el origen del cráneo y la columna vertebral" },
+          { type: "paragraph", text: "El subfilo Craniata (o Vertebrata, según las clasificaciones) incluye a los animales con cráneo (cavidad ósea o cartilaginosa que protege el encéfalo) y, en la mayoría, columna vertebral. Aparecen en el Cámbrico (hace unos 530 millones de años) con formas como Myllokunmingia. Los vertebrados presentan importantes novedades evolutivas respecto a los cordados más basales:" },
+          { type: "list", items: [
+            "Cráneo (condrocráneo, esplacnocráneo y dermatocráneo) que protege el cerebro y los órganos sensoriales.",
+            "Columna vertebral (vértebras) que reemplaza al notocordio (el notocordio puede persistir como núcleo pulposo en discos intervertebrales).",
+            "Cresta neural: población de células ectodérmicas que migran durante el desarrollo para formar huesos de la cara, neuronas sensoriales, células pigmentarias y cartílago.",
+            "Placodas ectodérmicas: engrosamientos del ectodermo que originan los órganos sensoriales especializados (cristalino, epitelio de oído interno, quimiorreceptores).",
+            "Encéfalo tripartito (prosencéfalo, mesencéfalo, rombencéfalo) que evoluciona a complejas regiones cerebrales.",
+            "Epidermis pluriestratificada y sistema tegumentario con glándulas, escamas, plumas o pelos.",
+            "Musculatura metamérica (miómeros en W) que permite mayor control locomotor.",
+            "Aumento del número de genes Hox (duplicaciones en el ancestro de los vertebrados).",
+            "Sistema circulatorio cerrado con corazón ventral y eritrocitos con hemoglobina."
+          ] },
+          { type: "callout", variant: "info", content: "Los vertebrados constituyen el grupo más diverso de cordados (más de 70.000 especies) y han colonizado todos los ambientes: mares, aguas dulces, tierra firme y aire (aves)." }
+        ]
+      },
+      {
+        id: "agnatos",
+        title: "Agnatos (vertebrados sin mandíbulas)",
+        content: [
+          { type: "heading", level: 2, text: "Mixinos y lampreas: los vertebrados más primitivos" },
+          { type: "paragraph", text: "Los agnatos son vertebrados que carecen de mandíbulas (la boca es circular y succionadora). Incluyen grupos extintos (ostracodermos) y dos clases actuales: Mixinos (Myxini) y Lampreas (Petromyzontida). Son los únicos vertebrados vivos que no presentan vértebras verdaderas en algunos casos (mixinos) o las tienen muy rudimentarias." },
+          { type: "heading", level: 3, text: "Clase Myxini (mixinos o anguilas babosas)" },
+          { type: "paragraph", text: "Marinos, bentónicos, en aguas frías. Unas 75 especies. Cuerpo alargado, sin aletas pares, con una sola aleta caudal. Piel desnuda (sin escamas) con numerosas glándulas mucosas que segregan grandes cantidades de mucílago como defensa. Cráneo cartilaginoso pero sin vértebras (notocordio persiste). Boca con dos placas dentales córneas. Narina única en posición dorsal. Ojos rudimentarios bajo la piel. Cuatro pares de tentáculos alrededor de la boca. De 5 a 15 pares de sacos branquiales (no hendiduras verdaderas). Corazón con un solo canal semicircular en el oído interno. Alimentación: carroñeros o parásitos (penetran en peces y se alimentan de sus fluidos). Son gonocóricos (sexos separados), fecundación externa, desarrollo directo (sin larva)." },
+          { type: "heading", level: 3, text: "Clase Petromyzontida (lampreas)" },
+          { type: "paragraph", text: "Unas 38 especies, marinas y de agua dulce (zonas templadas). Cuerpo anguiliforme, sin aletas pares; dos aletas dorsales y aleta caudal. Boca en ventosa con dientes córneos (odontoides) y lengua también con dientes. Ojos bien desarrollados (vida activa). 7 pares de aberturas branquiales. Esqueleto cartilaginoso, con vértebras rudimentarias. Notocordio persistente. Dos canales semicirculares en el oído. La respiración: el agua entra por la boca y por el primer poro branquial (espiráculo) y sale por los demás. Alimentación: muchas especies son parásitas de peces (se adhieren con la ventosa y succionan sangre y tejidos); otras no se alimentan en la fase adulta (mueren tras la reproducción). Ciclo vital: larva (ammocoete) filtradora (parecida al anfioxo), que vive enterrada en sedimentos de ríos durante varios años; sufre una metamorfosis para convertirse en adulto. Los adultos migran al mar (especies anádromas) o permanecen en agua dulce. Reproducción: construyen nidos en grava, mueren tras desovar. La lamprea marina (Petromyzon marinus) es invasora en los Grandes Lagos de Norteamérica, causando graves daños a las pesquerías." }
+        ]
+      },
+      {
+        id: "gnathostomata-intro",
+        title: "Gnatostomados: la aparición de las mandíbulas",
+        content: [
+          { type: "heading", level: 2, text: "La conquista de la depredación activa" },
+          { type: "paragraph", text: "Los gnatostomados (vertebrados con mandíbulas) aparecieron en el Silúrico (hace unos 440 millones de años) y rápidamente diversificaron. La mandíbula deriva del primer arco branquial (arco mandibular), que se articula con el cráneo (suspensión anfistílica, hiostílica o autostílica). Las mandíbulas permitieron una alimentación más eficiente (depredación activa) y una radiación evolutiva sin precedentes. Los grupos actuales incluyen los condrictios (peces cartilaginosos) y los osteíctios (peces óseos), de los que derivan los tetrápodos." }
+        ]
+      },
+      {
+        id: "condrictios",
+        title: "Clase Chondrichthyes: peces cartilaginosos",
+        content: [
+          { type: "heading", level: 2, text: "Tiburones, rayas y quimeras" },
+          { type: "paragraph", text: "Los condrictios son peces con esqueleto cartilaginoso (calcificado en algunas zonas, pero sin hueso verdadero). Su piel está recubierta por dentículos dérmicos (escamas placoideas), que dan rugosidad y reducen la turbulencia. Presentan 5-7 pares de hendiduras branquiales (sin opérculo) y un espiráculo (primera abertura branquial modificada). La cola es heterocerca (lóbulo superior más largo). No tienen vejiga natatoria; la flotación se logra mediante un hígado grande y rico en lípidos (escuálido) y, en algunos, por la baja densidad del cartílago. La reproducción es interna (los machos poseen pterigopodios, modificaciones de las aletas pelvianas, para transferir esperma). Pueden ser ovíparos, ovovivíparos o vivíparos." },
+          { type: "heading", level: 3, text: "Subclase Elasmobranchii (tiburones y rayas)" },
+          { type: "list", items: [
+            "Unas 1.200 especies. Tiburones (forma fusiforme, branquias laterales, ojos laterales) y rayas (cuerpo deprimido, branquias ventrales, aletas pectorales expandidas).",
+            "Mandíbulas con dientes en varias filas (reemplazo continuo).",
+            "Intestino con válvula espiral (aumenta la superficie de absorción).",
+            "Osmoregulación: retienen urea y trimetilamina óxido (TMAO) para mantener la osmolaridad de la sangre ligeramente superior al agua de mar.",
+            "Sistema de línea lateral muy desarrollado; además, presentan electroreceptores (ampollas de Lorenzini) que detectan campos eléctricos (útiles para localizar presas enterradas).",
+            "Reproducción: tiburón blanco (ovovivíparo), tiburón martillo (vivíparo con placenta), raya látigo (ovípara con cápsulas)."
+          ] },
+          { type: "heading", level: 3, text: "Subclase Holocephali (quimeras o peces rata)" },
+          { type: "paragraph", text: "Unas 50 especies, principalmente de aguas profundas. Cuerpo con una sola abertura branquial (cubierta por un opérculo falso). Dientes fusionados en placas trituradoras. Cola delgada (dificerca). Suspensión mandibular autostílica (el palatocuadrado se fusiona al cráneo). Carecen de escamas placoideas (piel lisa). Se alimentan de crustáceos y moluscos. Ejemplo: Hydrolagus (quimera de hocico corto)." }
+        ]
+      },
+      {
+        id: "osteictios",
+        title: "Clase Osteichthyes: peces óseos",
+        content: [
+          { type: "heading", level: 2, text: "Peces con esqueleto osificado" },
+          { type: "paragraph", text: "Los osteíctios tienen esqueleto óseo (al menos parcialmente). La mayoría poseen vejiga natatoria (órgano de flotación) derivada del pulmón primitivo. Branquias cubiertas por un opérculo óseo móvil. El corazón tiene un cono arterioso (o bulbo arterioso). Presentan escamas (elasmoides, ganoides, cosmoides). Se dividen en dos grandes grupos: Actinopterygii (peces de aletas radiadas) y Sarcopterygii (peces de aletas lobuladas, de los que evolucionaron los tetrápodos)." },
+          { type: "heading", level: 3, text: "Actinopterygii (peces de aletas radiadas)" },
+          { type: "list", items: [
+            "Aletas sostenidas por radios lepidotricos (material parecido a la queratina).",
+            "Cola homocerca (los lóbulos son simétricos externamente; internamente la columna se dobla ligeramente hacia arriba).",
+            "Vejiga natatoria presente en la mayoría (fisóstoma o fisoclística).",
+            "Subclase Chondrostei: condrosteos (esturiones, espátulas). Esqueleto mayoritariamente cartilaginoso, cola heterocerca, espiráculo presente. Ejemplo: Acipenser (esturión, productor de caviar).",
+            "Subclase Neopterygii: holósteos (Lepisosteus, Amia) y teleósteos. Los teleósteos constituyen la mayoría de los peces actuales (> 26.000 especies). Presentan aletas con radios, maxilares móviles (protráctiles), vejiga natatoria sin conexión al tubo digestivo (fisoclística), escamas elasmoides (cicloideas o ctenoideas), y esqueleto bien osificado. Órdenes: Clupeiformes (sardinas), Salmoniformes (salmones), Cypriniformes (carpa), Perciformes (perca), etc."
+          ] },
+          { type: "heading", level: 3, text: "Sarcopterygii (peces de aletas lobuladas)" },
+          { type: "list", items: [
+            "Aletas pares con un eje basal óseo (carnoso) y radios articulados; la cintura pectoral es robusta.",
+            "Poseen pulmones o una vejiga natatoria que funciona como pulmón (respiración aérea).",
+            "Subclase Actinistia (celacantos): considerados fósiles vivientes, con representantes actuales (Latimeria chalumnae, L. menadoensis). Aletas lobuladas, cola trilobulada (dificerca), notocordio persistente. Hábitat: aguas profundas marinas.",
+            "Subclase Dipnoi (peces pulmonados): tres géneros actuales (Neoceratodus en Australia, Protopterus en África, Lepidosiren en Sudamérica). Cuerpo alargado, aletas lobuladas, respiración aérea obligada (estivan en el barro durante la sequía, dentro de un capullo). Son los parientes vivos más cercanos a los tetrápodos."
+          ] },
+          { type: "callout", variant: "info", content: "Los sarcopterigios y los tetrápodos forman un clado monofilético (Choanata) caracterizado por la presencia de coanas (conductos que comunican las fosas nasales con la cavidad bucal, permitiendo respirar con la boca cerrada)." }
+        ]
+      },
+      {
+        id: "tetrapoda",
+        title: "Superclase Tetrapoda: la conquista del medio terrestre",
+        content: [
+          { type: "heading", level: 2, text: "De las aletas a las extremidades con dedos" },
+          { type: "paragraph", text: "Los tetrápodos (vertebrados con cuatro extremidades funcionales o derivadas) evolucionaron a partir de sarcopterigios durante el Devónico (hace unos 370 millones de años). Fósiles de transición como Tiktaalik muestran aletas lobuladas con muñeca y dedos incipientes. Las principales adaptaciones para la vida terrestre incluyen:" },
+          { type: "list", items: [
+            "Extremidades con dedos (quiridio) y cinturas escapular y pélvica reforzadas, conectadas a la columna vertebral.",
+            "Columna vertebral regionalizada (vértebras cervicales, torácicas, lumbares, sacras, caudales).",
+            "Flexión de la cabeza mediante la articulación atlanto-occipital (primeras dos vértebras modificadas).",
+            "Pulmones más desarrollados (superficie de intercambio aumentada; en anfibios son sacos simples, en amniotas más complejos).",
+            "Circulación doble y completa (corazón con tres cámaras en anfibios y tres con tabique parcial o cuatro en amniotas).",
+            "Respiración cutánea complementaria en anfibios (piel húmeda y permeable).",
+            "Hendiduras faríngeas reducidas (las primeras dos se convierten en oído medio y amígdala).",
+            "Coanas (narinas internas) que permiten respirar aire sin abrir la boca."
+          ] }
+        ]
+      },
+      {
+        id: "anfibios",
+        title: "Clase Amphibia: anfibios, los primeros tetrápodos",
+        content: [
+          { type: "heading", level: 2, text: "Anfibios: vida doble (agua y tierra)" },
+          { type: "paragraph", text: "Los anfibios actuales (unos 8.000 especies) son depredadores de pequeños invertebrados, con piel húmeda y glandular (mucosa y venenosa). No tienen escamas ni uñas. El corazón es tricameral (dos aurículas y un ventrículo) con un espiral parcial que desvía la sangre. Son ectotermos. La mayoría necesita agua para la reproducción (huevos sin cáscara, larvas acuáticas con branquias y metamorfosis). Existen tres órdenes." },
+          { type: "heading", level: 3, text: "Orden Gymnophiona (cecilias)" },
+          { type: "paragraph", text: "Apodos (sin extremidades), de hábitos subterráneos (excavadores) o acuáticos. Cuerpo anillado, ojos pequeños o ausentes, tentáculos sensoriales entre los ojos y las narinas. Unas 200 especies tropicales. Reproducción: fecundación interna (el macho introduce un órgano copulador, el falodeo). Mayoría ovíparos (con puesta terrestre y cuidado parental) o vivíparos. Larvas acuáticas en algunas especies." },
+          { type: "heading", level: 3, text: "Orden Caudata (urodelos: salamandras y tritones)" },
+          { type: "paragraph", text: "Unas 700 especies. Cuerpo alargado, con cola bien desarrollada y cuatro extremidades (aunque algunas especies acuáticas tienen reducción). Piel lisa. Fecundación interna mediante espermatóforos que la hembra recoge. Mayoría ovíparas (larvas acuáticas con branquias externas). Algunas especies presentan neotenia (conservación de caracteres larvarios, como branquias, en el adulto, por ejemplo, el axolote Ambystoma mexicanum). Ejemplos: Triturus (tritón), Salamandra (salamandra, vivípara)." },
+          { type: "heading", level: 3, text: "Orden Anura (ranas y sapos)" },
+          { type: "paragraph", text: "Unas 6.700 especies. Cuerpo compacto, sin cola en el adulto, con extremidades posteriores muy desarrolladas para el salto. Metamorfosis completa: renacuajo (larva acuática herbívora/filtradora) se transforma en adulto carnívoro. Vocalizaciones mediante sacos vocales. Fecundación externa (amplexo). La mayoría son ovíparas (masas de huevos en agua). Ejemplo: Rana (rana verde), Bufo (sapo), Hyla (rana arbórea). Los anfibios están sufriendo una crisis de conservación global: declive de poblaciones debido a pérdida de hábitat, cambio climático y enfermedades como la quitridiomicosis (Batrachochytrium dendrobatidis)." }
+        ]
+      },
+      {
+        id: "amniotas",
+        title: "Amniotas: el huevo con membranas extraembrionarias",
+        content: [
+          { type: "heading", level: 2, text: "La conquista definitiva de la tierra firme" },
+          { type: "paragraph", text: "Los amniotas surgieron en el Carbonífero (hace unos 320 millones de años). Su principal innovación es el huevo amniótico, que permite la reproducción fuera del agua. El huevo contiene cuatro membranas extraembrionarias: amnios (rodea al embrión y lo protege), corion (intercambio gaseoso), alantoides (acumula desechos y contribuye al intercambio) y saco vitelino (nutrición). Los amniotas incluyen a los saurópsidos (reptiles y aves) y a los sinápsidos (mamíferos)." },
+          { type: "list", items: [
+            "Fecundación interna (copulación o espermatóforo).",
+            "Desarrollo directo (sin larva).",
+            "Piel queratinizada, con escamas (reptiles), plumas (aves) o pelo (mamíferos), que evita la desecación.",
+            "Respiración pulmonar exclusiva (en reptiles y aves; los mamíferos también).",
+            "Circulación doble y completa (corazón con cuatro cámaras, aunque en reptiles no mamíferos el ventrículo está incompletamente dividido).",
+            "Excreción de ácido úrico (reptiles, aves) o urea (mamíferos)."
+          ] }
+        ]
+      },
+      {
+        id: "reptiles",
+        title: "Clase Reptilia (saurópsidos no avianos)",
+        content: [
+          { type: "heading", level: 2, text: "Reptiles: escamas y ectotermia" },
+          { type: "paragraph", text: "Los reptiles actuales (más de 10.000 especies) son amniotas ectotermos, con piel cubierta de escamas epidérmicas (queratina). La mayoría son ovíparos; los huevos tienen cáscara calcárea o coriácea. El corazón es tricameral con un tabique ventricular incompleto (excepto en cocodrilos, que tienen cuatro cámaras). Respirán exclusivamente por pulmones (no respiración cutánea). Excreción de ácido úrico (ahorro de agua)." },
+          { type: "heading", level: 3, text: "Orden Testudines (tortugas)" },
+          { type: "paragraph", text: "Unas 350 especies. Cuerpo protegido por un caparazón óseo fusionado a las vértebras y costillas. Mandíbulas sin dientes, con un pico córneo. Ectotermas, de distribución mundial. Marinas, de agua dulce y terrestres. La reproducción es ovípara; el sexo está determinado por la temperatura de incubación. Longevidad muy alta (>150 años en especies grandes)." },
+          { type: "heading", level: 3, text: "Orden Squamata (lagartos, serpientes, anfisbenas)" },
+          { type: "paragraph", text: "El orden más diverso de reptiles actuales (más de 10.000 especies). Cuerpo cubierto de escamas imbricadas, que mudan periódicamente (muda de la piel completa). Los lagartos (Sauria) tienen cuatro extremidades (algunos las han perdido secundariamente). Las serpientes (Ophidia) son ápodas, con mandíbulas muy flexibles (unidas por ligamentos elásticos) que permiten tragar presas enteras; tienen órganos de Jacobson (quimiorreceptores) y algunas poseen glándulas de veneno. Los anfisbenos (Amphisbaenia) son reptiles excavadores con cuerpo anillado y extremidades atrofiadas. La reproducción es ovípara u ovovivípara. Ejemplos: Lacerta (lagarto), Vipera (víbora), Python (pitón)." },
+          { type: "heading", level: 3, text: "Orden Crocodylia (cocodrilos, aligátores, gaviales)" },
+          { type: "paragraph", text: "Unas 24 especies, las más cercanas a las aves. Son reptiles semiacuáticos, depredadores, con cuerpo alargado, mandíbulas potentes y dientes implantados en alvéolos (tecodontia). Corazón completamente dividido (cuatro cámaras). Exhiben cuidado parental (la hembra construye un nido, protege los huevos y transporta a las crías). Ectotermos, pero pueden regular su temperatura mediante baños de sol. Ejemplo: Crocodylus niloticus, Alligator mississippiensis." }
+        ]
+      },
+      {
+        id: "aves",
+        title: "Clase Aves: los reptiles emplumados",
+        content: [
+          { type: "heading", level: 2, text: "Aves: homeotermas, con plumas y vuelo" },
+          { type: "paragraph", text: "Las aves evolucionaron a partir de dinosaurios terópodos en el Jurásico (Archeopteryx, hace 150 Ma). Son amniotas con plumas (estructuras epidérmicas de queratina), endotermia (homeotermas), y esqueleto adaptado al vuelo (huesos neumáticos, quilla en el esternón, fusión de vértebras). Presentan un corazón con cuatro cámaras, circulación doble y completa. Respiración con sacos aéreos que permiten un flujo unidireccional de aire en los pulmones (muy eficiente). Mandíbulas sin dientes (beca córnea). Ojos grandes y buena visión en color. Órgano vocal: siringe. Excreción de ácido úrico (poco agua). Reproducción: ovípara, con huevos amnióticos calcáreos, incubación externa, cuidado parental. Los polluelos pueden ser nidícolas (altriciales) o nidífugos (precoces)." },
+          { type: "heading", level: 3, text: "Adaptaciones al vuelo" },
+          { type: "list", items: [
+            "Aletas (alas) con plumas de vuelo (remeras, cobertoras, timoneras).",
+            "Esternón con quilla (excepto en aves no voladoras como el avestruz).",
+            "Huesos neumáticos (con cavidades llenas de aire) que reducen el peso.",
+            "Fusión de vértebras (sacro y pigóstilo) para dar rigidez.",
+            "Sacos aéreos conectados a los pulmones, que también facilitan la termorregulación.",
+            "Metabolismo elevado (endotermia)."
+          ] },
+          { type: "heading", level: 3, text: "Clasificación de las aves" },
+          { type: "paragraph", text: "Aves actuales (Neornithes) se dividen en Paleognathae (aves no voladoras como el avestruz, emú, ñandú, kiwi, casuario) y Neognathae (aves con quilla, la mayoría, incluyendo gallináceas, patos, gaviotas, rapaces, loros, paseriformes). Existen más de 10.000 especies. Muchas realizan largas migraciones (rutas migratorias intercontinentales). Las aves desempeñan funciones ecológicas importantes (polinización, dispersión de semillas, control de plagas). Algunas especies son de interés económico (aves de corral) o cinegético. Además, pueden ser vectores de enfermedades (gripe aviar, virus del Nilo occidental)." }
+        ]
+      },
+      {
+        id: "mamiferos",
+        title: "Clase Mammalia: glándulas mamarias y pelo",
+        content: [
+          { type: "heading", level: 2, text: "Mamíferos: endotermos, vivíparos (en su mayoría) con pelo y leche" },
+          { type: "paragraph", text: "Los mamíferos son sinápsidos (un solo arco temporal en el cráneo) que evolucionaron a partir de los terápsidos en el Triásico. Presentan pelo (carácter sinapomórfico), glándulas mamarias (producen leche), dentición diferenciada (heterodoncia) y diphyodontia (dos juegos de dientes, deciduos y permanentes). El corazón es tetracameral, circulación doble completa, endotermia. Excreción de urea. Encéfalo muy desarrollado, con neocorteza. Órganos sensoriales complejos (audición con tres huesecillos: martillo, yunque y estribo). Fecundación interna. La mayoría son vivíparos (excepto monotremas)." },
+          { type: "heading", level: 3, text: "Subclase Prototheria (monotremas)" },
+          { type: "paragraph", text: "Solo cinco especies actuales (ornitorrinco y cuatro equidnas). Viven en Australia y Nueva Guinea. Ponen huevos (ovíparos), pero amamantan a las crías (sin pezones, la leche es secretada por campos glandulares). Pelo, hocico en forma de pico (ornitorrinco). Esqueleto reptiliano (cintura pectoral con huesos coracoides y procoracoides). Cloaca. Ectotermia moderada (no regulan perfectamente la temperatura)." },
+          { type: "heading", level: 3, text: "Subclase Theria (marsupiales y placentarios)" },
+          { type: "paragraph", text: "Infraclase Metatheria (marsupiales): unas 330 especies, principalmente en Australia y América. Las crías nacen muy inmaduras (altriciales) y completan su desarrollo en una bolsa (marsupio) donde se adhieren a un pezón. Ejemplos: canguros (Macropus), koalas (Phascolarctos), zarigüeyas (Didelphis)." },
+          { type: "paragraph", text: "Infraclase Eutheria (placentarios): la mayoría de los mamíferos (unas 5.000 especies). Poseen placenta corioalantoidea (comunicación íntima madre-embrión) que permite gestaciones largas y crías más desarrolladas. Órdenes destacados: Rodentia (roedores, más del 40% de especies), Chiroptera (murciélagos, únicos mamíferos voladores), Cetacea (ballenas, delfines), Carnivora (perros, gatos, osos, focas), Proboscidea (elefantes), Primates (lémures, monos, simios, humanos)." },
+          { type: "heading", level: 3, text: "Orden Primates y familia Hominidae" },
+          { type: "paragraph", text: "Primates: dedos prensiles, uñas planas, visión binocular (ojos frontales), cerebro grande. Suborden Strepsirrhini (lémures) y Haplorrhini (monos, simios). La familia Hominidae (grandes simios) incluye a chimpancés (Pan), gorilas (Gorilla), orangutanes (Pongo) y humanos (Homo). El género Homo aparece hace unos 2.5 millones de años en África; la única especie actual es Homo sapiens, caracterizada por bipedismo, cerebro muy desarrollado y lenguaje simbólico." }
+        ]
+      },
+      {
+        id: "resumen-chordata",
+        title: "Resumen: claves de los cordados",
+        content: [
+          { type: "heading", level: 2, text: "Ideas fundamentales" },
+          { type: "keypoint", points: [
+            "Los cordados se definen por notocordio, tubo neural dorsal, hendiduras faríngeas y cola postanal (en algún estadio).",
+            "Urocordados: adultos sésiles (ascidias) o pelágicos; solo la larva presenta las cuatro sinapomorfías.",
+            "Cefalocordados (anfioxos): presentan todas las sinapomorfías toda la vida; modelo de cordado primitivo.",
+            "Craniados (vertebrados): cráneo, columna vertebral, cresta neural y placodas; gran diversificación.",
+            "Agnatos (mixinos, lampreas): sin mandíbulas; lampreas tienen larva ammocoete.",
+            "Gnatostomados (mandíbulas): condrictios (esqueleto cartilaginoso, dentículos dérmicos, válvula espiral) y osteíctios (esqueleto óseo, vejiga natatoria).",
+            "Tetrápodos (amfibios, amniotas): extremidades con dedos, pulmones, circulación doble.",
+            "Amniotas (reptiles, aves, mamíferos): huevo amniótico, piel queratinizada, excreción de ácido úrico o urea.",
+            "Aves: plumas, endotermia, esqueleto neumático, huevos con cáscara calcárea.",
+            "Mamíferos: pelo, glándulas mamarias, heterodoncia, cerebro desarrollado."
+          ] }
+        ]
+      }
+    ]
+  },
+  {
+    id: "vocabulario",
+    number: 15,
     title: "Vocabulario",
     subtitle: "Glosario de términos clave",
     sections: [
