@@ -286,15 +286,30 @@ export function ChapterContent({
   return (
     <div className="min-h-screen pb-24 lg:ml-72">
       {/* Hero Section */}
-      <header className="relative flex h-[280px] items-end rounded-b-[40px] bg-gradient-to-br from-primary/90 to-primary/60 p-8 lg:p-12">
-        <div className="max-w-4xl">
+      <header
+        className={cn(
+          "relative flex h-[280px] items-end overflow-hidden rounded-b-[40px] p-8 lg:p-12",
+          !chapter.headerImage && "bg-gradient-to-br from-primary/90 to-primary/60"
+        )}
+      >
+        {chapter.headerImage && (
+          <>
+            <img
+              src={chapter.headerImage}
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/50 to-black/60" />
+          </>
+        )}
+        <div className="relative max-w-4xl">
           <Badge className="mb-4 bg-white/20 text-white backdrop-blur-sm">
             Capítulo {chapter.number}
           </Badge>
-          <h1 className="text-balance text-3xl font-black tracking-tight text-white md:text-4xl lg:text-5xl">
+          <h1 className="text-balance text-3xl font-black tracking-tight text-white drop-shadow-md md:text-4xl lg:text-5xl">
             {chapter.title}
           </h1>
-          <p className="mt-3 text-lg text-white/80">{chapter.subtitle}</p>
+          <p className="mt-3 text-lg text-white/90 drop-shadow">{chapter.subtitle}</p>
         </div>
 
         <div className="absolute right-8 top-8 flex items-center gap-3">

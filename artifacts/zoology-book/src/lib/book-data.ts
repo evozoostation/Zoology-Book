@@ -10,6 +10,7 @@ export interface Chapter {
   title: string;
   subtitle: string;
   sections: Section[];
+  headerImage?: string;
 }
 
 export type ContentBlock =
@@ -64,8 +65,7 @@ export const chapters: Chapter[] = [
             width: "md"
           },
           { type: "paragraph", text: "Entre los parientes unicelulares más cercanos a los animales se encuentran los coanoflagelados. Estos protistas coloniales poseen un flagelo rodeado por un collar de microvellosidades, una estructura prácticamente idéntica a los coanocitos de las esponjas. Su estudio es clave para entender cómo se originó la pluricelularidad." },
-          {
-            type: "video",
+          { type: "video",
             src: "https://res.cloudinary.com/dhtyvmi5f/video/upload/v1777133640/videoplayback_ohw9w4.mp4",
             caption: "**Dinámica colonial de *C. flexa*:** Observación de dinoflagelados ovalados y colonias de coanoflagelados en agua marina de Curazao, mostrando su capacidad de contraerse en esferas y expandirse en forma de copa.",
           },
@@ -78,11 +78,18 @@ export const chapters: Chapter[] = [
         content: [
           { type: "heading", level: 2, text: "Los verdaderos animales" },
           { type: "paragraph", text: "Cuando hablamos de animales (o metazoos) nos referimos a organismos pluricelulares que comparten un puñado de rasgos esenciales. Son heterótrofos, es decir, se alimentan de materia orgánica producida por otros seres vivos. Sus células se agrupan en tejidos especializados, y su desarrollo embrionario sigue un guion muy parecido en todos ellos: del cigoto a la blástula, de la blástula a la gástrula, y de ahí a la complejidad de órganos y sistemas." },
+          { 
+            type: "image", 
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/v1777208025/licensed-image_wokuif.jpg", 
+            alt: "Desarrollo embrionario" 
+          },
           { type: "paragraph", text: "Una de las grandes ventajas de ser pluricelular es que se pueden alcanzar tamaños mayores, vivir más años y repartir el trabajo entre células especializadas. Cada tipo celular hace lo que mejor sabe, y todas colaboran para que el conjunto funcione." },
           { type: "heading", level: 3, text: "El plan estructural (Bauplan)" },
           { type: "paragraph", text: "Cada filo animal responde a una arquitectura interna diferente: a eso los biólogos llaman «Bauplan» o plan estructural. Por ejemplo, los moluscos tienen un pie muscular, un manto y una concha, mientras que los artrópodos presentan un exoesqueleto articulado. Se han descrito unos 34 filos de metazoos, y cada uno es una solución única al problema de cómo organizar un cuerpo." }
+          
         ]
       },
+      
       {
         id: "formacion-animal",
         title: "¿Cómo se forma un animal?",
@@ -92,7 +99,14 @@ export const chapters: Chapter[] = [
           { type: "definition", term: "Opción 1 — Masa maciza de células", definition: "No funcionaría: las células del interior quedarían aisladas del exterior, sin oxígeno ni nutrientes. El intercambio de gases por difusión solo es eficaz en capas muy finas." },
           { type: "definition", term: "Opción 2 — Una sola capa de células", definition: "Tampoco es suficiente. El famoso alga verde Volvox forma esferas huecas de una sola capa, pero no puede complejizarse más porque carece de un interior especializado." },
           { type: "definition", term: "Opción 3 — Dos capas de células", definition: "Aquí sí hay un avance: una capa externa (ectodermo) que protege y otra interna (endodermo) que recubre una cavidad digestiva. Así funcionan los cnidarios (como las medusas) y las esponjas. Es el nivel de los diploblásticos." },
-          { type: "definition", term: "Opción 4 — Tres capas", definition: "La gran revolución: añadir el mesodermo, una capa media que dará lugar a músculos, esqueleto, sistema circulatorio... La mayoría de los animales actuales somos triblásticos." }
+          { type: "definition", term: "Opción 4 — Tres capas", definition: "La gran revolución: añadir el mesodermo, una capa media que dará lugar a músculos, esqueleto, sistema circulatorio... La mayoría de los animales actuales somos triblásticos." },
+          {
+            type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/q_auto,f_auto,e_sharpen:100/v1777213220/Gemini_Generated_Image_v5c079v5c079v5c0_pshkhu.png",
+            alt: "capas germinales y posible postior desarrollo de tejidos",
+            caption: "Capas germinales y su posible postior desarrollo de tejidos.",
+            width: "lg"
+          },
         ]
       },
       {
@@ -106,7 +120,13 @@ export const chapters: Chapter[] = [
           { type: "definition", term: "Acelomados", definition: "No tienen cavidad interna. El mesodermo es compacto. Ejemplo: los platelmintos (gusanos planos)." },
           { type: "definition", term: "Pseudocelomados", definition: "Poseen una cavidad (pseudoceloma) que no está rodeada por un epitelio propio. Actúa como esqueleto hidrostático y permite cierta compartimentación. Ejemplo: los nematodos." },
           { type: "definition", term: "Celomados", definition: "Son los más complejos. El celoma es una cavidad verdadera tapizada por un epitelio de origen mesodérmico (peritoneo). Allí dentro pueden alojarse órganos, circular fluidos y regular el intercambio con los tejidos. Ejemplo: anélidos, moluscos, artrópodos y nosotros mismos." },
-          { type: "callout", variant: "tip", title: "Un detalle importante", content: "El pseudoceloma deriva del blastocele (la cavidad del embrión temprano). El celoma, en cambio, es una cavidad de nueva formación. Muchos animales tienen ambos tipos a la vez: espacios pseudocelómicos que funcionan como hemoceloma (sistema circulatorio abierto)." }
+          { type: "callout", variant: "tip", title: "Un detalle importante", content: "El pseudoceloma deriva del blastocele (la cavidad del embrión temprano). El celoma, en cambio, es una cavidad de nueva formación. Muchos animales tienen ambos tipos a la vez: espacios pseudocelómicos que funcionan como hemoceloma (sistema circulatorio abierto)." },
+          {
+            type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/v1777223089/upscalemedia-transformed_1_mncjei.jpg",
+            alt: "Serie temporal del desarrollo embrionario desde cigoto hasta gástrula",
+            width: "md"
+          },
         ]
       },
       {
