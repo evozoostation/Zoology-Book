@@ -85,8 +85,8 @@ export const chapters: Chapter[] = [
           },
           { type: "paragraph", text: "Una de las grandes ventajas de ser pluricelular es que se pueden alcanzar tamaños mayores, vivir más años y repartir el trabajo entre células especializadas. Cada tipo celular hace lo que mejor sabe, y todas colaboran para que el conjunto funcione." },
           { type: "heading", level: 3, text: "El plan estructural (Bauplan)" },
-          { type: "paragraph", text: "Cada filo animal responde a una arquitectura interna diferente: a eso los biólogos llaman «Bauplan» o plan estructural. Por ejemplo, los moluscos tienen un pie muscular, un manto y una concha, mientras que los artrópodos presentan un exoesqueleto articulado. Se han descrito unos 34 filos de metazoos, y cada uno es una solución única al problema de cómo organizar un cuerpo." }
-          
+          { type: "paragraph", text: "Cada filo animal responde a una arquitectura interna diferente: a eso los biólogos llaman «Bauplan» o plan estructural. Por ejemplo, los moluscos tienen un pie muscular, un manto y una concha, mientras que los artrópodos presentan un exoesqueleto articulado. Se han descrito unos 34 filos de metazoos, y cada uno es una solución única al problema de cómo organizar un cuerpo." },
+         
         ]
       },
       
@@ -107,7 +107,7 @@ export const chapters: Chapter[] = [
             caption: "Capas germinales y su posible postior desarrollo de tejidos.",
             width: "lg"
           },
-        ]
+                  ]
       },
       {
         id: "cavidades-corporales",
@@ -347,7 +347,13 @@ export const chapters: Chapter[] = [
           { type: "heading", level: 2, text: "El blastoporo decide el futuro del animal" },
           { type: "paragraph", text: "Una de las primeras decisiones que toma el embrión es qué hacer con el blastoporo, la abertura que comunica el arquénteron con el exterior. Según su destino, los animales bilaterales se dividen en dos linajes fundamentales." },
           { type: "definition", term: "Protóstomos", definition: "El blastoporo se convierte en la boca. El ano se forma después, en el extremo opuesto o a partir del propio blastoporo. La segmentación es espiral y determinada, y el celoma se forma por esquizocelia. Ejemplos: moluscos, anélidos, artrópodos, nematodos." },
-          { type: "definition", term: "Deuteróstomos", definition: "El blastoporo se convierte en el ano. La boca se forma de novo en el extremo opuesto. La segmentación es radial e indeterminada (las células embrionarias son totipotentes más tiempo), y el celoma se forma por enterocelia. Ejemplos: equinodermos, hemicordados, cordados." },
+                    { type: "definition", term: "Deuteróstomos", definition: "El blastoporo se convierte en el ano. La boca se forma de novo en el extremo opuesto. La segmentación es radial e indeterminada (las células embrionarias son totipotentes más tiempo), y el celoma se forma por enterocelia. Ejemplos: equinodermos, hemicordados, cordados." },
+                    { type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/q_auto,f_auto/v1777308699/Gemini_Generated_Image_37riuq37riuq37ri_qmwj7d.png",
+            alt: "Diferenciación entre Protóstomos y Deuteróstomos",
+            caption: "El destino del blastoporo define la división principal de los Bilaterales: en Protóstomos origina la boca, mientras que en Deuteróstomos origina el ano.",
+            width: "lg"
+          },
           { type: "table", headers: ["Carácter embrionario", "Protóstomos", "Deuteróstomos"], rows: [
             ["Origen de la boca", "Del blastoporo", "De neoformación"],
             ["Origen del ano", "Secundario (a veces del blastoporo)", "Del blastoporo"],
@@ -356,8 +362,9 @@ export const chapters: Chapter[] = [
             ["Ejemplos", "Anélidos, moluscos, artrópodos", "Equinodermos, cordados"]
           ] },
           { type: "callout", variant: "info", title: "Una excepción notable", content: "Los nematodos son protóstomos, pero su segmentación no es espiral pura (es bilateral determinada). Es un grupo derivado dentro de Ecdysozoa." }
-        ]
-      },
+                  ]
+           },
+      
       {
         id: "filogenia-basica",
         title: "El árbol de la vida de los animales",
@@ -380,7 +387,13 @@ export const chapters: Chapter[] = [
             "La distinción entre protóstomos y deuteróstomos es fundamental para entender la evolución animal.",
             "La presencia de cutícula quitinosa y muda define a los Ecdysozoa, uno de los grupos más diversos (artrópodos, nematodos).",
             "La segmentación espiral y la larva trocófora son marcas de los Spiralia."
-          ] }
+          ] },
+          { type: "image",
+            src: "https://res.cloudinary.com/dhtyvmi5f/image/upload/q_auto,f_auto/v1777309529/Gemini_Generated_Image_qt10rcqt10rcqt10_x2ammj.png",
+            alt: "Comparación entre desarrollo Protóstomo y Deuteróstomo",
+            caption: "Diferenciación según el destino del blastoporo: en los Protóstomos (izquierda) da lugar a la boca, mientras que en los Deuteróstomos (derecha) da lugar al ano.",
+            width: "lg"
+          },
         ]
       },
       {
