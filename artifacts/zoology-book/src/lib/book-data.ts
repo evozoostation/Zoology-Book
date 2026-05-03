@@ -29,6 +29,7 @@ export const chapters: Chapter[] = [
     number: 1,
     title: "Arquitectura Animal — Parte I",
     subtitle: "Biodiversidad y origen de los metazoos",
+    headerImage: "https://res.cloudinary.com/dhtyvmi5f/image/upload/f_auto,q_auto,w_1600,h_600,c_fill/v1777132775/Gemini_Generated_Image_40npjw40npjw40np_flp9xk.png",
     sections: [
       {
         id: "biodiversidad",
