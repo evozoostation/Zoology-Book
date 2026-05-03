@@ -8,6 +8,7 @@ import {
   Search,
   X,
   Menu,
+  Images,
 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -19,6 +20,8 @@ interface BookSidebarProps {
   currentChapter: string;
   currentSection: string;
   onNavigate: (chapterId: string, sectionId?: string) => void;
+  onOpenGallery: () => void;
+  isGalleryActive: boolean;
   progress: Record<string, boolean>;
 }
 
@@ -26,6 +29,8 @@ function SidebarContent({
   currentChapter,
   currentSection,
   onNavigate,
+  onOpenGallery,
+  isGalleryActive,
   progress,
   onClose,
 }: BookSidebarProps & { onClose?: () => void }) {
@@ -125,12 +130,40 @@ function SidebarContent({
       <div className="flex-1 min-h-0 overflow-hidden">
         <ScrollArea className="h-full">
           <div className="space-y-1 px-2 pb-4">
+
+            {/* Gallery link */}
+            <div className="px-2 pb-1">
+              <button
+                onClick={() => { onOpenGallery(); onClose?.(); }}
+                className={cn(
+                  "flex w-full items-center gap-3 rounded-lg px-4 py-3 text-left transition-all",
+                  isGalleryActive
+                    ? "bg-sidebar-accent text-sidebar-primary"
+                    : "text-sidebar-foreground/70 hover:bg-sidebar-accent/50 hover:text-sidebar-foreground"
+                )}
+              >
+                <div className={cn(
+                  "flex h-7 w-7 shrink-0 items-center justify-center rounded-lg",
+                  isGalleryActive
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-sidebar-accent text-sidebar-foreground/60"
+                )}>
+                  <Images className="h-4 w-4" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="truncate text-sm font-semibold">Galería</p>
+                  <p className="text-[10px] text-sidebar-foreground/50">Imágenes del libro</p>
+                </div>
+              </button>
+            </div>
+
             <p className="px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-sidebar-foreground/40">
               Contenido
             </p>
+
             {filteredChapters.map((chapter) => {
               const isExpanded = expandedChapters.includes(chapter.id);
-              const isActive = currentChapter === chapter.id;
+              const isActive = !isGalleryActive && currentChapter === chapter.id;
               const chapterProgress = chapter.sections.filter(
                 (s) => progress[`${chapter.id}-${s.id}`]
               ).length;
@@ -179,6 +212,7 @@ function SidebarContent({
                         const sectionKey = `${chapter.id}-${section.id}`;
                         const isCompleted = progress[sectionKey];
                         const isSectionActive =
+                          !isGalleryActive &&
                           currentChapter === chapter.id &&
                           currentSection === section.id;
 
@@ -241,7 +275,6 @@ export function BookSidebar(props: BookSidebarProps) {
 
   return (
     <>
-      {/* Mobile Menu Button */}
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button
@@ -257,7 +290,6 @@ export function BookSidebar(props: BookSidebarProps) {
         </SheetContent>
       </Sheet>
 
-      {/* Desktop Sidebar */}
       <aside className="fixed left-0 top-0 z-40 hidden h-screen w-72 lg:block">
         <SidebarContent {...props} />
       </aside>
