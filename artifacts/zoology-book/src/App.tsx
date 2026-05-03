@@ -1,3 +1,4 @@
+import { GaleriaAutomatica } from './GaleriaAutomatica';
 import { useState, useEffect } from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
