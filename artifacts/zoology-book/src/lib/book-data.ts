@@ -66,7 +66,7 @@ export const chapters: Chapter[] = [
             width: "md"
           },
           { type: "paragraph", text: "Entre los parientes unicelulares más cercanos a los animales se encuentran los coanoflagelados. Estos protistas coloniales poseen un flagelo rodeado por un collar de microvellosidades, una estructura prácticamente idéntica a los coanocitos de las esponjas. Su estudio es clave para entender cómo se originó la pluricelularidad." },
-          { type: "video",
+          { type: "image",
             src: "https://res.cloudinary.com/dhtyvmi5f/video/upload/v1777133640/videoplayback_ohw9w4.mp4",
             caption: "**Dinámica colonial de *C. flexa*:** Observación de dinoflagelados ovalados y colonias de coanoflagelados en agua marina de Curazao, mostrando su capacidad de contraerse en esferas y expandirse en forma de copa.",
           },
