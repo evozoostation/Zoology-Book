@@ -5,44 +5,123 @@ node_modules/
 # Environment variables
 .env
 .env.local
-*.env.*
+.env.*
 
-# IDE specific
+# IDE files
 .vscode/
 .idea/
+*.swp
+*.swo
 
 # Logs
 *.log
 
-# Python related
+# Temporary files
+*.tmp
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
-*.so
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/refs/replace/
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
 
-# Build outputs
-dist/
-build/
-*.egg-info/
+# Compiled files
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.dylib
+*.exe
+*.out
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
 
 # OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Icon?
+desktop.ini
 
-# Coverage reports
+# Package manager
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
 coverage/
 htmlcov/
-*.coverage
+.nyc_output/
+istanbul/
+.mocha.opts
 
-# Temporary files
-*.tmp
-*.swp
-*.swo
+# Distribution
+*.tar.gz
+*.egg-info/
+*.egg
 
-# Cache directories
-.mypy_cache/
-.pytest_cache/
-.coverage*
+# Compression
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+target/
 ```
