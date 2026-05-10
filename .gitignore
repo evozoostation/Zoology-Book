@@ -1,13 +1,26 @@
 ```
+# Build artifacts
+OUT/
+*.js
+*.css
+*.svg
+*.html
+*.jpg
+*.png
+*.jpeg
+*.gif
+*.webp
+*.ico
+
 # Dependencies
 node_modules/
 
-# Environment variables
+# Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# IDE files
+# Editors
 .vscode/
 .idea/
 *.swp
@@ -18,11 +31,8 @@ node_modules/
 
 # Temporary files
 *.tmp
-
-# Build artifacts
-dist/
-build/
-target/
+Thumbs.db
+.DS_Store
 
 # Python
 __pycache__/
@@ -42,31 +52,71 @@ pip-delete-this-directory.txt
 nosetests.xml
 coverage.xml
 *.cover
-*.log
-.git/refs/replace/
-.pytest_cache/
-.mypy_cache/
-.hypothesis/
+*.db
+*.sqlite
+*.sqlite3
 
-# Compiled files
+# Compiled
+*.class
 *.o
+*.a
 *.obj
 *.so
-*.a
-*.lib
 *.dll
-*.dylib
 *.exe
 *.out
-*.class
-*.jar
-*.war
-*.ear
-*.iml
-*.ipr
-*.iws
 
-# OS generated files
+# Archives
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.gz
+*.rar
+*.7z
+
+# Testing
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Gradle
+.gradle/
+build/
+
+# Node
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Bower
+bower_components/
+
+# Jspm
+jspm_packages/
+
+# Grunt
+.grunt
+
+# Gulp
+gulp-cache/
+
+# Webpack
+webpack-stats.json
+
+# SASS
+.sass-cache/
+
+# Code coverage
+lcov-report/
+
+# OS generated
 .DS_Store
 .DS_Store?
 ._*
@@ -74,54 +124,4 @@ coverage.xml
 .Trashes
 ehthumbs.db
 Thumbs.db
-Icon?
-desktop.ini
-
-# Package manager
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Testing
-coverage/
-htmlcov/
-.nyc_output/
-istanbul/
-.mocha.opts
-
-# Distribution
-*.tar.gz
-*.egg-info/
-*.egg
-
-# Compression
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
-
-# Gradle
-.gradle/
-build/
-
-# Maven
-target/
 ```
